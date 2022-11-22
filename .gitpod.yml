@@ -2,7 +2,7 @@ additionalRepositories:
   - url: https://bitbucket.org/legendcorp/codelibrary/src/master/
     # checkoutLocation is optional and relative to /workspaces.
     # by default the location defaults to the repository name.
-    checkoutLocation: backend
+    checkoutLocation: CodeLibrary
 
 tasks:
   - init: echo 'e'
