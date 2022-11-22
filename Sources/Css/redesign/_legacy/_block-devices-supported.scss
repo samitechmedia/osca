@@ -1,0 +1,80 @@
+.block-devices-supported {
+  text-align: center;
+  margin: 15px -0.9%;
+  overflow: hidden;
+}
+
+.box-device-supported {
+  width: 18.2%;
+  float: left;
+  display: inline-block;
+  border: 2px solid #e6e6e6;
+  border-radius: 4px;
+  padding: 22px 0 12px;
+  margin: 9px 0.9%;
+}
+
+.box-device-supported .title {
+  font-size: 14px;
+  line-height: 100%;
+  color: #707070;
+  padding: 25px 0 0;
+}
+
+.box-device-supported .icon-check {
+  width: 40px;
+  height: 40px;
+  background: url(/images/ultimate-slots-guide/sprite-mobile-slots.png) no-repeat -334px 0;
+  position: absolute;
+  right: -12px;
+  bottom: -9px;
+  z-index: 2;
+}
+
+.box-device-supported .icon {
+  display: inline-block;
+  height: 113px;
+  position: relative;
+  background: url(/images/ultimate-slots-guide/sprite-mobile-slots.png) no-repeat 0 0;
+}
+
+.box-device-supported .icon-iphone {
+  background-position: 0 0;
+  width: 56px;
+}
+
+.box-device-supported .icon-ipad {
+  background-position: -61px 0;
+  width: 81px;
+}
+
+.box-device-supported .icon-android {
+  background-position: -147px 0;
+  width: 58px;
+}
+
+.box-device-supported .icon-windows-phone {
+  background-position: -210px 0;
+  width: 58px;
+}
+
+.box-device-supported .icon-blackberry {
+  background-position: -273px 0;
+  width: 56px;
+}
+
+@media screen and (max-width: 800px){
+  .box-device-supported .icon{-webkit-transform: scale(0.72); -ms-transform: scale(0.72); transform: scale(0.72); margin: -18px;}
+}
+
+@media screen and (max-width: 767px){
+  .box-device-supported{float: none; width: 100%; max-width: 175px;}
+}
+
+@media screen and (max-width: 600px){
+  .box-device-supported{max-width: 142px;}
+}
+
+@media screen and (max-width: 480px){
+  .box-device-supported{margin: 6px 0.9%;}
+}

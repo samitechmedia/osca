@@ -1,0 +1,36 @@
+.software__games {
+    #bx1 {
+        position: relative;
+        width: 100%;
+        margin: 10px 0 0 1%;
+        height: 215px;
+
+        @media (min-width: 600px) {
+            width: 49%;
+        }
+
+        @media (min-width: 1200px) {
+            width: 32%;
+        }
+
+        > a {
+            width: 250px;
+            display: block;
+            margin: 0 auto;
+        }
+
+        .action-button {
+            position: absolute;
+            left: 50%;
+            transform: translate(-50%, 0);
+            bottom: 10px;
+            text-align: center;
+            line-height: 1;
+
+            &:hover {
+                transform: translate(-50%, 2px);
+                border-bottom: 3px solid rgb(117, 6, 1);
+            }
+        }
+    }
+}

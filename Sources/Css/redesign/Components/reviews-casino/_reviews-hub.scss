@@ -1,0 +1,113 @@
+#bx1 {
+    float: left;
+    position: relative;
+    width: 236px;
+    line-height: 7px;
+    margin-left: 0;
+    z-index: 6;
+    min-height: 115px;
+    background-color: #f2f1ef;
+    background-repeat: no-repeat;
+    border-radius: 5px;
+    transition: all 0.2s ease-in-out;
+
+    &:hover {
+      background-color: #dbdbdb;
+    }
+
+    .red {
+      background-color: #9a0000;
+      border-bottom: 5px solid #750601;
+      text-shadow: 0 -2px #750601;
+
+      &:hover {
+        transform: translateY(2px);
+        border-bottom: 2px solid #7F4C15;
+      }
+    }
+  }
+
+  .action-button {
+    position: relative;
+    padding: 16px 40px;
+    margin: 33px 10px 15px 16px;
+    float: left;
+    border-radius: 10px;
+    font-size: 18px;
+    color: #FFF;
+  }
+
+  .animate {
+    transition: all .1s;
+  }
+
+  .action-button {
+    text-decoration: none;
+  }
+
+  #freeit {
+    position: relative;
+    float: left;
+    margin-top: 30px;
+    margin-left: 15px;
+    z-index: 5;
+  }
+
+  .bonusy,
+  .moneey,
+  .percenty {
+    position: absolute;
+  }
+
+  .bonusy {
+    float: left;
+    text-align: center !important;
+    margin-left: 94px;
+    position: absolute;
+  }
+
+  .titley,
+  .uptoy {
+    color: #000;
+    position: absolute;
+    font-weight: 700;
+  }
+
+  .threed {
+    font-weight: 700;
+    position: absolute;
+    margin-left: 42px;
+  }
+
+  .uptoy {
+    font-size: 15px;
+    line-height: 1;
+    margin-top: 81px;
+    margin-left: 54px;
+    width: 58px;
+  }
+
+  .titley {
+    margin-left: 41px;
+    margin-top: 20px;
+  }
+
+  .percenty {
+    color: green;
+    font-size: 30px;
+    font-weight: 700;
+    margin-top: 50px;
+    margin-left: 35px;
+  }
+
+  .moneey,
+  .threed {
+    color: green;
+    font-size: 30px;
+    margin-top: 121px;
+  }
+
+  .moneey {
+    font-weight: 700;
+    margin-left: 33px;
+  }

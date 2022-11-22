@@ -1,0 +1,23 @@
+.breadcrumbs {
+    padding: 12px 0;
+
+    &__link {
+        border-bottom: 1px solid transparent;
+        color: $osca-blue-3;
+        display: inline;
+        font-weight: bold;
+        transition: color 0.3s ease;
+    }
+
+    &__list-item {
+        display: inline;
+        font-size: 14px;
+
+        &:last-of-type > .breadcrumbs {
+            &__link {
+                color: $black-2;
+                font-weight: normal;
+            }
+        }
+    }
+}

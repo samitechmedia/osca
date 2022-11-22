@@ -1,0 +1,49 @@
+.quote-block {
+    position: relative;
+    margin: 70px 0 40px 0;
+    background: rgba(247, 246, 245, 0.61);
+    color: #9a0000;
+    font-style: italic;
+    font-size: 18px;
+    line-height: normal;
+    padding: 25px 32px;
+    text-align: left;
+
+    @include respond-to('medium') {
+      padding: 42px 32px 25px 32px;
+    }
+
+    @include respond-to('extra-large') {
+      font-size: 36px;
+      line-height: 48px;
+      text-align: center;
+      padding: 60px 25px;
+    }
+
+    &--right {
+      font-size: 20px;
+      width: 100%;
+      margin: 20px 0;
+
+      @include respond-to('small') {
+        float: right;
+        width: 320px;
+        font-size: 24px;
+        margin: 0 0 20px 20px;
+      }
+    }
+
+    &__icon {
+      color: rgba(243, 224, 224, 0.61);
+      mix-blend-mode: multiply;
+      position: absolute;
+      left: 50%;
+      top: 33%;
+      transform: translate(-50%, -50%);
+
+      @include respond-to('extra-large') {
+        width: 240px;
+        height: 240px;
+      }
+    }
+  }

@@ -1,0 +1,34 @@
+{
+  "extends": [
+    "stylelint-config-recommended",
+    "stylelint-config-standard",
+    "stylelint-config-sass-guidelines"
+  ],
+  "plugins": [
+    "@namics/stylelint-bem"
+  ],
+  "rules": {
+    "declaration-no-important" : true,
+    "function-parentheses-space-inside": "never-single-line",
+    "function-url-scheme-disallowed-list" : [
+      "data",
+      "ftp",
+      "/^http/",
+      "/^https/"
+    ],
+    "indentation": 4,
+    "max-nesting-depth": 3,
+    "plugin/stylelint-bem-namics": {
+      "patternPrefixes": [],
+      "helperPrefixes": []
+    },
+    "selector-no-qualifying-type": [
+      true,
+      {
+        "ignore": [
+          "attribute"
+        ]
+      }
+    ]
+  }
+}

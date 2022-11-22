@@ -1,0 +1,16 @@
+.further {
+    &__information .left-content {
+        align-items: center;
+        display: flex;
+
+        img {
+            width: 120px;
+        }
+    }
+}
+
+.slot-icon {
+    &__container {
+        clear: both;
+    }
+}

@@ -1,0 +1,60 @@
+.gameContainerResizing {
+  position: relative;
+  height: 0;
+  overflow: hidden;
+  background-color: black;
+}
+
+.gameContainerResizing object {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+
+.gameContainerResizing.aspectRatio43 {
+  padding-bottom: 75%;
+}
+
+.gameContainerResizing.aspectRatio169 {
+  padding-bottom: 56.25%;
+}
+
+/* Ref VisualConfig.json */
+.js_fancyBoxHolderFullscreen{
+  min-width: 100%;
+  /*width:100% !important;*/
+}
+
+/* Ref VisualConfig.json */
+.js_fancyBoxHiddenElement{
+  display: none;
+}
+
+.js_visualGamesLoader{
+  border: 5px solid #f3f3f3;
+  -webkit-animation: spinLazyLoader 1s linear infinite;
+  animation: spinLazyLoader 1s linear infinite;
+  border-top: 5px solid #555;
+  border-radius: 50%;
+  width: 75px;
+  height: 75px;
+
+  position: relative;
+  margin-left:auto;
+  margin-right:auto;
+
+  margin-top:75px;
+}
+
+@keyframes spinLazyLoader {
+  0% { transform: rotate(0deg); }
+  100% { transform: rotate(360deg); }
+}
+
+.search_noresponse{
+  display: block;
+  width: 100%;
+  text-align: center;
+}

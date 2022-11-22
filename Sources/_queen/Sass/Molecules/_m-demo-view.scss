@@ -1,0 +1,34 @@
+// Provides us with some styling before client-side js kicks in
+
+.m-demo-view {
+    display: flex;
+    justify-content: center;
+
+    &__img {
+        align-items: center;
+        background-position: 50%;
+        display: flex;
+        height: 375px;
+        justify-content: center;
+        position: relative;
+        width: 500px;
+
+        &--holder {
+            background-color: #f1f1f1;
+        }
+
+        &::after {
+            background-color: rgba(#000, 0.5);
+            content: '';
+            display: inline-block;
+            height: 100%;
+            position: absolute;
+            width: 100%;
+        }
+
+        .a-cta-button {
+            margin-bottom: 0;
+            z-index: 1;
+        }
+    }
+}

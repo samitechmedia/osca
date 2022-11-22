@@ -1,0 +1,97 @@
+// Old game reviews attributes section
+// excellent__container
+
+.block__info {
+    border: 2px solid #d7d7d7;
+    padding: 10px;
+    border-radius: 10px;
+    min-height: 268px;
+    margin: 30px 0;
+    display: none;
+
+    @include respond-to('extra-large') {
+      display: flex;
+    }
+  }
+
+.block__info-item {
+    border: 1px solid #d7d7d7;
+    border-radius: 10px;
+    flex: 0 0 100%;
+    flex-direction: column;
+    height: 114px;
+    color: #393939;
+    font-weight: 700;
+    font-size: 17px;
+    margin-bottom: 10px;
+
+    .green-text {
+        font-size: 34px;
+        line-height: normal;
+
+        &.text-smaller {
+            font-size: 26px;
+        }
+
+        &.text-center {
+            text-align: center;
+        }
+    }
+
+    .small__text {
+        font-size: 12px;
+    }
+
+    @include respond-to('extra-large') {
+        flex: 0 0 19%;
+    }
+}
+
+.svg__circle {
+    position: relative;
+    width: 75px;
+    height: 75px;
+    display: inline-block;
+    vertical-align: middle;
+    text-align: center;
+    line-height: 75px;
+    color: #53be11;
+    font-size: 32px;
+    font-weight: 700;
+
+    svg {
+      position: absolute;
+      top: 0;
+      left: 0;
+      right: 0;
+      bottom: 0;
+    }
+
+    .st0 {
+      fill: #777;
+    }
+
+    @include respond-to('extra-large') {
+      width: 105px;
+      height: 105px;
+      line-height: 105px;
+      font-size: 50px;
+    }
+  }
+
+
+  .st0__fill {
+    transition: all .4s ease;
+    fill: #01D10C !important;
+  }
+
+
+  .trigger {
+    display: none;
+    width: 300px;
+    height: 20px;
+    background: red;
+    position: absolute;
+    top: 139%;
+    right: 0;
+  }

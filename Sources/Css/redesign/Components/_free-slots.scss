@@ -1,0 +1,356 @@
+.free-slots {
+  background: #eeeeee;
+
+  &__subtitle {
+    color: #393939;
+   }
+
+  &__btn {
+    max-width: 520px;
+    margin: auto;
+  }
+
+  &__card {
+    margin-bottom: 25px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+
+    @include respond-to('large') {
+      width: 50%;
+    }
+
+    &__image-container {
+      display: flex;
+      padding: 5px;
+      width: 230px;
+      border: 1px solid #ededed;
+      box-shadow: 0 0 4px 0 rgba(0, 0, 0, .4);
+      margin: 10px;
+      align-self: center;
+    }
+
+    &__image {
+      width: 100%;
+      height: auto;
+      align-self: center;
+    }
+
+    &__title {
+      color: #221c1c;
+      font-weight: 700;
+      display: block;
+      margin: 0;
+      font-size: 16px;
+
+      @include respond-to('medium') {
+        font-size: 22px;
+        margin-bottom: 15px;
+      }
+    }
+
+    .white__inner-circle {
+      box-shadow: inset 0 1px 0 0 #b67709;
+    }
+  }
+
+  &__rating {
+    align-self: flex-start;
+
+    @include respond-to('medium') {
+      margin-bottom: 15px;
+    }
+  }
+
+  &__info {
+    color: #221c1c;
+    width: 230px;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+    @include respond-to('small') {
+      margin-left: 0;
+    }
+
+    @include respond-to('medium') {
+      margin-left: 20px;
+    }
+
+    @include respond-to('large') {
+      margin-left: 0;
+    }
+
+    @include respond-to('extra-large') {
+      margin-left: 30px;
+    }
+
+    &__btn {
+      margin-top: 15px;
+      margin-bottom: 4px;
+      border-color: #c5830e;
+      box-shadow: 0 4px 0 0 rgba(159, 102, 3, .75);
+      display: flex;
+      justify-content: space-between;
+
+      @media (max-width: 768px) {
+        padding: 8px;
+      }
+
+      @media (max-width: 500px) {
+        font-size: 12px;
+      }
+
+      @include respond-to('medium') {
+        margin-top: 15px;
+      }
+    }
+  }
+}
+
+.tabs__area {
+  background: #9e1c03;
+  border: 3px solid #9e1c03;
+  border-radius: 10px;
+  padding: 15px 0 0 0;
+  margin: 50px 0 30px 0;
+
+  .swiper-button-prev,
+  .swiper-button-next {
+    display: none;
+    top: 46%;
+    background: none;
+    font-size: 80px;
+    line-height: 80px;
+    -webkit-text-stroke: 1px #c8850d;
+    -webkit-text-fill-color: #faa900;
+    -webkit-animation: fill 0.5s infinite alternate;
+    @include respond-to('extra-large') {
+      display: block;
+    }
+  }
+
+  .swiper-button-next {
+    &:before {
+      font-family: 'FontAwesome';
+      content: "\f105";
+    }
+  }
+
+  .swiper-button-prev {
+    &:before {
+      font-family: 'FontAwesome';
+      content: "\f104";
+    }
+  }
+
+  .slider-text__description {
+    font-size: 28px;
+    color: #221c1c;
+    font-weight: 700;
+    display: block;
+    text-align: center;
+    margin: 15px 0 0 0;
+  }
+}
+
+.tabs__nav {
+  margin-left: 25px;
+  margin-right: 25px;
+}
+
+.tabs-nav__item {
+  flex: 1 0 50%;
+  text-align: center;
+
+  a {
+    font-size: 21px;
+    color: #fff;
+    display: block;
+    background: rgba(255, 255, 255, 0.33);
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+    padding: 10px 10px;
+    text-decoration: none;
+    font-weight: 900;
+  }
+}
+
+.tabs-nav__item--active {
+  a {
+    background: rgba(255, 255, 255, 1);
+    color: #9e1c03;
+    text-decoration: underline;
+  }
+}
+
+.tabs__stage {
+  background: rgba(255, 255, 255, 1);
+  border-bottom-left-radius: 8px;
+  border-bottom-right-radius: 8px;
+  padding: 25px;
+}
+
+.rotate__text {
+  font-size: 20px;
+  color: #221c1c;
+  display: block;
+  margin: 15px 0 0 20px;
+
+  @include respond-to('extra-large') {
+    display: none;
+  }
+}
+
+//slider style
+.swiper-container {
+  max-width: 680px;
+  //height: 407px;
+  margin: 60px auto 0 auto;
+}
+
+.swiper-slide {
+  text-align: center;
+  font-size: 18px;
+  background: #fff;
+  /* Center slide text vertically */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: auto;
+  flex-direction: column;
+}
+
+.getting-most__slots {
+  margin-top: 30px;
+  background: #9b0104;
+  padding: 25px;
+  border-radius: 5px;
+
+  .title--h2 {
+    color: #e8c64d;
+    text-align: center;
+    position: relative;
+    margin-bottom: 22px;
+  }
+
+  .bullet__item {
+    font-size: 17px;
+    margin-bottom: 14px;
+    padding: 0 0 0 40px;
+    color: #fff;
+  }
+
+  .fa-arrow-circle-right {
+    color: #e8c64d;
+    font-size: 28px;
+    vertical-align: middle;
+    margin: 0 15px 0 0;
+  }
+
+  @include respond-to('extra-large') {
+    padding: 25px 100px;
+    background: #eeeeee;
+    .title--h2 {
+      color: #9e1c03;
+
+      &:after {
+        background: #9e1c03;
+      }
+    }
+    .fa-arrow-circle-right {
+      color: #9e1c03;
+    }
+    .bullet__item {
+      color: #555555;
+    }
+  }
+}
+
+// Visual game rating
+.game__star-rating {
+  display: block;
+  overflow: hidden;
+  text-align: center;
+
+  span {
+    display: inline-block;
+
+    &:after {
+      clear: both;
+      content: '';
+      float: right;
+    }
+  }
+}
+
+
+$unchecked-star: '\f006';
+$unchecked-color: #dd0;
+$checked-star: '\f005';
+$checked-color: #dd0;
+.star-cb-group {
+  font-family: 'FontAwesome';
+  overflow: hidden;
+  /* remove inline-block whitespace */
+  font-size: 0;
+
+  * {
+    font-size: 46px;
+  }
+
+  /* flip the order so we can use the + and ~ combinators */
+  //   unicode-bidi: bidi-override;
+  direction: ltr;
+
+  & > label {
+    /* only enough room for the star */
+    display: inline-block;
+    overflow: hidden; //   text-indent: 9999px;
+    width: 1em;
+    white-space: nowrap;
+    cursor: pointer;
+
+    &:before {
+      display: inline-block; // text-indent: -9999px;
+      content: $unchecked-star;
+      color: $unchecked-color;
+    }
+
+    &.active:before {
+      content: $checked-star !important;
+      color: $checked-color;
+    }
+  }
+
+  &:checked ~ label:before,
+  & + label:hover ~ label:before,
+  & + label:hover:before {
+    content: $checked-star;
+    color: #dd0;
+  }
+
+  /* the hidden clearer */
+  & > .star-cb-clear + label {
+    // text-indent: -9999px;
+    width: .5em;
+    margin-left: -.5em;
+  }
+
+  & > .star-cb-clear + label:before {
+    width: .5em;
+  }
+
+  &:hover > input + label:before {
+    content: $unchecked-star;
+    color: $unchecked-color;
+    text-shadow: none;
+  }
+
+  &:hover > input + label:hover ~ label:before,
+  &:hover > input + label:hover:before {
+    content: $checked-star;
+    color: $checked-color;
+  }
+}

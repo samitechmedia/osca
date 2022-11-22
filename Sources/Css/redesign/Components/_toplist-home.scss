@@ -1,0 +1,334 @@
+.rating {
+  padding-right: 10px;
+}
+
+.rating__header {
+  text-transform: uppercase;
+}
+
+.spin__text-holder {
+  display: inline-block;
+  vertical-align: sub;
+  line-height: initial;
+}
+
+.spin__total {
+  font-size: 50px;
+  font-weight: 700;
+  color: #393939;
+}
+
+.spin__text {
+  display: inline-block;
+  font-weight: 700;
+  font-size: 20px;
+}
+
+.top__five-area {
+  counter-reset: numbered-list;
+  margin-top: 0;
+
+  @include respond-to("small") {
+    margin-top: 37px;
+  }
+  @include respond-to("extra-large") {
+    margin-top: 40px;
+  }
+}
+
+.canada__favorite {
+  padding: 12px 16px;
+  border-radius: 5px;
+  position: relative;
+  .title--h3 {
+    font-size: 18px;
+    position: relative;
+  }
+}
+
+.top-five__item--first {
+  background: #fbf7d2;
+  border-color: #dcd596;
+  border-top-right-radius: 0 !important;
+  border-top-left-radius: 0 !important;
+}
+
+.angle__down {
+  width: 25px;
+  height: 25px;
+  border-radius: 3px;
+  border: 1px solid #3c4765;
+  color: #3d4661;
+  margin-left: 12px;
+  line-height: 25px;
+}
+
+// top five style
+.top-five__item {
+  position: relative;
+  border: 1px solid #d8d3b4;
+  border-radius: 5px;
+  padding: 20px 20px 15px 20px;
+
+  .title--h2 {
+    margin: 0;
+  }
+
+  .image__holder {
+    flex: 0 0 100%;
+    text-align: center;
+    @include respond-to("extra-large") {
+      flex: 0 0 28%;
+    }
+    &-wrapper {
+      width: 100%;
+      height: 225px;
+      position: relative;
+      border: 1px solid #b7b7b7;
+      border-radius: 5px;
+      background: #fff;
+      margin-bottom: 10px;
+
+      img {
+        position: absolute;
+        left: 50%;
+        top: 50%;
+        transform: translate(-50%, -50%);
+        max-height: 100%;
+      }
+    }
+  }
+  .inner__left-side {
+    flex: 0 0 100%;
+    margin-left: 0;
+    @include respond-to("extra-large") {
+      flex: 0 0 66%;
+      margin-left: 28px;
+    }
+  }
+  .primary-btn {
+    width: 100%;
+  }
+  @include respond-to("extra-large") {
+    padding: 40px 40px 30px 40px;
+  }
+}
+
+.custom__icon {
+  width: 50px;
+  height: 50px;
+  border-radius: 50px;
+  display: inline-flex;
+  .sprite-icon_spin {
+    margin: auto auto auto 12px;
+  }
+}
+
+.custom__icon--orange {
+  background: #fa9f00;
+}
+
+.not_mobile {
+  display: none;
+  @include respond-to("extra-large") {
+    display: flex;
+  }
+}
+
+.info-box__title {
+  font-size: 34px;
+}
+
+// gid box style
+.grid-box__item {
+  flex: 0 0 100%;
+  border: 4px solid #2f59ef;
+  border-radius: 5px;
+  text-align: center;
+  padding: 20px 15px;
+  margin-bottom: 15px;
+  @include respond-to("medium") {
+    margin-bottom: 25px;
+    flex: 0 0 48%;
+    -ms-flex: 1 0 40%; /* IE11 flexbox bug fixer */
+    @include respons-margin(2, 2, "%");
+  }
+  @include respond-to("large") {
+    margin-bottom: 25px;
+    flex: 0 0 31%;
+    -ms-flex: 1 0 22%; /* IE11 flexbox bug fixer */
+    @include respons-margin(3, 2.33, "%");
+  }
+  @include respond-to("extra-large") {
+    padding: 43px;
+  }
+  .title--h3 {
+    color: #9b0104;
+    text-decoration: underline;
+  }
+  p {
+    font-size: 18px;
+  }
+}
+
+.blue__circle {
+  width: 87px;
+  height: 87px;
+  border-radius: 87px;
+  background: #2f59ef;
+  display: inline-flex;
+  margin-bottom: 18px;
+  i {
+    margin: auto;
+  }
+}
+
+// Toplist featured game style
+.featured__game {
+  display: none;
+  background: #f5f5f5;
+  border-bottom: 1px solid #b7b7b7;
+  border-bottom-left-radius: 5px;
+  border-bottom-right-radius: 5px;
+  padding: 23px 0 16px;
+  text-align: center;
+
+  .type-left-side {
+    @include respond-to("extra-large") {
+      flex: 0 0 45%;
+    }
+  }
+  .type-right-side {
+    @include respond-to("extra-large") {
+      flex: 0 0 35%;
+    }
+  }
+
+  &.opened {
+    display: flex;
+  }
+
+  .bullet__list {
+    text-align: left;
+  }
+  .primary-btn--outline {
+    width: 232px !important;
+    margin: auto;
+    padding: 10px 20px !important;
+  }
+  .title--h3 {
+    color: #555555;
+    margin-bottom: 10px;
+    text-align: center;
+    margin-top: 30px;
+    @include respond-to("extra-large") {
+      margin-top: 0;
+      text-align: left;
+    }
+  }
+  .bullet__list {
+    margin-bottom: 35px;
+  }
+
+  .bullet__item {
+    &:not(:last-child) {
+      margin-bottom: 12px;
+    }
+  }
+  .primary-btn {
+    max-width: 390px;
+    width: 100%;
+    margin: auto;
+    font-size: 16px;
+    position: relative;
+    top: 12px;
+    left: 0;
+    padding: 19px 20px;
+
+    &--mb-20 {
+      margin-bottom: 20px;
+    }
+
+    @include respond-to("extra-large") {
+      left: -30px;
+      font-size: 24px;
+    }
+    &--outline {
+      margin: 0 auto 20px;
+    }
+  }
+  .type-read-more {
+    position: relative;
+    top: 10px;
+    right: 0;
+
+    @include respond-to("extra-large") {
+      right: 34px;
+    }
+  }
+  @include respond-to("extra-large") {
+    width: 100%;
+    padding: 64px 35px 56px 15px;
+  }
+  .freeGame-block {
+    margin-bottom: 30px;
+    @include respond-to("large") {
+      margin-bottom: 0;
+    }
+  }
+}
+// Toplist featured image
+.featured__image-holder {
+  position: relative;
+  border: 1px solid #d2d2d2;
+  border-radius: 5px;
+  padding: 3px;
+  background: #fff;
+  margin-bottom: 12px;
+  display: flex;
+  justify-content: center;
+
+  img {
+    align-self: center;
+    width: 100%;
+    max-width: 100%;
+  }
+}
+
+.featured__tool-tip {
+  position: absolute;
+  top: -19px;
+  left: 0;
+  right: 0;
+  margin: auto;
+  color: #fff;
+  background: #0f4378;
+  font-size: 16px;
+  font-weight: 700;
+  text-align: center;
+  width: 157px;
+  padding: 9px 0;
+  border-radius: 5px;
+  @include respond-to("extra-large") {
+    font-size: 22px;
+    width: 236px;
+    background: #fa9f00;
+  }
+}
+
+.avalon__title {
+  font-weight: 900;
+  font-size: 31px;
+  color: #393939;
+}
+
+.avalon__text {
+  font-size: 24px;
+  color: #555555;
+  margin-bottom: 12px;
+  text-align: center;
+}
+
+.test {
+  display: none;
+}

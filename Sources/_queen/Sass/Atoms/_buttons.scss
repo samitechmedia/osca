@@ -1,0 +1,58 @@
+.a-cta-button {
+    align-items: center;
+    background-color: $osca-lime-green;
+    border: 1px solid $osca-green-2;
+    border-radius: rem(5px);
+    box-shadow: 0 rem(4px) 0 0 rgba(81, 15, 2, 0.75);
+    box-sizing: border-box;
+    color: #fff;
+    cursor: pointer;
+    display: flex;
+    font-size: rem(16px);
+    font-weight: 900;
+    justify-content: center;
+    margin: 0 rem(5px) rem(32px) rem(5px);
+    padding: rem(6px);
+    text-decoration: none;
+
+    @include respond-to('medium') {
+        padding: rem(10px);
+    }
+
+    @include respond-to('large') {
+        font-size: rem(18px);
+    }
+
+    &[data-focus-visible-added] {
+        background-color: $osca-green-2;
+        color: #000;
+        outline: none;
+    }
+
+    &:hover {
+        box-shadow: none;
+        transform: translateY(rem(4px));
+    }
+
+    .fa {
+        color: $osca-lime-green;
+        font-size: 16px;
+    }
+
+    > span {
+        margin-left: rem(10px);
+    }
+
+    &--orange {
+        background-color: $osca-orange;
+        border-color: $osca-gold;
+
+        &[data-focus-visible-added] {
+            background-color: $osca-gold;
+        }
+
+        .fa {
+            color: $osca-orange;
+        }
+    }
+}

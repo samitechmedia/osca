@@ -1,0 +1,374 @@
+/* GENERAL PAGE ELEMENTS */
+
+h1, h2, .border-box h1, .border-box h2, .block-top-tips .title a {
+    color: #20304E;
+}
+
+.box-red {
+    border-radius: 3px 0 0 0;
+}
+
+.box-red, .box-jackpot {
+    background: #2B4068;
+}
+
+.new-slots .title {
+    color: #2B4068;
+}
+
+.new-slots .title span {
+    color: #A20410;
+}
+
+.box-jackpot {
+    border-radius: 0 3px 3px 0;
+}
+
+.box-jackpot .content-jackpot-b {
+    color: #FFFFFF;
+}
+
+@media (max-width: 1009px) {
+    #main {
+        margin-top: 45px;
+    }
+
+    .box-jackpot {
+        width: 100%;
+        float: none;
+        border-radius: 3px;
+
+    }
+}
+
+.newBoxesColumn .newItem .newHeading {
+    border-bottom: 2px solid #2B4068;
+    color: #2B4068;
+}
+
+.block-winners-map {
+    background: #2B4068;
+}
+
+.block-winners-map .body-winners-map {
+    border: 1px solid #2B4068;
+}
+
+.idTabs a.selected {
+    color: #2B4068;
+    background: #CED4D4;
+}
+
+.blockTabs {
+    background: #CED4D4;
+}
+
+.block-software-table .heading-software-table {
+    background: #2B4068;
+}
+
+.tips-box {
+    background: #2B4068;
+}
+
+.tips-box h2 {
+    color: #FFFFFF;
+}
+
+blockquote, .quickfactbox, .bottom-box2 {
+    background: #F1F1F1;
+}
+
+blockquote, blockquote:before {
+    color: #20304E;
+}
+
+.quickfactbox h3 {
+    background: #2B8522;
+}
+
+.bottom-box2 {
+    border: 3px solid #2B4068;
+}
+
+.bottom-box2 .hold-bottom {
+    background: #2B4068;
+}
+
+.btn-wide, .bottom-box2 .btn-wide{
+    background: none;
+    background: #3EAC2B;
+    font: bold 20px/44px Arial, sans-serif;
+}
+
+.btn-wide .arrow, .btn-wide:hover .arrow {
+    background: none;
+    background: #2B7600;
+}
+
+.btn-wide:hover .arrow {
+    box-shadow: 0 -1px 0 0 rgba(0, 0, 0, .28) inset;
+    -webkit-box-shadow: 0 -1px 0 0 rgba(0, 0, 0, .28) inset;
+}
+
+.btn-wide:hover {
+    box-shadow: 0 -1px 0 0 rgba(0, 0, 0, .28) inset, 0 0 9px rgba(0, 0, 0, .39);
+    -webkit-box-shadow: 0 -1px 0 0 rgba(0, 0, 0, .28) inset, 0 0 9px rgba(0, 0, 0, .39);
+    background: none;
+    background: #3EAC2B;
+    -ms-transform: translateY(2px);
+    -webkit-transform: translateY(2px);
+    transform: translateY(2px)
+}
+
+.sprite {
+    background-image: url(/images/top-casino-box/spritesheet-blue.png);
+}
+
+.osfaq {
+    border: 2px solid #2B4068;
+    background-color: #F1F1F1;
+}
+
+.osfaq h2, h3 {
+    color: #2B4068;
+}
+
+.block-with-pointer .pointer {
+    margin-right: 20px;
+}
+
+.widget-box {
+    border: 1px solid #2B4068;
+    background: #959FB3;
+}
+
+.widget-box .title {
+    background: none;
+    background: #2B4068;
+}
+
+.widget-table .play-cell > a {
+    color: #A20410;
+}
+
+.widget-box .widget-content {
+    background: #FFF;
+}
+
+.tbl-row:hover {
+    background-color: #5987E0;
+}
+
+.box-more > .title {
+    color: #20304E;
+}
+
+.block-top-tips .title, .box-install-app:before {
+    color: #2B4068;
+}
+
+/* SLOT REVIEWS */
+.games-title, .review-box .title {
+    color: #20304E;
+}
+
+.review-box .sub-title {
+    color: #2B4068;
+}
+
+.games-frame {
+    border: 4px solid #1A60E8;
+}
+
+.review-box .col-rating {
+    border: 1px solid #959FB3;
+    background: #F1F1F1;
+}
+
+.review-box .col-rating .overall {
+    background: #CED4D4;
+    border: none;
+}
+
+/* MAIN NAV */
+
+.main-nav ul {
+    background: #20304E;
+}
+
+.main-nav ul li {
+    border-top: 1px solid #506287;
+}
+
+.main-nav ul li:first-child {
+    border: none;
+}
+
+#header .main-nav li:hover .menu-item {
+    background: #20304E;
+}
+
+.main-nav li.menu-separator {
+    border-top: 2px solid #506287;
+}
+
+@media screen and (max-width: 1009px) {
+    .header-inner {
+        /*border-bottom: 2px solid #FFF;*/
+        border-bottom: none;
+    }
+}
+
+/* BREADCRUMBS */
+
+.breadcrumbs li a:hover:before {
+    border-color: #2B4068 #2B4068 #2B4068 transparent
+}
+
+.breadcrumbs li a:hover {
+    background-color: #2B4068;
+}
+
+.breadcrumbs li a:active {
+    background-color: #20304E;
+}
+
+.breadcrumbs li a:active:before {
+    border-color: #20304E #20304E #20304E transparent
+}
+
+/* BUTTONS */
+
+.freeGame-block_btn .image_box {
+    border: none;
+    display: block;
+    max-width: 120px;
+    margin: 10px auto 3px;
+    background: #48b207;
+    border-radius: 4px;
+    padding: 10px;
+    font-size: 11px;
+    line-height: 100%;
+    color: #fff;
+    font-weight: 700;
+    text-align: center;
+    text-transform: uppercase;
+    box-shadow: 0 3px 0 0 #2b7600
+}
+
+.freeGame-block_btn .image_box:hover {
+    background-image: none;
+    background: #48b207;
+    box-shadow: 0 1px 0 0 #2b7600;
+    -ms-transform: translateY(2px);
+    -webkit-transform: translateY(2px);
+    transform: translateY(2px)
+}
+
+/* FREE GAMES BOX */
+
+.free-games-box .title{
+  background-color: #20304E;
+}
+
+/* SLICK NAV */
+
+.slicknav_nav {
+    margin: 39px 0 0;
+}
+
+.slicknav_menu {
+    display: flex;
+    justify-content: space-between;
+    height: auto;
+    margin-top: -45px;
+}
+
+.slicknav_menu, .slicknav_nav, .slicknav_nav ul {
+    background-color: #2B4068;
+}
+
+.slicknav_btn {
+    border: 1px solid #FFF;
+    float: left;
+    padding: 3px 5px;
+    height: auto;
+}
+
+.slicknav_menu .slicknav_menutxt {
+    display: block;
+    line-height: 1.188em;
+    float: left;
+    color: #FFF;
+    font-weight: 700
+}
+
+.slicknav_menu .slicknav_icon {
+    float: left;
+    width: auto;
+    height: 0.875em;
+    margin: 0.188em 0 0 0.438em;
+}
+
+.slicknav_btn_white {
+    background-color: #FFF;
+}
+
+.slicknav_btn_white .slicknav_menutxt {
+    color: #2B4068;
+}
+
+.fa-mobile-phone:before, .fa-mobile:before {
+    font-size: 20px;
+    line-height: 13px;
+    color: #2B4068;
+}
+
+.fa-dollar:before, .fa-usd:before {
+    font-size: 16px;
+    line-height: 13px;
+    color: #2B4068;
+}
+
+/* To set equidistant spacing these rules need to be reset */
+
+@media screen and (max-width: 1024px) {
+    .slicknav_menu .slicknav_menutxt {
+        margin-left: 0;
+    }
+}
+
+@media (max-width: 680px) {
+    .slicknav_menu .slicknav_menutxt {
+        margin-left: 0;
+    }
+}
+
+@media (max-width: 421px) {
+    .slicknav_menu .slicknav_menutxt {
+        margin-left: 0;
+    }
+
+    .slicknav_btn {
+        margin-left: 0;
+    }
+}
+
+@media (max-width: 370px) {
+    .slicknav_menu .slicknav_menutxt {
+        margin-left: 0;
+    }
+}
+
+@media (max-width: 348px) {
+    .slicknav_menu .slicknav_menutxt {
+        font-size: 14px
+    }
+}
+
+/* BACK TO TOP */
+
+.cd-top {
+    background: url(/images/cd-top-arrow.svg) center 50% no-repeat #20304E;
+}

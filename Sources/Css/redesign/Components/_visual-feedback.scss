@@ -1,0 +1,219 @@
+.js_hiddenElement {
+  display: none !important;
+}
+
+.games-feedback {
+  width: 100%;
+  position: absolute;
+
+  @include respond-to('extra-large') {
+    width: 640px;
+  }
+
+  &__top {
+    position: relative;
+    background: #9e1c03;
+    font-size: 24px;
+    color: #fff;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+  }
+
+  &__title {
+    margin-bottom: 0;
+  }
+
+  &__close {
+    background: url('/images/close.png') no-repeat;
+    width: 20px;
+    height: 20px;
+    display: block;
+    cursor: pointer;
+  }
+
+  &__body {
+    background: #fff;
+  }
+
+  &__options {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    padding: 26px 27px 0;
+
+    @include respond-to('extra-large') {
+      padding: 54px 27px 40px 27px;
+    }
+
+    &__item {
+      border: 1px solid #d5d5d5;
+      border-radius: 5px;
+      position: relative;
+      // Moved to > div so that listener click area is maximised
+      //padding: 30px 3px 20px 3px;
+      font-size: 18px;
+      text-align: center;
+      color: #555555;
+      cursor: pointer;
+      flex: 0 0 120px;
+      height: 97px;
+      display: flex;
+      align-items: center;
+      margin: 0 0 25px 0;
+
+      &:hover {
+        background: #d5d5d5;
+        color: #fff;
+      }
+
+      @include respond-to('extra-large') {
+        margin: 0;
+        height: 113px;
+      }
+
+      > div {
+        padding: 30px 3px 20px 3px;
+      }
+    }
+
+    > .active{
+      color: #4aaf00;
+    }
+  }
+
+  // this is for the visual games text area that only has an id
+  // alternatively you issue via :: .games-feedback__options > div > textarea
+  #js_visualFeedbackOther {
+    width: 100%;
+    padding: 10px 27px 0 27px;
+
+    @include respond-to('extra-large') {
+      padding: 10px 27px 0 27px;
+    }
+
+    textarea {
+      width: 100%;
+      border-radius: 5px;
+      border: 1px solid #d5d5d5;
+    }
+  }
+
+  &__sprite {
+    position: absolute;
+    width: 35px;
+    height: 35px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: #4aaf00;
+    border-radius: 50%;
+    top: -18px;
+    left: 0;
+    right: 0;
+    margin: 0 auto;
+
+    &:before {
+      content: '';
+      background: url('/images/feedback_sprite.png') no-repeat;
+      display: block;
+    }
+
+    &--spinner {
+      &:before {
+        content: '';
+        background-position: 0 0;
+        width: 21px;
+        height: 21px;
+      }
+    }
+
+    &--heart {
+      &:before {
+        content: '';
+        background-position: -24px -2px;
+        width: 18px;
+        height: 16px;
+      }
+    }
+
+    &--lock {
+      &:before {
+        content: '';
+        background-position: -46px 0;
+        width: 14px;
+        height: 20px;
+      }
+    }
+
+    &--chat {
+      &:before {
+        content: '';
+        background-position: -64px -2px;
+        width: 17px;
+        height: 17px;
+      }
+    }
+  }
+
+  &__back-game-button {
+    text-align: center;
+  }
+
+  &--response {
+    flex-shrink: 1;
+    position: absolute;
+    text-align: center;
+    top: 15%;
+    left: 25%;
+    width: 50%;
+    padding: 10px;
+  }
+
+  &__thanks {
+    font-size: 20px;
+    color: #222221;
+    position: relative;
+    text-align: center;
+    margin: 0 0 35px 0;
+
+    &:before,
+    &:after {
+      content: none;
+      height: 1px;
+      width: 165px;
+      display: inline-block;
+      vertical-align: middle;
+      background: #c3c3c3;
+      position: absolute;
+      top: 16px;
+
+      @include respond-to('extra-large') {
+        content: '';
+      }
+    }
+
+    &:before {
+      left: 0;
+    }
+
+    &:after {
+      right: 0;
+    }
+  }
+
+  &__close_button {
+    font-size: 20px;
+    text-transform: capitalize;
+    width: 296px;
+    margin: auto;
+  }
+}
+
+
+
+
+
+

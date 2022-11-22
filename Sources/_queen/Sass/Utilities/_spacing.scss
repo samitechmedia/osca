@@ -1,0 +1,53 @@
+/*
+ * Utility classes for spacing
+ *
+ * r = right
+ * l = left
+ * b = bottom
+ * h = horizontal left + right
+ *
+ */
+// Margin
+.m {
+    &r {
+        &-4 {
+            margin-right: rem(4px);
+        }
+
+        &-8 {
+            margin-right: rem(8px);
+        }
+
+        &-16 {
+            margin-right: rem(16px);
+        }
+    }
+
+    &l {
+        &-8 {
+            margin-left: rem(8px);
+        }
+    }
+
+    &b {
+        &-8 {
+            margin-bottom: rem(8px);
+        }
+    }
+
+    &h {
+        &-4 {
+            margin-left: rem(4px);
+            margin-right: rem(4px);
+        }
+    }
+}
+
+// Margin
+.p {
+    &b {
+        &-28 {
+            padding-bottom: rem(28px);
+        }
+    }
+}

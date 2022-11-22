@@ -1,0 +1,157 @@
+/* BASIC BLOCK SETUP */
+
+.block-progressive-jackpots {
+	margin-bottom: 20px;
+    box-sizing: border-box;
+    clear: both;
+}
+.block-progressive-jackpots__heading {
+	border-radius: 5px 5px 0 0;
+	color: #fff;
+	font-size: 22px;
+	font-family: "Roboto", Arial, Helvetica, sans-serif;
+	font-weight: 700;
+	text-transform: uppercase;
+	padding: 15px;
+}
+.block-progressive-jackpots__heading--red {
+	background-color: #9C0000;
+}
+
+/* JP FILTERS - EDIT IN HERE */
+
+.block-progressive-jackpots__filter {
+    display: block;
+    padding: 10px;
+    background-color: #CED4D4;
+}
+
+/* JP GAMES HOLDER */
+
+.block-progressive-jackpots__jackpot-games {
+    background: #f1f1f1;
+    border-radius: 4px;
+    padding: 15px 15px;
+    width: 100%;
+    margin-bottom: 30px;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    box-sizing: border-box;
+    text-decoration: none;
+}
+
+/* JP GAMES */
+
+.block-progressive-jackpots__jackpot-game {
+    background: #fff;
+    border: 1px solid #ebedee;
+    border-radius: 3px;
+    width: 20%;
+    text-align: center;
+    padding: 15px 0;
+    margin: 5px;
+    flex: 1 1 200px;
+}
+
+.block-progressive-jackpots__jackpot-game a {
+    text-decoration: none;
+}
+
+.block-progressive-jackpots__title-game {
+    font-size: 14px;
+    line-height: 100%;
+    color: #000;
+    font-weight: 700
+}
+
+.block-progressive-jackpots__logo-game {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    margin: 6px 0;
+}
+
+.block-progressive-jackpots__value-jackpot {
+    font-size: 14px;
+    line-height: 100%;
+    color: #000;
+    font-weight: 700;
+    color: #48b207;
+}
+
+.block-progressive-jackpots__btn-play-now {
+    display: block;
+    max-width: 120px;
+    margin: 10px auto 3px;
+    background: #48b207;
+    border-radius: 4px;
+    padding: 10px;
+    font-size: 11px;
+    line-height: 100%;
+    color: #fff;
+    font-weight: 700;
+    text-align: center;
+    text-transform: uppercase;
+    box-shadow: 0 3px 0 0 #2b7600
+}
+
+.block-progressive-jackpots__btn-play-now:hover {
+    box-shadow: 0 1px 0 0 #2b7600;
+    -webkit-transform: translateY(2px);
+    -moz-transform: translateY(2px);
+    -o-transform: translateY(2px);
+    transform: translateY(2px)
+}
+
+/* DO NOT EDIT - TIPS BOX */
+/* -------------------------------------------------- */
+
+.block-top-tips .box-tip {
+    display: table;
+}
+
+.block-top-tips .box-tip .box-num-badge {
+    background: url('/images/progressive-jackpots-page/img-badge.png');
+    color: #FFFFFF;
+    height: 46px;
+    width: 46px;
+    text-align: center;
+    line-height: 45px;
+    font-weight: bold;
+    font-size: 24px;
+    display: table-cell;
+}
+
+.block-top-tips .box-tip p {
+    margin: 0;
+    display: table-cell;
+    vertical-align: middle;
+    text-align: left;
+    padding-left: 15px;
+}
+
+.block-top-tips .box-tip.no-left-pad {
+    padding-left: 0;
+}
+
+@media (max-width: 768px) {
+    .block-progressive-jackpots__jackpot-game {
+        width: 30%;
+    }
+}
+
+@media (max-width: 650px) {
+    .block-progressive-jackpots__jackpot-game {
+        width: 48%;
+    }
+}
+
+@media (max-width: 320px) {
+    .block-progressive-jackpots__jackpot-game {
+        width: 100%;
+    }
+}
+
+/* DO NOT EDIT - TIPS BOX */
+/* -------------------------------------------------- */

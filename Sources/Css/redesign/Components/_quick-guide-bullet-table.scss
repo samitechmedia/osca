@@ -1,0 +1,59 @@
+.quick__guide {
+    .bullet__list__table {
+        .bullet__item {
+            padding: 0;
+            &:nth-child(2n) {
+                background-color: #f1f1f1;
+            }
+            &:nth-child(2n + 1) {
+                background-color: #e1e1e1;
+            }
+            &.bullet__list__table__header {
+                padding: 0;
+                background-color: #a7a7a7;
+                &:before {
+                    display: none;
+                }
+            }
+            &:before {
+                position: absolute;
+                display: block;
+                left: 23px;
+                top: 7px;
+                width: 39px;
+                height: 27px;
+                background-image: url('/images/sprite_payment_icons.png');
+                content: '';
+                border-radius: 0;
+            }
+            &.card_1:before {
+                background-position: 0 0;
+            }
+            &.card_2:before {
+                background-position: 0 -30px;
+            }
+            &.card_3:before {
+                background-position: 0 -60px;
+            }
+            &.card_4:before {
+                background-position: 0 -88px;
+            }
+            &.card_1:before {
+                background-position: 0 -116px;
+            }
+        }
+    }
+    .bullet__list__table__header  {
+        .bullet__item__left,
+        .bullet__item__right {
+            padding-left: 0;
+            text-align: center;
+            text-transform: uppercase;
+            color: #fff;
+            font-weight: 700;
+        }
+        &:before {
+            display: none;
+        }
+    }
+}

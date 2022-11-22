@@ -1,0 +1,600 @@
+$cf-background: #9b0104;
+$cf-primary: #fba200;
+$white: #ffffff;
+$black: #000000;
+$border-col: #d9d9d9;
+$start-btn: #a93003;
+$slide-bg: #f0eee6;
+$subtext: #6e4b00;
+
+.casino-finder {
+  background-color: $cf-background;
+  padding: 2.5em 5.5em;
+  min-height: 600px;
+  width: 100%;
+  margin-left: auto;
+  margin-right: auto;
+  position: relative;
+  background-image: url('/images/site-finder/rays.png');
+  background-repeat: no-repeat;
+  background-size: cover;
+  margin-bottom: 1em;
+
+  .swiper-pagination {
+    bottom: 24px;
+  }
+
+  .swiper-pagination-bullet {
+    margin-right: 1em;
+    background-color: $white;
+    opacity: 1;
+    width: 12px;
+    height: 12px;
+  }
+
+  .swiper-pagination-bullet:last-child {
+    margin: 0;
+  }
+
+  .swiper-pagination-bullet-active {
+    background-color: $cf-primary;
+  }
+
+  .swiper-button-prev,
+  .swiper-button-next {
+    position: absolute;
+    bottom: 5.5em;
+    top: unset;
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 36px;
+    height: 70px;
+  }
+
+  .swiper-button-prev {
+    background-image: url('/images/site-finder/carousel_back.png');
+    left: 0;
+  }
+
+  .swiper-button-next {
+    background-image: url('/images/site-finder/carousel_next.png');
+    right: 0;
+  }
+
+  .hide {
+    opacity: 0;
+    height: 0;
+    z-index: -1;
+    padding: 0;
+    overflow: hidden;
+  }
+
+  .swiper-container {
+    max-width: initial;
+    margin: 23px auto 0 auto;
+    opacity: 0;
+    height: 142px;
+    width: 100%;
+  }
+
+  .swiper-container.active {
+    opacity: 1;
+    transition: opacity .25s ease-in-out;
+    -moz-transition: opacity .25s ease-in-out;
+    -webkit-transition: opacity .25s ease-in-out;
+    padding-bottom: 2em;
+    height: auto;
+  }
+
+  p.casino-finder__count {
+    margin-right: 18px;
+  }
+
+  &__results {
+    max-width: 900px;
+    margin: 0 auto;
+
+    h2 {
+      text-align: center;
+      padding: 1.5em 0;
+    }
+
+    &__content {
+      display: flex;
+      margin-left: auto;
+      margin-right: auto;
+      flex-wrap: wrap;
+      justify-content: center;
+    }
+
+    &__content__box {
+      padding: 2em;
+      background-color: $white;
+      border-right: 1px solid $border-col;
+      text-align: left;
+      flex-direction: column;
+      display: flex;
+
+      &-center {
+        text-align: center;
+      }
+
+      &-orange {
+        color: $cf-primary;
+      }
+
+      &:nth-child(1) {
+        width: 33%;
+      }
+
+      &:nth-child(2) {
+        width: 25%;
+      }
+
+      &:nth-child(3) {
+        width: 42%;
+        border: 0;
+      }
+
+      &:nth-child(2) span:nth-child(1),
+      &:nth-child(2) span:nth-child(3) {
+        padding: 0;
+      }
+
+      &:nth-child(2) span:nth-child(2) {
+        font-size: 3em;
+        padding: 0;
+      }
+
+      &:nth-child(2) span:nth-child(5) {
+        padding-top: 7px;
+      }
+
+      span {
+        padding-bottom: 17px;
+      }
+
+      a {
+        text-decoration: underline;
+      }
+
+    }
+  }
+
+  &__banner {
+    background-image: url('/images/site-finder/casino_banner.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 150px;
+    height: 150px;
+    position: absolute;
+    top: 0;
+    right: 0;
+  }
+
+  &__btns {
+    margin-top: 2em;
+    text-align: center;
+  }
+
+  &__btns .casino-finder__btn,
+  &__btns .casino-finder__btn__result {
+    border-radius: 5px;
+    border: none;
+    background-color: $cf-primary;
+    color: white;
+    font-size: 25px;
+    text-transform: uppercase;
+    font-weight: bold;
+    box-shadow: 0 6px 7px 0 rgba(65,10,0,0.14), inset 0 -3px 0 0 rgba(204,95,0,0.004);
+    background-repeat: no-repeat;
+    cursor: pointer;
+  }
+
+  &__btn__start {
+    display: inline-block;
+    padding: 14px 58px 14px 23px;
+    background-position: center right 24px;
+    background-color: $start-btn;
+    float: right;
+    background-image: url('/images/site-finder/start_again_icon.png');
+    border-radius: 5px;
+    border: none;
+    color: $white;
+    font-size: 25px;
+    text-transform: uppercase;
+    font-weight: bold;
+    box-shadow: 0 6px 7px 0 rgba(65,10,0,0.14), inset 0 -3px 0 0 rgba(204,95,0,0.004);
+    margin: 0 0.2em;
+    background-repeat: no-repeat;
+  }
+
+  &__btn--next {
+    background-image: url('/images/site-finder/next_icon.png');
+    background-position: right 38px center;
+    padding: 14px 71px 14px 37px;
+  }
+
+  &__btn--back {
+    background-image: url('/images/site-finder/back_icon.png');
+    padding: 14px 37px 14px 71px;
+    background-position: left 38px center;
+    margin-right: 0.5em;
+  }
+
+  &__container {
+    width: 100%;
+    border-radius: 9px;
+    background-color: $slide-bg;
+    padding: 2.5em 3em;
+  }
+
+  &__slide {
+    position: relative;
+    background-color: $slide-bg;
+    border-radius: 14px;
+  }
+
+  &__title {
+    text-align: center;
+    color: $cf-primary;
+    font-size: 2em;
+    font-weight: bold;
+    line-height: normal;
+  }
+
+  &__count {
+    border-right: 1px solid rgba(0, 0, 0, .5);
+    line-height: 17px;
+    padding-right: 14px;
+    flex: 1;
+  }
+
+  &__progress__box.tick &__count {
+    visibility: hidden;
+    padding-right: 25px;
+  }
+
+  &__progress__box.tick &__count:after {
+    content: '';
+    background-image: url(/dist/icons/icon-check-green.svg);
+    width: 19px;
+    height: 14px;
+    position: absolute;
+    visibility: visible;
+    background-repeat: no-repeat;
+    background-size: contain;
+  }
+
+  &__progress__box.active &__count {
+    border-right: 1px solid rgba(255, 255, 255, .5);
+  }
+
+  &__progress {
+    margin-left: auto;
+    margin-right: auto;
+    display: flex;
+    justify-content: space-between;
+    width: 90%;
+
+    &__box {
+      background-color: #fff;
+      box-shadow: 1px -1px 7px 0 rgba(255,255,255,0.59), 0 23px 24px 0 rgba(119,62,1,0.1);
+      background-repeat: no-repeat;
+      background-size: cover;
+      width: 19%;
+      align-items: center;
+      display: flex;
+      justify-content: space-around;
+      padding: 1.8em 1.3em;
+      position: relative;
+      top: 2.7em;
+      z-index: 2;
+      font-size: 14px;
+      text-transform: uppercase;
+    }
+
+    &__box p:nth-child(2) {
+      flex: 3;
+    }
+
+    &__box p {
+      margin: 0 auto;
+      font-weight: 600;
+      font-size: 13px;
+      text-align: left;
+    }
+
+    &__box.active {
+      background-color: rgb(251,143,0);
+      background: linear-gradient(0deg, rgba(251,143,0,1) 0%, rgba(252,176,0,1) 100%);
+    }
+
+    &__box.active p {
+      color: $white;
+    }
+  }
+
+  &__question {
+    text-align: center;
+    font-size: 19px;
+    padding: 1em;
+    margin-top: 0.5em;
+    margin-bottom: 0.5em;
+
+    h1 {
+      font-weight: bold;
+      line-height: normal;
+    }
+
+    > span {
+      color: $subtext;
+      font-size: 13px;
+    }
+
+  }
+
+  &__choices {
+    display: flex;
+    max-width: 900px;
+    margin-left: auto;
+    margin-right: auto;
+    flex-wrap: wrap;
+    justify-content: center;
+
+    choices__img
+    &__img {
+      align-self: center;
+      padding-bottom: 13px;
+    }
+
+    &__title {
+      text-transform: uppercase;
+      font-size: 14px;
+      padding-top: 25px;
+    }
+
+    &__choice {
+      margin-bottom: 15px;
+      padding: 2em;
+      justify-content: center;
+      background-color: $white;
+      width: 31.3%;
+      text-align: center;
+      margin-left: 1%;
+      margin-right: 1%;
+      flex-direction: column;
+      border-radius: 6px;
+      display: flex;
+      align-items: center;
+      cursor: pointer;
+
+      &.active {
+        background: $cf-primary;
+      }
+
+    }
+  }
+
+  &__btn__start,
+  &__btn-playnow {
+    display: none;
+  }
+
+  &__btn-playnow {
+    padding: 14px 36px;
+    margin-left: 26%;
+  }
+
+}
+
+.hide-btn {
+  display: none;
+}
+
+.casino-finder p {
+  color: $black;
+  margin: 0;
+}
+
+@media only screen and (max-width: 1200px)  {
+  .casino-finder {
+
+    &__progress__box p:nth-child(2) {
+      margin: 0 auto;
+    }
+
+    &__progress__box {
+      padding: 0.8em 1.3em;
+    }
+
+  }
+}
+
+@media only screen and (max-width: 1000px)  {
+  .casino-finder {
+    padding: 1.5em 2em 2em 2em;
+
+    &__count {
+      margin-right: 8px;
+    }
+
+    &__progress__box {
+      padding: 0.5em 1em;
+      font-size: 13px;
+    }
+
+    &__choices__choice {
+      padding: 1em;
+    }
+
+    &__progress__box p:nth-child(2) {
+      margin: 0 auto;
+    }
+
+    &__results__content__box {
+      padding:1em;
+
+      &:nth-child(1),
+      &:nth-child(2) {
+        width: 50%;
+      }
+
+      &:nth-child(2) {
+        border: 0;
+      }
+
+      &:nth-child(3) {
+        width: 100%;
+        border-top: 1px solid $border-col;
+      }
+
+      &:nth-child(3) img {
+        padding:0
+      }
+
+      &:nth-child(2) span:nth-child(2) {
+        font-size: 2em;
+      }
+
+    }
+  }
+}
+
+@media only screen and (max-width: 770px)  {
+
+  .casino-finder p.casino-finder__count {
+    margin: 0;
+  }
+
+  .casino-finder {
+
+    .swiper-button-prev,
+    .swiper-button-next {
+      bottom: 4.5em;
+    }
+
+    &__btn-playnow {
+      margin: 0;
+    }
+
+    &__progress__box p:nth-child(2) {
+      display: none;
+    }
+
+    &__count {
+      border: 0;
+      line-height: normal;
+      padding: 0;
+      flex: none;
+    }
+
+    &__progress__box.active &__count {
+      border: 0;
+    }
+
+    &__progress__box {
+      padding: 1em 1em;
+      font-size: 20px;
+      top: 1.5em;
+    }
+
+    &__banner {
+      width: 120px;
+      height: 120px;
+    }
+
+  }
+}
+
+@media only screen and (max-width: 500px)  {
+  .casino-finder {
+    padding: 1.5em 0;
+
+    .swiper-button-prev {
+      background-image: url("/images/site-finder/carousel_back_mobile.png");
+      left: 22px;
+    }
+
+    .swiper-button-next {
+      background-image: url("/images/site-finder/carousel_next_mobile.png");
+      right: 22px;
+    }
+
+    .swiper-container.active {
+      padding-bottom: 3em;
+    }
+
+    .swiper-button-prev,
+    .swiper-button-next {
+      bottom: 17px;
+      background-size: contain;
+      height: 38px;
+    }
+
+    &__btn-playnow {
+      width: 90%;
+      padding: 0.8em;
+      margin-bottom: 1em;
+    }
+
+    &__btn__start {
+      float: none;
+      background-color: transparent;
+      box-shadow: none;
+      text-transform: none;
+      text-decoration: underline;
+      font-size: 15px;
+      padding: 0 19px 0 0;
+      background-position: right;
+      background-size: 13px;
+      cursor: pointer;
+    }
+
+    &__container {
+      padding: 1.5em 1em;
+    }
+
+    &__question {
+      padding: 1em 0;
+    }
+
+    &__choices__choice {
+      width: 46%;
+      margin-left: 2%;
+      margin-right: 2%;
+    }
+
+    &__choices__choice:nth-child(4) {
+      margin: 0 0 14px 2%;
+    }
+
+    &__banner {
+      width: 100px;
+      height: 100px;
+    }
+
+    &__title {
+      margin: 0 auto;
+      font-size: 1.5em;
+      width: 190px;
+    }
+
+    &__btn--next {
+      background-position: right 7px center;
+      padding: 6px 32px 6px 15px;
+    }
+
+    &__btn--back {
+      padding: 6px 15px 6px 32px;
+      background-position: left 7px center;
+    }
+
+    &__btns &__btn {
+      padding-top: 9px;
+      padding-bottom: 9px;
+      font-size: 22px;
+    }
+
+  }
+}

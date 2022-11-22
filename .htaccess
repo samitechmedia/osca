@@ -1,0 +1,285 @@
+Options -Indexes -MultiViews
+
+AddHandler application/x-httpd-php70 .php
+
+RewriteEngine On
+########## extensionless files fix for apache2.4 #############
+#redirect external .php requests to extensionless url
+RewriteBase "/"
+
+########## Rewrite for Unity Afflinks ############
+RewriteCond %{REQUEST_URI} /go/.*/\w
+RewriteRule ^(.*)$ includes/partners-redirect.php [L]
+
+#if its not a directory
+RewriteCond %{REQUEST_FILENAME} !-d
+#and it has a trailing slash then redirect to URL without slash
+RewriteRule ^(.+)/$ /$1 [L,R=301]
+
+RewriteCond %{REQUEST_URI} !^/CodeLibrary/
+RewriteCond %{REQUEST_FILENAME} !-d
+RewriteCond %{REQUEST_FILENAME}\.php -f
+RewriteRule ^(.*)$ $1.php [NS,L]
+
+# NAMEOFTHEFILE.php > NAMEOFTHEFILE (visible, exception for index.php)
+RewriteCond %{REQUEST_URI} !^/CodeLibrary/
+RewriteCond %{THE_REQUEST} ^[A-Z]{3,}\s/(.+)\.php[^\s]* [NC]
+RewriteCond %{REQUEST_FILENAME} !index\.php
+RewriteRule ^ /%1 [R=301,NE,L]
+
+# .git protection
+RedirectMatch 404 /\.git
+
+# gulp and grunt protection
+RedirectMatch 404 /(Gruntfile|gulpfile).js
+
+# bower and npm protection
+RedirectMatch 404 /(bower|package).json
+RedirectMatch 404 /\.npmrc
+
+ErrorDocument 404 /404
+
+#RewriteCond %{REMOTE_ADDR} !^127\.0\.0\.1
+#RewriteCond %{HTTPS} off
+#RewriteRule (.*) https://www.onlineslots.ca/$1 [L,R=301]
+
+#RewriteCond %{REMOTE_ADDR} !^127\.0\.0\.1
+#RewriteCond %{HTTP_HOST} !^www.onlineslots.ca$ [NC]
+#RewriteCond %{HTTP_HOST} !^server.onlineslots.ca$ [NC]
+#RewriteRule ^(.*)$ https://www.onlineslots.ca/$1 [L,R=301]
+
+Redirect 301 /best-canadian https://www.onlineslots.ca
+Redirect 301 /best-online-slots https://www.onlineslots.ca
+Redirect 301 /games/play-slots https://www.onlineslots.ca
+Redirect 301 /games/online-slots-canada https://www.onlineslots.ca
+Redirect 301 /casinos/best-slots https://www.onlineslots.ca
+Redirect 301 /games/slot-games https://www.onlineslots.ca
+Redirect 301 /casinos/casino-slots https://www.onlineslots.ca
+Redirect 301 /casinos/best-canadian https://www.onlineslots.ca/best-canadian
+Redirect 301 /casinos/best-no-download https://www.onlineslots.ca/best-no-download
+Redirect 301 /casinos/best-online-slots https://www.onlineslots.ca/best-online-slots
+Redirect 301 /casinos/real-money https://www.onlineslots.ca/real-money
+Redirect 301 /casinos/mac https://www.onlineslots.ca/
+Redirect 301 /mac https://www.onlineslots.ca/
+Redirect 301 /casinos/mobile https://www.onlineslots.ca/mobile
+Redirect 301 /casinos/android https://www.onlineslots.ca/android
+Redirect 301 /casinos/apple-ipad-iphone https://www.onlineslots.ca/apple-ipad-iphone
+Redirect 301 /casinos/ https://www.onlineslots.ca
+Redirect 301 /best-no-download https://www.onlineslots.ca/no-download
+Redirect 301 /apple-ipad-iphone https://www.onlineslots.ca/iphone
+Redirect 301 /online-casino https://www.onlineslots.ca/online-casinos
+Redirect 301 /games/slot-machines https://www.onlineslots.ca/slot-machine-history
+Redirect 301 /games/gonzo-quest https://www.onlineslots.ca/games/gonzos-quest
+
+
+Redirect 301 /tips https://www.onlineslots.ca/guides/tips
+Redirect 301 /faq https://www.onlineslots.ca/guides/faq
+Redirect 301 /welcome-bonus https://www.onlineslots.ca/guides/welcome-bonus
+Redirect 301 /slot-games-explained https://www.onlineslots.ca/guides/slot-games-explained
+Redirect 301 /vip-status https://www.onlineslots.ca/guides/vip-status
+Redirect 301 /security https://www.onlineslots.ca/guides/security
+Redirect 301 /online-better https://www.onlineslots.ca/
+Redirect 301 /random-number-generators https://www.onlineslots.ca/guides/random-number-generators
+Redirect 301 /ecogra https://www.onlineslots.ca/guides/ecogra
+Redirect 301 /slot-machine-history https://www.onlineslots.ca/guides/slot-machine-history
+Redirect 301 /guides/fast-payouts https://www.onlineslots.ca/fast-payouts
+Redirect 301 /games/free-slots https://www.onlineslots.ca/free
+
+Redirect 301 /reviews/alaskan-fishing https://www.onlineslots.ca/games/alaskan-fishing
+Redirect 301 /reviews/break-da-bank-again https://www.onlineslots.ca/games/break-da-bank-again
+Redirect 301 /reviews/gold-factory https://www.onlineslots.ca/games/gold-factory
+Redirect 301 /reviews/grand-journey https://www.onlineslots.ca/games/grand-journey
+Redirect 301 /reviews/great-griffin https://www.onlineslots.ca/games/great-griffin
+Redirect 301 /reviews/immortal-romance https://www.onlineslots.ca/games/immortal-romance
+Redirect 301 /reviews/karate-pig https://www.onlineslots.ca/games/karate-pig
+Redirect 301 /reviews/the-dark-knight https://www.onlineslots.ca/games/the-dark-knight
+Redirect 301 /reviews/thunderstruck-ii https://www.onlineslots.ca/games/thunderstruck-ii
+Redirect 301 /reviews/avalon https://www.onlineslots.ca/games/avalon
+
+Redirect 301 /deposit/usemybank https://www.onlineslots.ca/deposit/usemyfunds
+Redirect 301 /deposit/click-and-buy https://www.onlineslots.ca/deposit/
+Redirect 301 /deposit/click2pay https://www.onlineslots.ca/deposit/
+
+Redirect 301 /software/goo https://www.onlineslots.ca/software/
+
+Redirect 301 /future-of-slots-gaming https://www.onlineslots.ca/guides/future
+Redirect 301 /offline-casino-gaming https://www.onlineslots.ca/guides/offline-casinos
+Redirect 301 /slot-machine-cheating https://www.onlineslots.ca/guides/cheating
+Redirect 301 /slots-explained https://www.onlineslots.ca/guides/slot-machines-work
+Redirect 301 /slot-tournament-guide https://www.onlineslots.ca/guides/tournaments
+Redirect 301 /slot-machine-psychology https://www.onlineslots.ca/guides/
+Redirect 301 /legal-slots https://www.onlineslots.ca/guides/legal-taxes
+
+Redirect 301 /software/wagerlogic https://www.onlineslots.ca/software/
+
+Redirect 301 /guides/deposit-withdrawal-guide https://www.onlineslots.ca/guides/
+Redirect 301 /guides/deposit-withdrawals https://www.onlineslots.ca/guides/
+Redirect 301 /guides/odds-and-payouts https://www.onlineslots.ca/guides/
+Redirect 301 /guides/psychology https://www.onlineslots.ca/guides/
+Redirect 301 /guides/top-10-casinos https://www.onlineslots.ca/guides/
+
+Redirect 301 /deposit/ukash https://www.onlineslots.ca/deposit/
+
+# Removing Deposit pages 20-07-17
+
+Redirect 301 /deposit/american-express https://www.onlineslots.ca/deposit/
+Redirect 301 /deposit/bank-transfer https://www.onlineslots.ca/deposit/
+Redirect 301 /deposit/citadel https://www.onlineslots.ca/deposit/
+Redirect 301 /deposit/echeck https://www.onlineslots.ca/deposit/
+Redirect 301 /deposit/ecopayz https://www.onlineslots.ca/deposit/
+Redirect 301 /deposit/entropay https://www.onlineslots.ca/deposit/
+Redirect 301 /deposit/idebit https://www.onlineslots.ca/deposit/
+Redirect 301 /deposit/instadebit https://www.onlineslots.ca/deposit/
+Redirect 301 /deposit/instant-eft https://www.onlineslots.ca/deposit/
+Redirect 301 /deposit/mastercard https://www.onlineslots.ca/deposit/
+Redirect 301 /deposit/paysafecard https://www.onlineslots.ca/deposit/
+Redirect 301 /deposit/prepaid-cards https://www.onlineslots.ca/deposit/
+Redirect 301 /deposit/skrill https://www.onlineslots.ca/deposit/
+Redirect 301 /deposit/usemyfunds https://www.onlineslots.ca/deposit/
+Redirect 301 /deposit/visa https://www.onlineslots.ca/deposit/
+Redirect 301 /deposit/western-union https://www.onlineslots.ca/deposit/
+
+Redirect 301 /guides/facebook-slots https://www.onlineslots.ca/guides/
+Redirect 301 /guides/how-slots-work https://www.onlineslots.ca/guides/slot-machines-work/
+Redirect 301 /games/penny-slots https://www.onlineslots.ca/games/
+Redirect 301 /lucky-slots https://www.onlineslots.ca/
+Redirect 301 /blackberry https://www.onlineslots.ca/
+Redirect 301 /windows-phone https://www.onlineslots.ca/
+Redirect 301 /guides/future https://www.onlineslots.ca/
+Redirect 301 /guides/getting-started https://www.onlineslots.ca/
+Redirect 301 /guides/online-better https://www.onlineslots.ca/
+Redirect 301 /guides/mobile-account-setup https://www.onlineslots.ca/guides/
+
+Redirect 301 /reviews/spin-palace https://www.onlineslots.ca/reviews/spin-casino
+
+########## HEADERS FOR PERFORMANCE  #############
+<IfModule mod_headers.c>
+    Header append Vary User-Agent
+    Header append Vary: Accept-Encoding
+    Header append Connection keep-alive
+</IfModule>
+
+########## CACHING #############
+<IfModule mod_expires.c>
+    ExpiresActive On
+    # Default
+    ExpiresDefault                                      "access plus 1 month"
+    # AppCache manifest files
+    ExpiresByType application/manifest+json             "access plus 1 week"
+    ExpiresByType application/x-web-app-manifest+json   "access plus 0 seconds"
+    ExpiresByType text/cache-manifest                   "access plus 0 seconds"
+    # CSS  - Removed/Uncomment below once we have file versioning/hashing implemented
+    # ExpiresByType text/css                              "access plus 6 months"
+    ExpiresByType text/css                              "access plus 1 week"
+    # Data interchange
+    ExpiresByType application/atom+xml                  "access plus 1 hour"
+    ExpiresByType application/rdf+xml                   "access plus 1 hour"
+    ExpiresByType application/rss+xml                   "access plus 1 hour"
+    ExpiresByType application/json                      "access plus 0 seconds"
+    ExpiresByType application/ld+json                   "access plus 0 seconds"
+    ExpiresByType application/schema+json               "access plus 0 seconds"
+    ExpiresByType application/vnd.geo+json              "access plus 0 seconds"
+    ExpiresByType application/xml                       "access plus 0 seconds"
+    ExpiresByType text/xml                              "access plus 0 seconds"
+    # Favicon
+    ExpiresByType image/vnd.microsoft.icon              "access plus 1 week"
+    ExpiresByType image/x-icon                          "access plus 1 week"
+    # Font
+    ExpiresByType font/woff                             "access plus 6 months"
+    ExpiresByType font/woff2                            "access plus 6 months"
+    # HTML
+    ExpiresByType text/html                             "access plus 0 seconds"
+    # Image
+    ExpiresByType image/avif                            "access plus 6 months"
+    ExpiresByType image/gif                             "access plus 6 months"
+    ExpiresByType image/jpg                             "access plus 6 months"
+    ExpiresByType image/jpeg                            "access plus 6 months"
+    ExpiresByType image/png                             "access plus 6 months"
+    # SVG (svg sprites could be updated regularly) - Removed/Uncomment below once we have file versioning/hashing implemented
+    # ExpiresByType image/svg+xml                         "access plus 6 months"
+    ExpiresByType image/svg+xml                         "access plus 1 week"
+    ExpiresByType image/webp                            "access plus 6 months"
+    # JavaScript - Removed/Uncomment below once we have file versioning/hashing implemented
+    ExpiresByType application/javascript                "access plus 1 week"
+    ExpiresByType application/x-javascript              "access plus 1 week"
+    ExpiresByType text/javascript                       "access plus 1 week"
+    # ExpiresByType application/javascript                "access plus 6 months"
+    # ExpiresByType application/x-javascript              "access plus 6 months"
+    # ExpiresByType text/javascript                       "access plus 6 months"
+    # Markdown
+    ExpiresByType text/markdown                         "access plus 0 seconds"
+    # Other
+    ExpiresByType text/x-cross-domain-policy            "access plus 1 week"
+</IfModule>
+
+######### COMPRESSSION ##########
+<IfModule mod_deflate.c>
+    AddOutputFilterByType DEFLATE   "application/atom+xml" \
+                                    "application/javascript" \
+                                    "application/json" \
+                                    "application/ld+json" \
+                                    "application/manifest+json" \
+                                    "application/rdf+xml" \
+                                    "application/rss+xml" \
+                                    "application/schema+json" \
+                                    "application/geo+json" \
+                                    "application/vnd.ms-fontobject" \
+                                    "application/vnd.oasis.opendocument.formula-template" \
+                                    "application/x-javascript" \
+                                    "application/x-web-app-manifest+json" \
+                                    "application/xhtml+xml" \
+                                    "application/xml" \
+                                    "font/collection" \
+                                    "font/opentype" \
+                                    "font/otf" \
+                                    "font/ttf" \
+                                    "image/bmp" \
+                                    "image/svg+xml" \
+                                    "image/vnd.microsoft.icon" \
+                                    "image/x-icon" \
+                                    "text/cache-manifest" \
+                                    "text/css" \
+                                    "text/html" \
+                                    "text/javascript" \
+                                    "text/plain" \
+                                    "text/markdown" \
+                                    "text/vtt" \
+                                    "text/xml"
+</IfModule>
+
+# Serve all resources labeled as 'text/html' or 'text/plain'
+# with the media type 'charset' parameter set to 'utf-8'
+AddDefaultCharset utf-8
+
+######### MIME support ##########
+# Serve resources with the proper media types
+<IfModule mod_mime.c>
+    # Data
+    AddType text/xml                                xml
+    AddType application/json                        json map
+    AddType application/rss+xml                     rss
+    # JavaScript
+    AddType application/javascript                  js
+    # Manifest files
+    AddType application/manifest+json               webmanifest
+    AddType text/cache-manifest                     appcache
+    # Media files
+    AddType image/svg+xml                           svg svgz
+    AddType image/x-icon                            ico cur
+    AddType image/webp                              webp
+    AddType image/avif                              avif
+    # Web fonts
+    AddType font/woff                               woff
+    AddType font/woff2                              woff2
+
+    # Serve the following file types with the media type 'charset'
+    # parameter set to 'utf-8'
+    AddCharset utf-8 .css \
+                     .js \
+                     .json \
+                     .manifest \
+                     .rss \
+                     .svg \
+                     .webmanifest \
+                     .xml
+</IfModule>

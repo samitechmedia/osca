@@ -1,0 +1,35 @@
+.top-heading-wrapper {
+  @include respond-to('medium') {
+    max-width: 55%;
+  }
+}
+
+.heading {
+  color: $black-2;
+  font-family: $font-poppins;
+  font-weight: 600;
+
+  &--h1 {
+    font-size: 24px;
+    line-height: 32px;
+    margin-bottom: 15px;
+  
+    @include respond-to('medium') {
+        font-size: 32px;
+        line-height: 40px;
+    }
+  }
+
+  &--h2 {
+    font-size: 22px;
+    line-height: 28px;
+    margin-bottom: 8px;
+    margin-top: 56px;
+  
+    @include respond-to('medium') {
+        font-size: 24px;
+        line-height: 32px;
+        margin-bottom: 16px;
+    }
+  }
+}

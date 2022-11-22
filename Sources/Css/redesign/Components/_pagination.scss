@@ -1,0 +1,123 @@
+[data-pagination],
+[data-pagination] *,
+[data-pagination] *:before,
+[data-pagination] *:after {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    text-rendering: optimizeLegibility;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    font-kerning: auto;
+}
+[data-pagination] {
+    font-size: 10pt;
+    line-height: 1;
+    font-weight: 700;
+    -webkit-text-size-adjust: 100%;
+    margin: 32px 0 18px 0;
+    text-align: center;
+    transition: font-size .2s ease-in-out;
+    @include respond-to('extra-large') {
+        font-size: 21pt;
+    }
+}
+[data-pagination] ul {
+    list-style-type: none;
+    display: inline;
+    font-size: 100%;
+    margin: 0 0.5em;
+    padding: .5em;
+}
+[data-pagination] ul li {
+    display: inline-block;
+    font-size: 100%;
+    margin: 0 5px;
+}
+[data-pagination] > a {
+    font-size: 140%;
+}
+[data-pagination] a {
+    color: #555555;
+    font-size: 100%;
+    text-decoration: none;
+    display: inline-block;
+    padding: .5em;
+    background: #eeeeee;
+}
+[data-pagination] a:focus,
+[data-pagination] a:hover {
+    color: #fff;
+    background: #9e1c03;
+}
+[data-pagination] li.current a {
+    color: #fff;
+    background: #9e1c03;
+}
+/* Disabled & Hidden Styles */
+[data-pagination] .inactive,
+[data-pagination] [hidden],
+[data-pagination] [disabled] {
+    opacity: .5;
+    pointer-events: none;
+}
+
+// Adapted by Carlos -> from ul->li to just <a>
+[data-pagination] > div {
+    list-style-type: none;
+    display: inline;
+    font-size: 100%;
+    margin: 0 0.5em;
+    padding: .5em;
+}
+
+[data-pagination] > a {
+    font-size: 140%;
+}
+
+[data-pagination] a {
+    color: #555555;
+    font-size: 100%;
+    text-decoration: none;
+    display: inline-block;
+    padding: .5em;
+    background: #eeeeee;
+}
+
+[data-pagination] a:focus,
+[data-pagination] a:hover {
+    color: #fff;
+    background: #9e1c03;
+    cursor: pointer;
+}
+
+[data-pagination] a.active {
+    color: #fff;
+    background: #9e1c03;
+}
+
+.pagination{
+    margin-left: auto;
+    margin-right: auto;
+}
+
+//@media (min-width: 350px) {
+//    [data-pagination] {
+//        font-size: 10pt;
+//    }
+//}
+//@media (min-width: 500px) {
+//    [data-pagination] {
+//        font-size: 12pt;
+//    }
+//}
+//@media (min-width: 700px) {
+//    [data-pagination] {
+//        font-size: 14pt;
+//    }
+//}
+//@media (min-width: 900px) {
+//    [data-pagination] {
+//        font-size: 16pt;
+//    }
+//}

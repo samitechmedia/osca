@@ -1,0 +1,286 @@
+.review-block-header {
+    display: block;
+    border: 2px solid #8f2312;
+    border-radius: 6px;
+    margin-bottom: 40px;
+    * {
+        margin: 0;
+        padding: 0;
+    }
+
+    &__rating {
+        margin: 20px auto;
+
+        @include respond-to('medium') {
+            margin: 26px auto 48px;
+        }
+    }
+
+    .inner {
+        display: block;
+        padding: 0;
+        text-align: center;
+        color: inherit;
+        text-decoration: none;
+    }
+    .aside {
+        display: inline-block;
+        width: 239px;
+        min-width: 239px;
+        padding: 20px 0 19px;
+        float: left;
+        text-align: center;
+        text-decoration: none;
+        vertical-align: top;
+    }
+    .casino-logo {
+        display: block;
+        margin: 16px auto 0;
+        max-width: 100%;
+        max-height: 130px;
+    }
+    .main-col {
+        display: inline-block;
+        vertical-align: top;
+        width: calc(100% - 500px);
+        padding: 20px 0;
+        background: #eaeeec;
+    }
+    .primary-btn {
+        width: 177px;
+        line-height: 1;
+        margin: 5px auto;
+        padding: 10px 5px;
+        background: #48b207;
+        text-transform: uppercase;
+        border: none;
+        border-radius: 4px;
+        color: #fff;
+        box-shadow: 0 5px #2b7600;
+        cursor: pointer;
+    }
+    .bonus-info {
+        display: block;
+        line-height: 1.2;
+        margin: 4px 0 0 27px;
+        .heading {
+            font-size: 19px;
+            font-weight: 600;
+            letter-spacing: .3px;
+        }
+        .bonus-count {
+            position: relative;
+            display: inline-block;
+            font-family: roboto,Arial,Helvetica,sans-serif;
+            font-size: 23px;
+            min-width: 230px;
+            font-weight: 500;
+            margin-left: 4px;
+            &:after {
+                content: "";
+                display: inline-block;
+                width: 222px;
+                height: 16px;
+                position: absolute;
+                bottom: -17px;
+                left: -1px;
+                background: url(/images/casino-review-blocks/sprite_header.png) -3px -13px no-repeat;
+            }
+        }
+        .main-text {
+            font-weight: 500;
+            color: #48b207;
+            font-size: 25px;
+        }
+    }
+    .text-block {
+        display: inline-block;
+        width: 49%;
+        min-width: 245px;
+        vertical-align: top;
+        padding: 40px 0 0 26px;
+        .heading {
+            display: block;
+            font-weight: 700;
+            font-size: 16px;
+            text-transform: uppercase;
+            text-align: center;
+        }
+        .bullet__list {
+            text-align: left;
+            line-height: inherit;
+            display: table;
+            margin: 0 auto;
+        }
+        .bullet__item {
+            padding: 0 0 0 26px;
+            margin: 17px 0;
+            .fa {
+                margin: 0;
+                font-size: 22px;
+            }
+        }
+        .specials-list {
+            display: table;
+            margin: 0 auto;
+        }
+        .specials-item {
+            margin: 17px 0;
+            padding: 0 0 0 40px;
+            text-align: left;
+            &:before {
+                content: "";
+                position: absolute;
+                display: inline-block;
+                vertical-align: top;
+                background: url(/images/casino-review-blocks/sprite_header.png) -6px -63px no-repeat;
+                width: 34px;
+                height: 32px;
+                margin: 0 12px 0 -40px;
+            }
+            &.bonus-img:before {
+                background-position: -7px -95px;
+            }
+            &.tournaments:before {
+                background-position: -47px -95px;
+            }
+            &.gifts:before {
+                background-position: -89px -95px;
+            }
+            &.withdrawals:before {
+                background-position: -129px -95px;
+            }
+            &.support:before {
+                background-position: -171px -95px;
+            }
+        }
+    }
+    .add-info {
+        position: relative;
+        display: inline-block;
+        width: 260px;
+        min-width: 260px;
+        float: right;
+        padding: 20px 0 0;
+        vertical-align: top;
+        .carousel {
+            position: relative;
+            width: 260px;
+            margin: auto;
+        }
+        .swiper-container {
+            width: 182px;
+            margin: 0 auto;
+            &:before {
+                content: "";
+                display: block;
+                position: absolute;
+                width: 100%;
+                height: 144px;
+                border: 2px solid #39b549;
+                border-radius: 6px;
+                z-index: 10;
+            }
+        }
+        .swiper-slide {
+            display: flex;
+            flex-direction: column;
+            text-align: center;
+            padding: 9px 9px 0;
+            justify-content: flex-start;
+        }
+        .image-screen {
+            max-width: 100%;
+            max-height: 100%;
+        }
+        .image-logo {
+            display: block;
+            margin: 19px auto 0;
+        }
+        .swiper-btn {
+            display: inline-block;
+            top: rem(75px);
+
+            &--next {
+                right: rem(5px);
+            }
+
+            &--prev {
+                left: rem(5px);
+            }
+        }
+        .get-your-bonus-link {
+            display: block;
+            margin: 10px auto;
+            text-align: center;
+            text-decoration: underline;
+            font-family: roboto,Arial,Helvetica,sans-serif;
+            font-weight: 400;
+            font-size: 22px;
+            color: #39b549;
+            .bonus-count {
+                font-weight: 500;
+                margin: 0;
+            }
+        }
+        .arrow {
+            display: block;
+            width: 253px;
+            height: 80px;
+            position: absolute;
+            top: -35px;
+            left: 50%;
+            transform: translateX(-141px);
+            background: url(/images/casino-review-blocks/sprite_header.png) 0 -135px;
+        }
+    }
+
+    .bullet__item{
+        color: #262626
+    }
+}
+
+@media (max-width: 1200px) {
+    .review-block-header .inner {
+        text-align:center
+    }
+
+    .review-block-header .aside {
+        width: 49%;
+        float: none
+    }
+
+    .review-block-header .main-col {
+        width: 100%;
+        text-align: left;
+        border-radius: 0 0 6px 6px
+    }
+
+    .review-block-header .bonus-info {
+        margin-left: 0;
+        text-align: center
+    }
+
+    .review-block-header .add-info {
+        width: 49%;
+        float: none;
+        padding-bottom: 20px
+    }
+}
+
+@media (max-width: 768px) {
+    .review-block-header .text-block{
+        display: block;
+        margin: 0 auto;
+        padding: 20px 0;
+    }
+
+    .review-block-header .aside {
+        padding:20px 0 45px
+    }
+
+    .review-block-header .add-info .arrow {
+        top: -25px;
+        left: 52%
+    }
+}

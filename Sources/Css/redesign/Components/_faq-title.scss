@@ -1,0 +1,25 @@
+.faq__title {
+    font-size: 28px;
+    font-weight: bold;
+    margin-bottom: 20px;
+    @include respond-to('small') {
+        background-image: url('/images/faq-bg.png');
+        background-size: 100% 157px;
+        background-repeat: no-repeat;
+        height: 145px;
+        color: #efefef;
+        line-height: 200px;
+        text-align: center;
+    }
+    .title {
+        color: $osca-heading-color;
+        padding-top: 44px;
+        padding-left: 20px;
+        font-size: 26px;
+        line-height: 34px;
+        text-align: left;
+        @include respond-to('small') {
+            color: $white;
+        }
+    }
+}

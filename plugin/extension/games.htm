@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en" ng-app="celcApp">
+
+    <head>
+        <title>Chrome plugin</title>
+        <meta charset="UTF-8">
+        <meta name=description content="">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" type="text/css" href="css/games-slider.css">
+        <link rel="stylesheet" type="text/css" href="new.css">
+    </head>
+
+    <body ng-controller="MainCtrl">
+        <div class="freeGamesMobile">
+            <!-- <h2>Test Drive These Popular Real Cash Slots for Free</h2>
+            <div class="iframe-wraper">
+                <iframe ng-src="{{gameUrl}}" ng-show="gameUrl" frameborder="0" scrolling="no" width="100%" height="500px"></iframe>
+            </div> -->
+            <div class="tabs-box">
+                <ul class="idTabs">
+                    <li><a href="#" ng-click="orderBy('rating')" ng-class="{'selected': ordered=='rating'}" class="selected">Most Popular</a></li>
+                    <li><a href="#" ng-click="orderBy('newest')" ng-class="{'selected': ordered=='newest'}">NEWEST GAMES</a></li>
+                    <li><a href="#" ng-click="orderBy('jackpot')" ng-class="{'selected': ordered=='jackpot'}">Biggest Jackpots</a></li>
+                    <li><a href="#" ng-click="orderBy('payouts')" ng-class="{'selected': ordered=='payouts'}">Most Payouts</a></li>
+                </ul>
+                <div class="blockTabs">
+                    <div class="freeGame-block" ng-repeat="game in games">
+                        <a href="#" ng-click="setGameUrl($index)">
+                            <div class="freeGame-block_img">
+                                <img src="{{game.thumb}}" alt="{{game.title}}">
+                            </div>
+                            <div class="freeGame-block_title jackpot-title">Jackpot: <b>${{game.jackpot | number:0}}</b></div>
+                            <div class="freeGame-block_title">{{game.title}}</div>
+                            <div class="freeGame-block_reiting">
+                                <div class="freeGame-block_reiting_line" style="width: {{game.rating/(5/100)}}%;"></div>
+                            </div>
+                            <div class="freeGame-block_btn">
+                                <span class="image_box">Play free</span>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="freeGame-block" ng-repeat="game in games">
+                        <a href="#" ng-click="setGameUrl($index)">
+                            <div class="freeGame-block_img">
+                                <img src="{{game.thumb}}" alt="{{game.title}}">
+                            </div>
+                            <div class="freeGame-block_title jackpot-title">Jackpot: <b>${{game.jackpot | number:0}}</b></div>
+                            <div class="freeGame-block_title">{{game.title}}</div>
+                            <div class="freeGame-block_reiting">
+                                <div class="freeGame-block_reiting_line" style="width: {{game.rating/(5/100)}}%;"></div>
+                            </div>
+                            <div class="freeGame-block_btn">
+                                <span class="image_box">Play free</span>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="freeGame-block" ng-repeat="game in games">
+                        <a href="#" ng-click="setGameUrl($index)">
+                            <div class="freeGame-block_img">
+                                <img src="{{game.thumb}}" alt="{{game.title}}">
+                            </div>
+                            <div class="freeGame-block_title jackpot-title">Jackpot: <b>${{game.jackpot | number:0}}</b></div>
+                            <div class="freeGame-block_title">{{game.title}}</div>
+                            <div class="freeGame-block_reiting">
+                                <div class="freeGame-block_reiting_line" style="width: {{game.rating/(5/100)}}%;"></div>
+                            </div>
+                            <div class="freeGame-block_btn">
+                                <span class="image_box">Play free</span>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="freeGame-block" ng-repeat="game in games">
+                        <a href="#" ng-click="setGameUrl($index)">
+                            <div class="freeGame-block_img">
+                                <img src="{{game.thumb}}" alt="{{game.title}}">
+                            </div>
+                            <div class="freeGame-block_title jackpot-title">Jackpot: <b>${{game.jackpot | number:0}}</b></div>
+                            <div class="freeGame-block_title">{{game.title}}</div>
+                            <div class="freeGame-block_reiting">
+                                <div class="freeGame-block_reiting_line" style="width: {{game.rating/(5/100)}}%;"></div>
+                            </div>
+                            <div class="freeGame-block_btn">
+                                <span class="image_box">Play free</span>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+
+                <div class="paginations-box">
+                    <span class="pagin-prev"></span>
+                    <ul>
+                        <li class="pagin_item" ng-click="paginate(page-2)" ng-show="page-2>0">{{page-2}}</li>
+                        <li class="pagin_item" ng-click="paginate(page-1)" ng-show="page-1>0">{{page-1}}</li>
+                        <li class="pagin_item pagin_active">{{page}}</li>
+                        <li class="pagin_item" ng-click="paginate(page+1)" ng-show="page+1<=maxPages">{{page+1}}</li>
+                        <li class="pagin_item" ng-click="paginate(page+2)" ng-show="page+2<=maxPages">{{page+2}}</li>
+                    </ul>
+                    <span class="pagin-next"></span>
+                </div>
+            </div>
+        </div>
+        <script src="js/angular.min.js"></script>
+        <script src="js/controllers.js"></script>
+        <script src="js/services.js"></script>
+        <script src="js/app.js"></script>
+    </body>
+</html>

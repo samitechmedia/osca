@@ -1,0 +1,45 @@
+.icon {
+    /* target the var used to change color of duo tone icons
+     * reference this in your custom component styles
+     * here it is --color-2
+     */
+    --color2: none; // second color used in some duo color icons (check the svg code)
+
+    fill: currentColor; // fill allows us to let the icon inherit color
+    stroke-width: 8%; // 4% whitespace required
+
+    &--green-white {
+        --color2: #48b207;
+
+        color: #fff;
+    }
+
+    &--red-white {
+        --color2: #9e1c03;
+
+        color: #fff;
+    }
+
+    /* SVGs with Stroke
+    * SVG should be created with a 1px stroke
+     * SVG should have a minimum 8% whitespace around it to allow the stroke to expand
+     * Example 25px square SVG should have at least 2px around it
+     * 28px square should have 3px(rounded up) around it
+     */
+
+    &--x-light {
+        stroke-width: 1;
+    }
+
+    &--light {
+        stroke-width: 4%;
+    }
+
+    &--bold {
+        stroke-width: 12%; // 6% whitespace required
+    }
+
+    &--x-bold {
+        stroke-width: 16%; // 8% whitespace required
+    }
+}

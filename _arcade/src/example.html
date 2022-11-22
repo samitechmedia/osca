@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Arcade bundle test</title>
+  </head>
+
+  <body>
+    <!-- File for verifying Arcade build without the need of running whole site -->
+    <!-- Run the static file server from the root of the site repository and visit /_arcade/src/example -->
+    <script>
+      window._arcade = window._arcade || {};
+      window._arcade.currentGame = 4366;
+    </script>
+
+    <script
+      src="/_arcade/dist/js/free-games.js"
+      id="arcade-free-games"
+    ></script>
+
+    <div id="arcade-game-review">
+      <m-demo-view></m-demo-view>
+      <m-attribute-box></m-attribute-box>
+      <a-cta-button type="link" href="/go/jackpot/casino">
+        <template v-slot:text>
+          <span aria-hidden="true">Play for free</span>
+        </template>
+        <template v-slot:a11y-text>
+          <span class="is-accessible-text"
+            >Play {{ $store.state.currentGame.name }} for free</span
+          >
+        </template>
+      </a-cta-button>
+    </div>
+    <script src="/_arcade/dist/js/game-review.js"></script>
+  </body>
+</html>

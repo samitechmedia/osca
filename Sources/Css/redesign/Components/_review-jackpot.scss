@@ -1,0 +1,9 @@
+.review__section {
+    .jackpot__area {
+        display: none;
+
+        @include respond-to('extra-large') {
+            display: block;
+        }
+    }
+}

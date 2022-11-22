@@ -1,0 +1,225 @@
+* {
+  box-sizing: border-box;
+}
+
+html,
+body {
+  font-family: FilsonSoftRegular, Arial, Helvetica, sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 1.45;
+  overflow-x: hidden;
+  max-width: 100%;
+  counter-reset: number;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+button,
+.primary-btn{
+  font-family: FilsonSoftRegular, Arial, Helvetica, sans-serif;
+  font-weight: 900;
+}
+
+.container {
+  padding-right: 10px;
+  padding-left: 10px;
+  @include respond-to('medium') {
+    padding-right: 15px;
+    padding-left: 15px;
+  }
+  @include respond-to('extra-large') {
+    width: 1200px;
+  }
+}
+
+.section {
+  &--light-gray {
+    background-color: $osca-gray-2;
+  }
+
+  &--spacing-lg {
+    padding: 40px 0;
+
+    @include respond-to('medium') {
+      padding: 56px 0;
+    }
+  }
+}
+
+.bullets {
+  margin-left: 20px;
+
+  li {
+    padding-bottom: 1em;
+  }
+
+  li:before {
+    content: "\2022";
+    color: black;
+    font-weight: bold;
+    display: inline-block;
+    width: 1em;
+    margin-left: -1em;
+  }
+}
+
+.numbers__list {
+  list-style: decimal;
+  padding-left: 20px;
+
+  .numbers__item {
+    padding-bottom: 9px;
+  }
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+p {
+  margin-bottom: 14px;
+  color: $osca-body-text-color;
+}
+
+li {
+  color: $osca-body-text-color;
+}
+
+img {
+  display: inline-block;
+  max-width: 100%;
+  object-fit: contain;
+
+  &.artright,
+  &.artleft {
+    padding-bottom: 10px;
+    max-width: 150px;
+    height: auto;
+
+    @include respond-to('medium') {
+      max-width: 100%;
+    }
+  }
+
+  &.artright {
+    float: right;
+    padding-left: 10px;
+  }
+
+  &.artleft {
+    float: left;
+    padding-right: 10px;
+  }
+}
+
+hr {
+  border-top-color: #c3c3c3;
+  border-left-color: #c3c3c3;
+  border-right-color: #c3c3c3;
+  border-bottom: none;
+  margin: 35px 0 35px;
+  border-width: 3px;
+}
+
+strong {
+  font-weight: bold;
+}
+
+.error {
+  padding: 5px;
+  border: 5px dashed red;
+  box-shadow: 0 0 15px 15px yellow;
+}
+
+.clearfix:before,
+.clearfix:after {
+  display: block;
+  content: '';
+  clear: both;
+}
+
+video {
+  max-width: 100%;
+}
+
+// this style is a fallback for if a iframe is added without a src
+// to stop there being a massive white space on the page
+iframe[src=""] {
+  display: none;
+}
+
+.js-more {
+  $self: &;
+
+  &__content {
+    display: none;
+
+    #{$self}--active & {
+      display: initial;
+    }
+
+    @include respond-to('large') {
+      #{$self}--below-lge & {
+        display: initial;
+      }
+    }
+  }
+
+  &__trigger {
+    position: relative;
+    padding-right: 1.3em;
+    cursor: pointer;
+
+    @include respond-to('large') {
+      #{$self}--below-lge & {
+        display: none;
+      }
+    }
+
+    &:after {
+      content: "";
+      position: absolute;
+      right: 0;
+      top: 50%;
+      transform: translate(0, -50%);
+      transform-origin: center 3px;
+      width: 12px;
+      height: 12px;
+      background-image: url("/dist/icons/icon-angle-down-black.svg");
+
+      #{$self}--active & {
+        transform: rotate(180deg);
+      }
+
+    }
+  }
+
+  &__dots {
+
+    #{$self}--active & {
+      display: none;
+    }
+
+    @include respond-to('large') {
+      #{$self}--below-lge & {
+        display: none;
+      }
+    }
+  }
+
+}
+
+.left__content {
+  display: flex;
+  align-items: center;
+
+  img {
+    width: 120px;
+  }
+}
+
+.slot__icon__container {
+  clear: both;
+}

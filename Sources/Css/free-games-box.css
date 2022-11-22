@@ -1,0 +1,215 @@
+/* Free Games Box */
+.free-games-box .title{
+	background-color: #8f2312;
+	padding: 13px 18px;
+	font-size: 24px;
+	color: #fff;
+	letter-spacing: 0px;
+	text-align: left;
+	font-weight: normal;
+	margin: 0;
+}
+.free-games-box .title span{
+	text-transform: uppercase;
+	font-weight: 600;
+}
+.free-games-box .content{
+	padding: 18px;
+	background-color: #f6f9fa;
+	float: none;
+    width: auto;
+    position: relative;
+}
+.free-games-box .content .fa-chevron-right{
+	display: none;
+}
+.free-games-box .free-games-carousel{
+	white-space: nowrap;
+	overflow-x: auto;
+	-webkit-overflow-scrolling: touch;
+}
+.free-games-box .item{
+	width: 24%;
+	display: inline-block;
+	margin-right: 8px;
+}
+.free-games-box .item:last-child{
+	margin: 0;
+}
+.free-games-box .inner{
+	padding: 10px 15px;
+	background: #fff;
+	border: 1px solid #ebedee;
+	border-radius: 0 0 5px 5px;
+}
+.free-games-box .inner .image{
+	text-align: center;
+	height: 150px;
+}
+.free-games-box .inner .image img{
+	max-width: 100%;
+	display: inline-block;
+}
+.free-games-box .inner .caption{
+	padding: 10px;
+}
+.free-games-box .inner h4{
+	font-size: 18px;
+	color: #000;
+	letter-spacing: 0px;
+	text-align: left;
+	margin: 0 0 10px;
+	text-align: center;
+	font-weight: 600;
+}
+.free-games-box .inner .rating-box{
+    width: 148px;
+    height: 21px;
+    line-height: 0;
+    background: url("/images/free-games-rating.png") 0 0 repeat-x;
+    overflow: hidden;
+    margin: 0 auto 14px;
+}
+.free-games-box .inner .rating-box .rating{
+    height: 21px;
+    background: url("/images/free-games-rating.png") 0 100% repeat-x;
+}
+.free-games-box .inner .btn-play{
+	font-size: 18px;
+	color: #fff;
+	letter-spacing: 0px;
+	text-align: center;
+	text-transform: uppercase;
+	background-color: #48b207;
+	box-shadow: 0 4px 0 0 #327d05;
+	border-radius: 5px;
+	padding: 10px 0 8px;
+}
+.free-games-box .inner .btn-play:hover{
+	background-color: #74b710;
+	box-shadow: 0 2px 0 0 #507D0D;
+    transform: translateY(2px);
+    -ms-transform: translateY(2px);
+    -webkit-transform: translateY(2px);
+}
+.free-games-carousel .owl-dots{
+	text-align: center;
+	margin-top: 14px;
+}
+.free-games-carousel .owl-dots div{
+	display: inline-block;
+    vertical-align: middle;
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    background-color: transparent;
+    border: 1px solid #000;
+    margin: 0 5px;
+}
+.free-games-carousel .owl-dots div.active{
+    background-color: #000;
+}
+
+@media only screen and (max-width: 991px){
+	.free-games-box .content:before{
+		content: "";
+		height: 100%;
+		width: 35px;
+		background: -webkit-linear-gradient(right ,#bbb 10%,rgba(187,187,187,0));
+		background: linear-gradient(to left,#bbb 10%,rgba(187,187,187,0));
+		position: absolute;
+		top: 0;
+		right: 0;
+		z-index: 5;
+	}
+	.free-games-box .content.hide-fade:before{
+	    display: block;
+	    opacity: 1;
+	    -webkit-animation: 1s ease 0s normal both 1 running hide-fade;
+	    -moz-animation: 1s ease 0s normal both 1 running hide-fade;
+	    animation: 1s ease 0s normal both 1 running hide-fade;
+	}
+	.free-games-box .content .fa-chevron-right{
+		display: block;
+		-webkit-animation: 1.5s ease 0s normal none infinite running cd-scroll-right;
+		-moz-animation: 1.5s ease 0s normal none infinite running cd-scroll-right;
+		animation: 1.5s ease 0s normal none infinite running cd-scroll-right;
+		position: absolute;
+		right: 10px;
+		top: 50%;
+		margin-top: -8px;
+		z-index: 6;
+	}
+	.free-games-box .item{
+		width: 32.3%;
+	}
+	.nudge{
+	    -webkit-animation: 1.5s ease-in-out 0s normal both 1 running nudge;
+	    -moz-animation: 1.5s ease-in-out 0s normal both 1 running nudge;
+	    animation: 1.5s ease-in-out 0s normal both 1 running nudge;
+	}
+
+	@keyframes cd-scroll-right{
+		0%, 100%{transform: translateX(0px);}
+		50%{transform: translateX(3px);}
+	}
+	@keyframes cd-scroll-right{
+		0%, 100%{transform: translateX(0px);}
+		50%{transform: translateX(3px);}
+	}
+	@keyframes cd-scroll-right{
+		0%, 100%{transform: translateX(0px);}
+		50%{transform: translateX(3px);}
+	}
+	@keyframes hide-fade{
+		0%{opacity: 1;}
+		100%{opacity: 0;}
+	}
+	@keyframes nudge{
+		0%, 100%, 20%, 50%, 80%{transform: translateX(0px);}
+		40%{transform: translateX(-30px);}
+		60%{transform: translateX(-15px);}
+	}
+	@keyframes nudge{
+		0%, 100%, 20%, 50%, 80%{transform: translateX(0px);}
+		40%{transform: translateX(-30px);}
+		60%{transform: translateX(-15px);}
+	}
+}
+
+@media only screen and (max-width: 850px){
+	.free-games-box .item{
+		width: 32.18%;
+	}
+}
+
+@media only screen and (max-width: 767px){
+	.free-games-box .item{
+		width: 48.88%;
+	}
+}
+
+@media only screen and (max-width: 639px){
+	.free-games-box .title{
+		font-size: 18px;
+		padding: 14px;
+		line-height: 28px;
+		text-align: center;
+	}
+	.free-games-box .item{
+		width: 48.56%;
+	}
+}
+@media only screen and (max-width: 479px){
+	.free-games-box .content{
+		padding: 14px;
+	}
+	.free-games-box .item{
+		width: 100%;
+	}
+	.free-games-box .inner{
+		padding: 10px 12px;
+	}
+}
+
+/* end Free Games Box */

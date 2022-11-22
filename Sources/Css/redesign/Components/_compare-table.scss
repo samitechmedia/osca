@@ -1,0 +1,162 @@
+.compare-table {
+  background: #f6f9fa;
+  border: 1px solid #e6e8e9;
+  border-radius: 4px;
+  position: relative;
+  z-index: 1;
+  margin: 30px 0 0
+}
+
+.compare-table .fa-chevron-right {
+  display: none
+}
+
+.compare-table .compare-row {
+  display: table;
+  width: 100%
+}
+
+.compare-table .compare-row+.compare-row {
+  border-top: 1px solid #e6e8e9
+}
+
+.compare-table .col {
+  display: table-cell;
+  vertical-align: middle;
+  height: 49px
+}
+
+.bottom-box2 .hold-bottom .img-left img,.bottom-box2 .hold-padd .img-left img,.bottom-box2 .hold-padd .txt-tight .bottom-card .item-holder ul li img {
+  vertical-align: top
+}
+
+.compare-table .compare-row.first .col {
+  height: 79px
+}
+
+.compare-table .compare-table-in {
+  overflow-x: auto;
+  -webkit-overflow-scrolling: touch
+}
+
+.compare-table .compare-table-in .compare-row {
+  display: table;
+  width: 100%;
+  padding-left: 244px;
+}
+
+.compare-table .compare-table-in .col {
+  width: calc(100% / 7);
+  text-align: center;
+  border-left: 1px solid #e6e8e9
+}
+
+.compare-table .compare-features {
+  width: 245px;
+  position: absolute;
+  left: 0;
+  top: 0;
+  z-index: 3;
+  pointer-events: none;
+  background: rgba(239,242,243,.8);
+  border-radius: 4px 0 0 4px
+}
+
+.compare-table .compare-features .col {
+  text-align: right;
+  border-right: 1px solid #e6e8e9;
+  padding: 0 25px;
+  font-size: 14px;
+  line-height: 100%;
+  color: #707070
+}
+.compare-table .col .fa {
+  margin: 0;
+}
+
+.compare-table .compare-features .compare-row.first .col {
+  font-size: 18px;
+  font-weight: 700
+}
+
+.compare-table .title {
+  font-size: 11px;
+  line-height: 100%;
+  color: #989898
+}
+
+.compare-table .icon {
+  background: url(/images/ultimate-slots-guide/sprite-mobile-slots.png) no-repeat;
+  width: 35px;
+  height: 38px;
+  margin: 0 auto 10px
+}
+
+.compare-table .icon-desktop {
+  background-position: 0 -213px
+}
+
+.compare-table .icon-iphone {
+  background-position: -35px -213px
+}
+
+.compare-table .icon-ipad {
+  background-position: -70px -213px
+}
+
+.compare-table .icon-android-phone {
+  background-position: -105px -213px
+}
+
+.compare-table .icon-android-tablet {
+  background-position: -140px -213px
+}
+
+.compare-table .icon-windows-phone {
+  background-position: -175px -213px
+}
+
+.compare-table .icon-blackberry-phone {
+  background-position: -210px -213px
+}
+
+.compare-table .fa-check {
+  color: #48b207;
+  font-size: 18px
+}
+
+.compare-table .fa-times {
+  color: #9a0000;
+  font-size: 18px
+}
+
+@media screen and (max-width: 1009px) {
+  .compare-table:before {
+    content: "";
+    position: absolute;
+    top: 0;
+    right: 0;
+    height: 100%;
+    width: 35px;
+    background: -webkit-linear-gradient(right, #dedede 10%, rgba(222, 222, 222, 0));
+    background: linear-gradient(to left, #dedede 10%, rgba(222, 222, 222, 0));
+    z-index: 5;
+    pointer-events: none
+  }
+  .compare-table .compare-table-in .compare-row {
+    width: 1008px;
+  }
+
+  .compare-table .fa-chevron-right {
+    display: block;
+    position: absolute;
+    right: 10px;
+    top: 50%;
+    margin-top: -8px;
+    color: #797979;
+    z-index: 6;
+    -webkit-animation: cd-scroll-right 1.5s infinite;
+    -moz-animation: cd-scroll-right 1.5s infinite;
+    animation: cd-scroll-right 1.5s infinite
+  }
+}

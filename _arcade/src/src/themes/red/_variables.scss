@@ -1,0 +1,55 @@
+@function rem($size) {
+  @return $size / 16px * 1rem;
+}
+
+$cl-primary: #9e1c03;
+$cl-secondary: #4368f1;
+$cl-secondary-darken: #3659dd;
+$cl-secondary-gradient: linear-gradient(
+  to bottom,
+  $cl-secondary-darken 0%,
+  $cl-secondary 100%
+);
+
+$cl-highlight: #47ab00;
+$cl-orange: #fa9f00;
+$cl-green: #50bc01;
+$cl-green-darker: #409503;
+$cl-green-darkest: #2B7600;
+$cl-yellow: #f8dc00;
+$cl-white: #ffffff;
+
+// @TODO: use OSCA colors from here instead
+
+$font-color-secondary: #525250;
+
+// Base Colors
+$black: #000;
+$white: #fff;
+
+// Brand Colors
+$osca-red: #9e1c03;
+$osca-blue: #2f59ef;
+$osca-secondary-blue: #0646c2;
+
+$osca-lime-green: #47ab00;
+$osca-orange: #f99f00;
+$osca-gold: #f99f00;
+
+$osca-light-gray: #6E7487;
+
+$osca-heading-color: #393939;
+$osca-body-text-color: #555555;
+$osca-link-color: #3059f0;
+
+$x-small: rem(576px);
+$viewport-x-small: #{'(max-width: #{$x-small})'};
+$viewport-small: #{'(min-width: #{rem(576px)})'};
+$viewport-medium: #{'(min-width: #{rem(768px)})'};
+$viewport-large: #{'(min-width: #{rem(992px)})'};
+$viewport-x-large: #{'(min-width: #{rem(1200px)})'};
+
+$vertical: #{'(orientation: portrait) and (max-width: #{rem(1024px)})'};
+$horizontal: #{'(orientation: landscape)'};
+
+$focus-color: $osca-lime-green;

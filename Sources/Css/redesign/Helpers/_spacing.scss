@@ -1,0 +1,30 @@
+// TODO - Check and remove generation of any not needed. Move into Sources/_queen/Sass/Utilities/_spacing.scss if needed.
+
+$spaceamounts: (5, 10, 15, 20, 25, 30, 35, 40, 45, 50, 75, 100); // Adjust this to include the pixel amounts you need.
+$sides: (top, bottom, left, right); // Leave this variable alone
+
+@each $space in $spaceamounts {
+  @each $side in $sides {
+
+    .m-#{str-slice($side, 0, 1)}-#{$space} {
+      margin-#{$side}: #{$space}px;
+    }
+  }
+}
+
+// get all widths as percentage
+
+@for $i from 0 through 100 {
+
+  @media (min-width: 992px) {
+    .width-lrg-percentage-#{$i} {
+      width: round(percentage($i/100));
+    }
+  }
+
+  @media (max-width: 992px) {
+    .width-sm-percentage-#{$i} {
+      width: round(percentage($i/100));
+    }
+  }
+}

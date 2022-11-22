@@ -1,0 +1,135 @@
+.morereviews {
+  background-color: #FFF;
+  border: 1px solid #a7b0ab;
+  border-radius: 10px;
+  margin-top: 60px;
+  padding: 38px 50px;
+  clear: left;
+}
+
+.morereviews ul {
+  -webkit-column-count: 3;
+  -moz-column-count: 3;
+  -o-column-count: 3;
+  column-count: 3;
+}
+
+.morereviews li {
+  list-style: none;
+  line-height: 21px;
+}
+
+.morereviews li a {
+  color: #515151;
+  float: left;
+  font-size: 14px;
+  font-weight: bold;
+  padding: 7px 0 7px 14px;
+  width: 100%;
+  position: relative;
+}
+
+.morereviews li a:before {
+  content: "";
+  display: block;
+  height: 0;
+  left: 2px;
+  position: absolute;
+  top: 50%;
+  margin-top: -4px;
+  width: 0;
+  border-top: 4px solid transparent;
+  border-left: 8px solid #dc0000;
+  border-bottom: 4px solid transparent;
+}
+
+.morereviews li a:hover::before {
+  border-left: 8px solid #003A70;
+}
+
+.morereviews li a:hover {
+  color: #003A70;
+}
+
+.morereviews2 {
+  margin-bottom: 10px;
+  padding: 5px;
+}
+
+.morereviews2 ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+.morereviews2 li {
+  float: left;
+  list-style: none;
+}
+
+.morereviews2 li a {
+  color: #515151;
+  display: inline;
+  font-weight: bold;
+  padding: 7px 0 7px 14px;
+  width: 60px;
+}
+
+.morereviews2 li a:before {
+  color: red;
+  content: "\25b6  ";
+}
+
+.morereviews2 li a:hover::before,
+.morereviews2 li a:visited:hover::before {
+  color: #003A70;
+}
+
+.morereviews2 li a:hover,
+.morereviews2 li a:visited:hover {
+  color: #003A70;
+}
+
+.morereviews2 li a:visited::before {
+  color: #A9A9A9;
+}
+
+.morereviews2 li a:visited {
+  font-weight: normal;
+}
+
+@media only screen and (max-width: 734px) {
+  .morereviews ul {
+    -webkit-column-count: 2;
+    -moz-column-count: 2;
+    -o-column-count: 2;
+    column-count: 2;
+  }
+}
+
+@media screen and (max-width: 500px) {
+  .morereviews {
+    background-color: #fff;
+    padding: 5px;
+    border: 1px solid #cecece;
+    border-radius: 10px;
+  }
+  .morereviews ul {
+    padding: 0;
+  }
+  .morereviews ul a {
+    text-decoration: none;
+  }
+  .morereviews ul a:hover {
+    text-decoration: none;
+  }
+  .morereviews ul li {
+    padding: 0 0 4px 10px;
+  }
+  .morereviews ul {
+    -webkit-column-count: 1;
+    -moz-column-count: 1;
+    -o-column-count: 1;
+    column-count: 1;
+  }
+}

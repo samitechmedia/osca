@@ -1,0 +1,15 @@
+.hidden__block {
+    display: none;
+
+    @include respond-to('extra-large') {
+        display: block;
+    }
+}
+
+.show__block {
+    display: block;
+
+    @include respond-to('extra-large') {
+        display: none;
+    }
+}

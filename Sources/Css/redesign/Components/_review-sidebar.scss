@@ -1,0 +1,238 @@
+.review-block-sidebar {
+    border-radius: 8px;
+    padding: 19px 10px 0 20px;
+    border: 2px solid #8f2312;
+    margin: 0 0 15px;
+
+    @include respond-to('medium') {
+        margin: 0;
+    }
+
+    @include respond-to('medium') {
+        float: right;
+        width: 33%;
+        padding: 15px 10px;
+        -webkit-box-sizing: border-box;
+        -moz-box-sizing: border-box;
+        box-sizing: border-box
+    }
+
+    @include respond-to('extra-large') {
+        width: 316px;
+    }
+
+    .side-block {
+        margin: 11px 0 0;
+        &:first-of-type {
+            margin: 0;
+        }
+    }
+    .heading {
+        position: relative;
+        width: 255px;
+        font-size: 16px;
+        font-family: roboto,Arial,Helvetica,sans-serif;
+        font-weight: 700;
+        text-transform: uppercase;
+        margin: 0 0 9px;
+        padding: 0 0 3px;
+        border-bottom: 1px solid #56b447;
+        &:after {
+            content: "";
+            display: inline-block;
+            position: absolute;
+            top: 0;
+            right: -26px;
+            width: 24px;
+            height: 23px;
+            float: right;
+            background: url(/images/casino-review-blocks/sprite_sidebar.png) -1px -3px no-repeat;
+        }
+    }
+    .deposit-list {
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+    .systems-list {
+        padding: 0;
+        list-style: none;
+        margin: 5px 0 21px;
+        li {
+            display: inline-block;
+            height: 33px;
+            width: 33px;
+            background: url(/images/casino-review-blocks/sprite_sidebar.png) no-repeat;
+            margin: 0 10px 5px 0;
+            &.android {
+                background-position: -4px -254px;
+            }
+            &.win {
+                background-position: -4px -159px;
+            }
+            &.mac {
+                background-position: -4px -208px;
+            }
+        }
+    }
+    .side-list {
+        .row {
+            position: relative;
+            border-bottom: 1px solid #dbdbda;
+            margin: 16px 0 0 43px;
+            width: calc(100% - 43px);
+            display: flex;
+            flex-wrap: nowrap;
+            justify-content: space-between;
+            &:before {
+                content: "";
+                display: inline-block;
+                position: absolute;
+                left: -46px;
+                width: 28px;
+                height: 25px;
+                vertical-align: top;
+                background: url(/images/casino-review-blocks/sprite_sidebar.png) top no-repeat
+            }
+            &:first-of-type {
+                margin-top: 0;
+            }
+            &:last-of-type {
+                border: none;
+                margin-bottom: 36px;
+            }
+            div {
+                display: inline-block;
+                padding: 0;
+                font-size: 15px;
+                vertical-align: top;
+                &:first-of-type {
+                    padding-right: 5px;
+                }
+                &.rating-number {
+                    float: right;
+                    text-align: right;
+                    font-size: 15px;
+                    width: 45px;
+                    padding: 0;
+                    font-weight: 700
+                }
+            }
+        }
+        .software:before {
+            background-position: -2px -33px;
+        }
+        .graphics:before {
+            background-position: -37px -33px;
+        }
+        .bonus:before {
+            background-position: -77px -33px;
+        }
+        .support:before {
+            background-position: -4px -66px;
+        }
+        .banking:before {
+            background-position: -38px -66px;
+        }
+        .loyalty:before {
+            background-position: -75px -66px;
+        }
+        .email:before {
+            background-position: -1px -102px;
+        }
+        .phone:before {
+            background-position: -39px -98px;
+        }
+    }
+    .contacts {
+        .row {
+            border: none;
+            white-space: nowrap;
+        }
+        .contacts-item {
+            float: right;
+            overflow: hidden;
+            text-overflow: ellipsis;
+            max-width: calc(100% - 43px);
+        }
+        .phone .contacts-item {
+            max-width: calc(100% - 62px);
+        }
+    }
+    .contacts-item {
+        float: none;
+        font-weight: 700;
+        font-size: 14px;
+        word-break: break-word;
+        a {
+            color: #000;
+            text-decoration: none
+        }
+    }
+    .inner {
+        text-decoration: none
+    }
+    .play-now-btn {
+        display: block;
+        width: 177px;
+        height: 45px;
+        margin: 5px auto;
+        padding-top: 10px;
+        cursor: pointer;
+    }
+    .get-your-bonus-link {
+        display: block;
+        margin: 20px auto 17px;
+        text-align: center;
+        text-decoration: underline;
+        font-family: roboto,Arial,Helvetica,sans-serif;
+        font-weight: 400;
+        font-size: 20px;
+        color: #39b549;
+        .bonus-count {
+            font-weight: 500;
+            margin: 0
+        }
+    }
+}
+
+@media (max-width: 1200px) {
+    .review-block-sidebar .heading {
+        width: 100%
+    }
+
+    .review-block-sidebar .heading:after {
+        right: 0;
+        top: -3px
+    }
+
+    .review-block-sidebar .side-list .row {
+        width: calc(100% - 30px);
+        margin-left: 30px
+    }
+
+    .review-block-sidebar .side-list .row div:first-of-type {
+        vertical-align: baseline;
+        max-width: 90px;
+    }
+
+    .review-block-sidebar .side-list .row:before {
+        left: -36px;
+    }
+}
+
+@media (max-width: 768px) {
+    .review-block-header .text-block:last-child {
+        margin-bottom:15px
+    }
+    .review-block-header .aside {
+        padding:20px 0 45px
+    }
+    .review-block-header .rating {
+        margin: 20px auto
+    }
+    .review-block-header .add-info .arrow {
+        top: -25px;
+        left: 52%
+    }
+}

@@ -1,0 +1,27 @@
+// Our shared non-critical styles
+@import './shared-btf-global';
+
+// Vendors - Must come before our custom styles
+@import '../Vendors/fontawsome';
+@import '../../../_queen/Sass/Plugins/swiper';
+
+@import '../Components/toplist-home';
+@import '../Components/top-three';
+@import '../Components/site-finder';
+@import '../Components/jackpot';
+
+// HP - Comparison of Casino Software
+@import '../Components/table-data';
+
+// Free Games
+@import '../Components/pagination';
+@import '../Components/free-slots';
+@import '../Components/visual_base';
+@import '../Components/mobile-casino-game';
+@import '../Components/visual-feedback';
+@import '../Components/game-modal';
+
+@import '../Components/exclusive-slot';
+@import '../Components/further-info';
+
+@import '../Components/faq';

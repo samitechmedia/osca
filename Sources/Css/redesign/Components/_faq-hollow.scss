@@ -1,0 +1,96 @@
+.faq-section {
+  .container {
+    padding: 0;
+  }
+}
+
+.faq__accordion {
+  margin-top: 16px;
+}
+
+.accordion__item {
+  position: relative;
+  width: 100%;
+  height: auto;
+  margin-bottom: 16px;
+  transition: height .3s linear;
+}
+
+.accordion-item__title {
+  padding: 14px 48px 14px 16px;
+  border: 1px solid $osca-gray-4;
+  border-radius: 10px;
+  text-decoration: none;
+  color: $black-2;
+  font-weight: bold;
+  font-size: 14px;
+  line-height: 22px;
+  position: relative;
+
+  @include respond-to('medium') {
+    font-size: 16px;
+    line-height: 28px;
+    padding: 14px 48px 14px 24px;
+  }
+
+  &:hover {
+    cursor: pointer;
+  }
+
+  &-ico {
+    position: absolute;
+    top: 50%;
+    right: 15px;
+    transform: translateY(-50%);
+    transition: transform .2s ease;
+  }
+
+  .elipsis {
+    text-overflow: ellipsis;
+    overflow: hidden;
+    white-space: pre;
+    width: 90%;
+  }
+  .no-elipsis {
+    white-space: normal;
+  }
+}
+
+.accordion__icon {
+  position: absolute;
+  right: 10px;
+  top: 10px;
+}
+
+.accordion__content {
+  position: relative;
+  width: 100%;
+  background-color: #fff;
+  border-bottom-left-radius: 5px;
+  border-bottom-right-radius: 5px;
+  transition: 0.3s max-height ease-in;
+  max-height: 0;
+  overflow: hidden;
+  padding-left: 16px;
+  padding-right: 16px;
+
+  @include respond-to('medium') {
+    padding-left: 24px;
+    padding-right: 24px;
+  }
+
+  p {
+    padding: 16px 0 8px;
+    margin: 0;
+  }
+}
+
+.js-accordion-active {
+  .accordion-item__title {
+    background-color: $osca-gray-2;
+
+    &-ico {
+      transform: rotate(180deg) translateY(50%);
+    }
+  }
+}

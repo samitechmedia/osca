@@ -1,0 +1,27 @@
+.tick-list {
+  &--circle-light-blue {
+    .tick-list__item {
+      display: flex;
+      margin-bottom: 16px;
+      font-size: 14px;
+      line-height: 22px;
+
+      @include respond-to('medium') {
+        margin-bottom: 24px;
+        align-items: center;
+      }
+    }
+
+    .tick-list__icon {
+      position: relative;
+      display: grid;
+      place-items: center;
+      width: 24px;
+      min-width: 24px;
+      height: 24px;
+      border-radius: 50%;
+      background-color: $osca-lavender;
+      margin-right: 8px;
+    }
+  }
+}

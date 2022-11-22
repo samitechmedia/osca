@@ -1,0 +1,34 @@
+.block-slot-machine *{-webkit-box-sizing: border-box; -moz-box-sizing: border-box; -o-box-sizing: border-box; box-sizing: border-box; outline: none;}
+.block-slot-machine .close-slot-machine{position: absolute; top: 0; right: 15%; color: #ffb52e; font-size: 30px; text-decoration: none;}
+.block-slot-machine{position: relative;}
+.block-slot-machine img{max-width: 100%; max-height: 100%;}
+.block-slot-machine .block-congratulations{background: url(/images/exit-slot/bg-block-congratulations.png) no-repeat 0 0; background-size: 100% auto !important; width: 55%; height: 13%; position: absolute; bottom: 3.8%; right: 1.7%;}
+
+.block-slot-machine .block-reels{width: 44%; height: 21.45%; overflow: hidden; position: absolute; top: 16.666%; left: 50%; margin-left: -22%;}
+.block-slot-machine .block-reels:before{content: ""; width: 100%; height: 1.4%; background: #3e9fdd; position: absolute; left: 0; top: 50%; margin-top: -0.65%;}
+.block-slot-machine .block-reels .jSlots-wrapper{display: table; width: 100%; height: 100%;}
+.block-slot-machine .block-reels .box-reel{display: table-cell; width: 33.333%; height: 100%; text-align: center; vertical-align: middle;}
+
+.block-slot-machine .block-spin-to-win{display: block; width: 11%; height: 14.6%; position: absolute; top: 42.6%; left: 50%; margin-left: -5.7%;}
+.block-slot-machine .block-try-again{background: url(/images/exit-slot/bg-block-try-again.png) no-repeat 0 0; background-size: cover !important;}
+
+.block-slot-machine .block-prize{width: 46%; height: 10.6%; font-size: 17px; line-height: 100%; color: #ffe02d; text-transform: uppercase; text-align: center; font-family: 'Open Sans Condensed', sans-serif; font-weight: 700; padding: 3% 0; text-decoration: none; letter-spacing: 2px; white-space: nowrap; position: absolute; top: 69%; left: 50%; margin-left: -22.6%; text-shadow: 0 0 14px #ffa81a;}
+.block-slot-machine .bonus-prize{display: inline-block;}
+.block-slot-machine .block-prize .casino-prize{color: #b1ff4c; text-decoration: underline;}
+.block-slot-machine .block-prize .casino-prize:hover{text-decoration: none;}
+
+@media screen and (max-width: 767px){
+    .block-slot-machine .bonus-prize{transform: scale(0.9); margin: 0 -26%;}
+}
+
+@media screen and (max-width: 639px){
+    .block-slot-machine .bonus-prize{transform: scale(0.66); margin: -2px -26%;}
+}
+
+@media screen and (max-width: 479px){
+    .block-slot-machine .bonus-prize{font-size: 15px; transform: scale(0.56); margin: -5px -31%;}
+}
+
+@media screen and (max-width: 359px){
+    .block-slot-machine .bonus-prize{transform: scale(0.5); margin: -5px -43%;}
+}

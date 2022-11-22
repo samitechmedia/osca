@@ -1,0 +1,36 @@
+// Our shared non-critical styles
+@import './shared-btf-global';
+
+@import '../Components/pagination';
+@import '../Components/jackpot';
+@import '../Components/table-data';
+@import '../Components/free-slots';
+@import '../Components/visual_base';
+@import '../Components/visual-feedback';
+@import '../Components/software-reviews';
+@import '../Components/compare-table';
+@import '../_legacy/block-winner';
+@import '../_legacy/block-top-tips';
+@import '../_legacy/block-devices-supported';
+@import '../_legacy/more-reviews';
+@import '../_legacy/all-hub';
+
+@import '../Components/exclusive-slot';
+
+@import '../Components/faq';
+@import '../Components/modal';
+@import '../Components/software-games';
+@import '../Components/game-modal';
+@import '../Components/hub';
+@import '../Components/jackpot-games';
+@import '../Components/winners-table';
+@import '../Components/box-more';
+
+@import '../Vendors/fontawsome';
+@import '../Vendors/fancybox';
+
+@import '../Components/reviews-casino/excellent';
+@import '../Components/reviews-casino/mobile-game';
+@import '../Components/reviews-casino/reviews-hub';
+@import '../Components/reviews-casino/software-games';
+@import '../Components/review-jackpot';

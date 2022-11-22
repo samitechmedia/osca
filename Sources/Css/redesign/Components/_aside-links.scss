@@ -1,0 +1,31 @@
+.aside-links {
+  border: 1px solid $osca-gray-4;
+  border-radius: 4px;
+  overflow: hidden;
+  margin-bottom: 20px;
+  
+  &__item {
+    margin-bottom: 3px;
+
+    &:last-of-type {
+      margin-bottom: 0;
+    }
+  }
+
+  &__link {
+    display: block;
+    padding: 4px 5px 4px 15px;
+    color: $black-2;
+    border-left: 2px solid transparent;
+
+    &.active {
+      background-color: $osca-gray-2;
+      border-color: $osca-blue-3;
+    }
+
+    &:hover {
+      background-color: $osca-gray-2;
+      border-color: $osca-blue-3;
+    }
+  }
+}

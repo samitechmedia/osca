@@ -1,0 +1,21 @@
+.deposit-icon {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 49px;
+  height: 34px;
+  padding: 3px;
+  border-radius: 3px;
+  border: 2px solid #cdced3;
+  background-color: #f3f6fa;
+  margin: 2px;
+
+  img {
+    max-height: 100%;
+  }
+
+  &--lge {
+    width: 70px;
+    height: 44px;
+  }
+}

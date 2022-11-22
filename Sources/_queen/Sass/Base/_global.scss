@@ -1,0 +1,29 @@
+.bullets {
+    margin-left: 20px;
+
+    li {
+        padding-bottom: 1em;
+    }
+
+    li::before {
+        color: #000;
+        content: '\2022';
+        display: inline-block;
+        font-weight: bold;
+        margin-left: -1em;
+        width: 1em;
+    }
+}
+
+.numbers {
+    &__list {
+        list-style: decimal;
+        padding-left: 20px;
+
+        .numbers {
+            &__item {
+                padding-bottom: 9px;
+            }
+        }
+    }
+}

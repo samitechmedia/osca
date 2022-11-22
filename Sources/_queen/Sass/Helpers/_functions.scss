@@ -1,0 +1,10 @@
+
+// Strip unit from a value
+@function strip-unit($value) {
+    @return $value / ($value * 0 + 1);
+}
+
+// Pass stripUnit value into rem function and divide by our base font size
+@function rem($pxValue) {
+    @return #{strip-unit($pxValue) / strip-unit($base-font-size)}rem;
+}

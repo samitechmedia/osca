@@ -1,0 +1,42 @@
+@import './base';
+
+.is-modal-open {
+  overflow: hidden;
+}
+
+[data-js-focus-visible] :focus:not([data-focus-visible-added]) {
+  outline: none;
+}
+
+:root {
+  --cl-primary: #{$cl-primary};
+  --cl-secondary: #{$cl-secondary};
+  --cl-secondary-darken: #{$cl-secondary-darken};
+  --cl-highlight: #{$cl-highlight};
+  --cl-orange: #{$cl-orange};
+  --cl-green: #{$cl-green};
+  --cl-green-darker: #{$cl-green-darker};
+  --cl-green-darkest: #{$cl-green-darkest};
+  --cl-yellow: #{$cl-yellow};
+  --cl-white: #{$cl-white};
+  --cl-light-gray: #{$osca-light-gray};
+}
+
+#arcade-free-games {
+  max-width: 100%;
+}
+
+:export {
+  breakpoints: {
+    extrasmall: $viewport-x-small;
+    small: $viewport-small;
+    medium: $viewport-medium;
+    large: $viewport-large;
+    extralarge: $viewport-x-large;
+  }
+
+  orientation: {
+    horizontal: $horizontal;
+    vertical: $vertical;
+  }
+}

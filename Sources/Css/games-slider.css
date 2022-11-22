@@ -1,0 +1,251 @@
+.loader {
+text-align:center;
+margin-bottom: 82px;
+}
+
+playWithRealMoneyBtn {
+    padding-top: 38px !important;
+}
+
+/* Tabs styles */
+.tabs-box {
+  margin-top: 40px;
+  /*background: #6a0000;*/
+}
+.idTabs { 
+  padding: 0px; 
+  margin: 0px;
+  background: #f9f9f9;
+}
+
+.idTabs:after {
+  display: block;
+  content: "";
+  clear: both;
+}
+
+.idTabs li {
+  list-style: none;
+  float: left;  
+}
+.idTabs a:after {
+  position: absolute;
+  top: 6px;
+  right: 0px;
+  content: "";
+  display: inline-block;
+  width: 1px;
+  height: 32px;
+  background: #dedede;
+}
+.idTabs li:last-child a:after {
+  display: none;
+}
+
+.idTabs a.selected:after {
+  content: none;
+}
+
+.idTabs a {
+  display: block;
+  padding: 12px 57px;
+  text-decoration: none!important;
+  margin-left: 0;
+  font-weight: 600;
+  color: #000;
+  background: #f9f9f9;
+  text-transform: uppercase;
+  position: relative;
+}
+.idTabs a.selected {
+  margin-bottom: 0;
+  color: #6a0000;
+  background: #dedede;
+  cursor: default;
+  left: -1px;
+}
+.idTabs li:first-child a.selected {
+  left: 0px;
+}
+
+.blockTabs {
+  padding: 10px 10px 15px 10px;
+  clear: left;
+  background: #dedede;
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.blockTabs > div:last-child {
+  margin-right: 0px;
+}
+
+.freeGame-block {
+  width: 173px;
+  width: 19%;
+  height: auto;
+  display: inline-block;
+  vertical-align: top;
+  padding: 8px;
+  background: #ffffff;
+  margin-right: 6px;  
+  margin-right: 0.6%; 
+  box-sizing: border-box;
+}
+
+
+.freeGame-block > a {
+    color: transparent;
+    text-decoration: none;
+}
+
+.freeGame-block_img  {  
+  -webkit-box-shadow: 5px 5px 5px rgba(0,0,0,0.2);
+  -moz-box-shadow: 5px 5px 5px rgba(0,0,0,0.2);
+  -ms-box-shadow: 5px 5px 5px rgba(0,0,0,0.2);
+  -o-box-shadow: 5px 5px 5px rgba(0,0,0,0.2);
+  box-shadow: 5px 5px 5px rgba(0,0,0,0.2);
+  margin-bottom: 10px;
+}
+
+.freeGame-block_img img {
+  width: 100%;
+  height: auto; 
+}
+
+.freeGame-block_title {
+  font-family: Calibri;
+  color: #3f3f3f;
+  font-size: 18px;
+  height: 38px;
+  overflow: hidden;
+}
+
+.freeGame-block_reiting {
+  width: 125px;
+  height: 23px;
+  background: url("/images/stars-slider.jpg") top left repeat-x;
+  margin: 0px auto 10px auto;
+}
+
+.freeGame-block_reiting_line {
+  height: 26px;
+  width: 0;
+  background: url("/images/stars-slider.jpg") bottom left repeat-x;
+}
+
+.freeGame-block_btn {
+  margin-bottom: 5px;
+}
+
+.freeGame-block_btn .image_box {
+  width: 90%;
+  display: inline-block;
+  border: 1px solid #376717;
+  border-radius: 10px;  
+  color: #fff;
+  text-transform: uppercase;
+  font: 18px Charcoal, sans-serif;
+  font-weight: 700;
+  line-height: 32px;
+  text-decoration: none;
+  background: -webkit-linear-gradient(to bottom, #5fd01e, #498a1d);
+  background: -moz-linear-gradient(to bottom, #5fd01e, #498a1d);
+  background: -o-linear-gradient(to bottom, #5fd01e, #498a1d);
+  background: linear-gradient(to bottom, #5fd01e, #498a1d);
+  -webkit-box-shadow: 5px 5px 5px rgba(0,0,0,0.2);
+  -moz-box-shadow: 5px 5px 5px rgba(0,0,0,0.2);
+  -ms-box-shadow: 5px 5px 5px rgba(0,0,0,0.2);
+  -o-box-shadow: 5px 5px 5px rgba(0,0,0,0.2);
+  box-shadow: 5px 5px 5px rgba(0,0,0,0.2);
+}
+
+.freeGame-block_btn .image_box:hover {
+  background: -webkit-linear-gradient(to bottom, #498a1d, #5fd01e);
+  background: -moz-linear-gradient(to bottom, #498a1d, #5fd01e);
+  background: -o-linear-gradient(to bottom, #498a1d, #5fd01e);
+  background: linear-gradient(to bottom, #498a1d, #5fd01e);
+}
+
+.paginations-box {
+  text-align: center;
+}
+
+.paginations-box ul {
+    padding-left: 0;
+}
+
+.pagin_item {
+  display: inline-block;
+  vertical-align: top;
+  font-size: 14px;
+  width: 30px;
+  height: 30px;
+  border: 1px solid #e2e2e2;
+  line-height: 30px;
+  border-radius: 3px;
+  margin: 0px 3px;
+  -webkit-box-shadow: 3px 3px 5px rgba(0,0,0,0.1);
+  -moz-box-shadow: 3px 3px 5px rgba(0,0,0,0.1);
+  -ms-box-shadow: 3px 3px 5px rgba(0,0,0,0.1);
+  -o-box-shadow: 3px 3px 5px rgba(0,0,0,0.1);
+  box-shadow: 3px 3px 5px rgba(0,0,0,0.1);
+  background: #ffffff;
+  cursor: pointer;
+}
+
+.pagin_active, .pagin_item:hover {
+  color: #ffffff;
+  font-weight: 700;
+  border: 1px solid #560704;
+  background: -webkit-linear-gradient(to top, #6a0000, #830303);
+  background: -moz-linear-gradient(to top, #6a0000, #830303);
+  background: -o-linear-gradient(to top, #6a0000, #830303);
+  background: linear-gradient(to top, #6a0000, #830303);
+}
+
+@media screen and (max-width:1024px) {
+  #tmpgames {
+    display: none !important;
+  }
+}
+
+@media screen and (max-width:840px) {
+  ul.idTabs {
+    margin: 0px;
+    padding: 0px;
+  }
+
+  .idTabs li {
+    float: none;
+    text-align: center;   
+  }
+
+  .idTabs a:after {
+    content: none;
+  }
+  .idTabs a.selected {
+    left: 0px;
+  }
+
+  .freeGame-block {
+    width: 40%;
+    margin-right: 5%;
+    margin-top: 15px;
+  }
+  .blockTabs > div:nth-child(2n+2) {
+    margin-right: 0px;
+  }
+}
+
+@media screen and (max-width:480px) {
+  .freeGame-block {
+    width: 90%;
+    margin: 0px 0px 20px 0px;
+  } 
+  .pagin_item {
+    width: 20px;
+    height: 20px;
+    line-height: 20px;
+  }
+}

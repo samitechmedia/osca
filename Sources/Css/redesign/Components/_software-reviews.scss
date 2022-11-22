@@ -1,0 +1,68 @@
+.software-reviews {
+  &__row {
+    margin-bottom: 30px;
+    width: 100%;
+    justify-content: space-between;
+    flex-wrap: wrap;
+
+    @media (min-width: 991px) {
+      display: flex;
+    }
+  }
+  .type-left-side,
+  .type-right-side {
+    padding: 9px 12px;
+    background: #e8edf2;
+    border: 1px solid #b4aaa3;
+    
+    border-radius: 3px;
+    flex: 0 0 100%;
+
+    @media (min-width: 991px) {
+      flex: 0 0 49%;
+      -ms-flex: 0 1 47%;
+    }
+  }
+  &__review {
+    position: relative;
+    //padding-left: 100px;
+    border-bottom: 1px dotted #000;
+    margin-bottom: 20px;
+    padding-bottom: 10px;
+    &:last-child {
+      border-bottom: none;
+    }
+    &__header {
+      display: inline-block;
+      font-weight: 700;
+      font-size: 17px;
+      line-height: 19px;
+      text-decoration: none;
+      border-bottom: 1px solid transparent;
+      transition: 0.3s ease;
+      &:hover {
+        border-color: #000;
+      }
+    }
+    &__img {
+      display: block;
+
+    }
+    &__text {
+      min-height: 130px;
+      font-size: 14px;
+    }
+  }
+}
+
+.future-video {
+  background-color: #9B0000;
+  padding: 10px;
+  max-width: 100%;
+
+  @media (min-width: 991px) {
+    max-width: none;
+    margin-left: 20px;
+  }
+
+}

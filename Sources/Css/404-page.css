@@ -1,0 +1,130 @@
+.page-404 * {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+.page-404 {
+	position: relative;
+}
+.bg-404{
+	position: absolute;
+	top: 0;
+	left: 50%;
+	transform: translateX(-50%);
+	width: 1920px;
+	height: 100%;
+	z-index: -1;
+	background: #fff url(/images/404-page/bg-404.jpg) 0 -10px no-repeat;
+}
+.page-404 .border-box{
+	margin: 0;
+	padding-top: 12.5%;
+}
+
+.page-404 .title-404 {
+	margin-bottom: 20px;
+	color: #447dec;
+    font: 68px/1em FilsonSoftRegular, Arial, Helvetica, sans-serif;
+    text-align: center;
+}
+.page-404 .title-404-sub {
+	font-size: 24px;
+	color: #000;
+	line-height: 34px;
+	text-align: center;
+}
+.page-404 .title-404-sub div:last-child {
+  margin-bottom: 20px;
+}
+.figure-404{
+	padding: 8.5% 0 5%;
+	max-width: 640px;
+	width: 100%;
+	margin: 0 13%;
+}
+.figure-404 img{
+	max-width: 100%;
+	width: 100%;
+}
+.page-404 .btn-wrap {
+	padding-left: 20px;
+	padding-right: 20px;
+	margin: 0 -3%;
+	text-align: center;
+	overflow: hidden;
+}
+.btn-wrap .column-3{
+	float: left;
+	padding: 0 3%;
+	width: 33.33%;
+}
+.btn-wrap .btn-wide{
+	line-height: 52px;
+}
+@media screen and (max-width: 1009px){
+	.btn-wrap .btn-wide{
+		padding: 13px 45px 15px 5px;
+		line-height: 22px;
+		font-size: 20px;
+	}
+	.bg-404{
+		background-position: 0 -10px;
+	}
+	.figure-404{
+		max-width: 480px;
+	}
+	.bg-404{
+		-webkit-background-size: 100% 77.4%;
+		background-size: 100% 77.4%;
+	}
+}
+
+@media screen and (max-width: 767px){
+	.bg-404{
+		-webkit-background-size: 100% 72.5%;
+		background-size: 100% 72.5%;
+	}
+	.figure-404{
+		max-width: 300px;
+	}
+}
+
+@media screen and (max-width: 639px){
+
+	.bg-404{
+		-webkit-background-size: 100% 51.9%;
+		background-size: 100% 51.9%;
+	}
+	.page-404 .title-404{
+		font-size: 40px;
+	}
+	.page-404 .title-404-sub{
+		font-size: 16px;
+		line-height: 22px;
+	}
+	.page-404 .border-box{
+		padding-top: 40px;
+	}
+	.btn-wrap .column-3{
+		float: none;
+		padding: 0 3%;
+		width: 50%;
+		margin: 0 auto;
+	}
+	.figure-404{
+		max-width: 252px;
+		padding: 40px 20px 20px;
+	}
+}
+@media screen and (max-width: 480px){
+
+}
+@media screen and (max-width: 420px){
+	.figure-404 img{ display: none; }
+	.btn-wrap .column-3{
+		width: 100%;
+	}
+	.bg-404{
+		background: none;
+	}
+}

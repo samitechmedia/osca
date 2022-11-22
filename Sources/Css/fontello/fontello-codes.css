@@ -1,0 +1,9 @@
+
+.icon-circle:before { content: '\f111'; } /* '' */
+.icon-apple:before { content: '\f179'; } /* '' */
+.icon-windows:before { content: '\f17a'; } /* '' */
+.icon-android:before { content: '\f17b'; } /* '' */
+.icon-mobile:before { content: '\f10b'; } /* '' */
+.icon-star:before {  content: '\e800';  }
+.icon-right-dir:before { content: '\e801';  }
+.icon-ok-circled:before { content: '\e802';  }

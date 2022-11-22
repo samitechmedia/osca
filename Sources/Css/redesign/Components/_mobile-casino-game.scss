@@ -1,0 +1,331 @@
+.mobile-casino-games {
+
+  .type-read-more {
+    font-size: 16px;
+    font-weight: 400;
+    margin: 0;
+  }
+}
+
+.games-header {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  width: 100%;
+  margin-bottom: 20px;
+  position: relative;
+
+  @include respond-to('extra-large') {
+    margin-top: 50px;
+    margin-bottom: 62px;
+  }
+
+  &__title {
+    color: #393939;
+    text-align: center;
+    font-size: 24px;
+    margin-bottom: 10px;
+
+    @include respond-to('extra-large') {
+      font-size: 28px;
+    }
+  }
+}
+
+.filter {
+  &__types {
+    display: flex;
+    justify-content: center;
+    padding-left: 15px;
+    padding-right: 15px;
+
+    @include respond-to('medium') {
+      padding-left: 0;
+      padding-right: 0;
+    }
+
+    &__button {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      color: #9e1c03;
+      text-transform: uppercase;
+      font-weight: 700;
+      line-height: 1;
+      border: 2px solid #9e1c03;
+      border-radius: 25px;
+      text-decoration: none;
+      padding: 12px;
+      margin: 0 6px 20px 0;
+      font-size: 14px;
+      outline: none;
+      cursor: pointer;
+
+      @include respond-to('extra-large') {
+        margin: 0 10px;
+        width: auto;
+      }
+
+      &__text {
+        margin-top: 4px;
+      }
+
+      .fa {
+        margin-right: 10px;
+        font-size: 17px;
+      }
+
+      &--search {
+        .fa {
+          @include respond-to('extra-small') {
+            margin-right: 0;
+          }
+        }
+
+        .filter__types__button__text {
+          @include respond-to('extra-small') {
+            display: none;
+          }
+        }
+      }
+
+      &:hover {
+        background: #9e1c03;
+        color: #fff;
+      }
+
+      &.js_active {
+        background: #9e1c03;
+        color: #fff;
+      }
+    }
+  }
+
+  &__buttons {
+    border-radius: 25px;
+    margin: 0 auto;
+
+    @include respond-to('extra-large') {
+      position: absolute;
+      left: -35px;
+      right: 0;
+      bottom: -52px;
+      width: 560px;
+    }
+  }
+
+  &__games,
+  &__sort {
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
+    border: 2px solid #9e1c03;
+    border-radius: 25px;
+    padding: 10px 10px 6px;
+    line-height: 1;
+    margin-right: 15px;
+    margin-left: 15px;
+
+    :hover,
+    .active{
+      color: #9e1c03;
+    }
+
+    .active{
+      font-weight: bold;
+    }
+
+    @include respond-to('medium') {
+      flex-wrap: nowrap;
+      height: 44px;
+      margin-right: 0;
+      margin-left: 0;
+    }
+
+    &__item {
+      cursor: pointer;
+      padding-bottom: 4px;
+
+      &:hover {
+        cursor: pointer;
+      }
+    }
+  }
+
+  &__games {
+    &__item {
+      width: 100px;
+
+      @include respond-to('medium') {
+        width: auto;
+        max-width: 105px;
+        padding-right: 4px;
+        padding-left: 4px;
+        padding-bottom: 0;
+      }
+    }
+  }
+
+  &__sort {
+    &__item {
+      width: 45%;
+
+      @include respond-to('medium') {
+        width: auto;
+        padding-right: 4px;
+        padding-left: 4px;
+        padding-bottom: 0;
+      }
+    }
+  }
+
+  &__search {
+    outline: none;
+    border: 2px solid #9e1c03;
+    border-radius: 25px;
+    width: 100%;
+    height: 44px;
+    padding: 5px 24px;
+    font-size: 18px;
+  }
+
+  &__games,
+  &__sort,
+  &__search {
+    display: none;
+
+    &.js_active {
+      display: flex;
+    }
+  }
+}
+
+.game-card {
+  position: relative;
+  background: #fff;
+  box-shadow: 0 2px 10px 1px rgba(0, 0, 0, 0.35);
+  border-radius: 8px;
+  margin-bottom: 28px;
+
+  .fa-angle-down {
+    font-size: 20px;
+    width: 27px;
+    height: 27px;
+    text-align: center;
+    line-height: 27px;
+    border: 1px solid #d5d5d5;
+    border-radius: 8px;
+  }
+
+  .rating--gold {
+    color: #f8c610;
+  }
+
+  &__title {
+    color: #221c1c;
+    font-weight: 700;
+    font-size: 1.1em;
+    margin-bottom: 5px;
+
+    line-height: 1.2em;
+    // 2x line height
+    min-height: 2.4em;
+  }
+
+  &__image {
+    position: relative;
+    background-size: cover;
+    height: 200px;
+    border-top-left-radius: 8px;
+    border-top-right-radius: 8px;
+
+    a {
+      position: absolute;
+    }
+
+    img, a {
+      height: 100%;
+      width: 100%;
+    }
+
+  }
+
+  &__info {
+    padding: 17px 22px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  &__details {
+    width: 100%;
+  }
+
+  &__cta {
+    width: 100%;
+  }
+
+  &__button {
+    padding: 10px;
+    font-size: 18px;
+
+    .white__inner-circle {
+      margin-left: 10px;
+      width: 20px;
+      height: 20px;
+
+      .fa-arrow-right {
+        font-size: 14px;
+      }
+    }
+  }
+}
+
+.result__area {
+  width: 100%;
+  margin-right: 0;
+  margin-left: 0;
+}
+
+// Styles added by Carlos
+
+.iframeResizeContain {
+  position: relative;
+  height: 0;
+  overflow: hidden;
+  background-color: black;
+}
+
+.iframeResizeContain iframe,
+.iframeResizeContain object {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+
+.iframeResizeContain.aspectRatio43 {
+  padding-bottom: 75%;
+}
+
+.iframeResizeContain.aspectRatio169 {
+  padding-bottom: 56.25%;
+}
+
+.js_gameContent {
+  margin-right: 0;
+  margin-left: 0;
+  padding-left: 0;
+  padding-right: 0;
+}
+
+.js_lightFullScreen {
+  width: 100% !important;
+  padding-left: 0;
+  padding-right: 0;
+}
+

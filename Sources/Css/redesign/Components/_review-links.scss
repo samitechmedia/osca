@@ -1,0 +1,47 @@
+.review-links {
+  margin-bottom: 32px;
+
+  @include respond-to('large') {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+
+  li {
+    border-bottom: 1px solid $osca-gray-3;
+    padding: 16px 0;
+
+    @include respond-to('large') {
+      width: 100%;
+      max-width: calc(50% - 32px);
+    }
+  }
+
+  &__link {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    color: $black-2;
+    font-weight: bold;
+    font-size: 14px;
+    line-height: 22px;
+  }
+
+  &__link-text {
+    text-align: left;
+    flex-grow: 1;
+  }
+
+  &__icon {
+    width: 56px;
+    min-width: 56px;
+    height: 56px;
+    border: 1px solid $osca-gray-4;
+    border-radius: 4px;
+    margin-right: 16px;
+    padding: 4px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+}

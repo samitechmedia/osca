@@ -1,0 +1,55 @@
+$breakpoints: ('extra-small': (max-width: 576px),
+  'small': (min-width: 576px),
+  'medium': (min-width: 768px),
+  'large': (min-width: 992px),
+  'extra-large': (min-width: 1200px));
+
+$backgroundColor: #fff;
+$sprite: url('/images/redesign/sprite.png');
+$sprite-size-x: 1000px;
+$sprite-size-y: 1000px;
+$sprite-size: $sprite-size-x $sprite-size-y;
+$sprite-size2x: $sprite-size-x / 2 $sprite-size-y / 2;
+
+//fonts
+
+$font-poppins: 'Poppins', sans-serif;
+
+// colors
+
+$font-color-secondary: #525250;
+
+.font-color-secondary {
+  color: #525250;
+}
+
+// Base Colors
+$black: #000;
+$black-2: #0D183D;
+$black-3: #1E1E1E;
+$white: #FFF;
+
+// Brand Colors
+$osca-red: #9E1C03;
+$osca-blue: #2F59EF;
+$osca-secondary-blue: #0646C2;
+$osca-blue-3: #305AEF;
+
+$osca-light-blue-1: #DBE3FF;
+
+$osca-lavender: #ADB8DE;
+
+$osca-green: #50BC01;
+$osca-green-2: #2B7600;
+$osca-lime-green: #47AB00;
+$osca-orange: #F99F00;
+$osca-gold: #F99F00;
+
+$osca-heading-color: #393939;
+$osca-body-text-color: #555555;
+$osca-link-color: #3059F0;
+
+$osca-gray-2: #EAECF2;
+$osca-gray-3: #E1E3E9;
+$osca-gray-4: #C8CCD9;
+$osca-gray-5:#6E7487;

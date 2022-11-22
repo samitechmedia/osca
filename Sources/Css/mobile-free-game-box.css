@@ -1,0 +1,83 @@
+.free-game-box{
+  box-sizing: border-box;
+  float: left;
+  margin: 20px 0;
+  border: 3px solid #A20410;
+  border-radius: 6px;
+  display: block;
+  width: 100%;
+  background-color: #F1F1F1;
+}
+
+.free-game-box__intro-text{
+  font-size: 22px;
+  line-height: 26px;
+  text-align: center;
+  padding: 10px;
+}
+
+.free-game-box__intro-text--bold-green{
+  color: #3EAC2B;
+  font-weight: 700;
+}
+
+.free-game-box__casino-logo{
+  background-color: #FFFFFF;
+  padding: 10px;
+}
+
+.free-game-box__casino-logo-holder{
+  width: 275px;
+  margin: auto;
+}
+
+.free-game-box__casino-logo img{
+  margin-bottom: 10px;
+}
+.free-game-box__casino-logo-text{
+  display: block;
+  line-height: 120px;
+  height: 145px;
+  float: right;
+  font-size: 22px;
+  font-weight: 700;
+  color: #A20410;
+}
+
+.free-game-box__casino-rating, .free-game-box__casino-ratingon{
+  display: block;
+  margin: 0 auto;
+  width: 180px;
+  height: 15px;
+  background: url(/images/top-casino-box/bg-stars.png) repeat-x;
+  position: relative
+}
+
+.free-game-box__casino-ratingon{
+    margin: 0 auto;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-position: 0 -17px;
+}
+
+.free-game-box__cta-button{
+  padding: 15px;
+}
+
+.free-game-box__cta-button .btn-wide{
+  font-size: 18px;
+  line-height: 15px;
+  padding-bottom: 15px;
+  margin: 0;
+}
+
+@media (max-width: 320px) {
+  .free-game-box__cta-button .btn-wide{
+    font-size: 16px;
+  }
+
+  .free-game-box__intro-text{
+    font-size: 18px;
+  }
+}

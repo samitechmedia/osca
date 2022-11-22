@@ -1,0 +1,56 @@
+.all-hub {
+  float: left;
+  width: 31%;
+  margin-top: 12px;
+  margin-left: 9px;
+  background-color: #f2f1ef;
+  border-radius: 5px;
+  padding-bottom: 30px;
+}
+
+.all-hub .hublogo {
+  display: block;
+  margin: 0 auto;
+  height: 36px;
+  max-width: 90%;
+  margin-top: 25px;
+}
+.all-hub .texty {
+  margin-top: 17px;
+  margin-left: 20px;
+  min-height: 100px;
+  line-height: 21px;
+  color: #000;
+  margin-right: 20px;
+  padding-bottom: 20px;
+}
+@media only screen and (max-width: 1000px) {
+  .all-hub .texty {
+    min-height: 120px;
+  }
+}
+
+@media only screen and (max-width: 769px) {
+  .all-hub {
+    width: 47%;
+  }
+  .all-hub .texty {
+    min-height: 140px;
+  }
+}
+
+@media only screen and (max-width: 667px) {
+  .all-hub .texty {
+    min-height: 130px;
+  }
+}
+
+@media only screen and (max-width: 500px) {
+  .all-hub {
+    width: 99%;
+  }
+
+  .all-hub .texty {
+    min-height: 70px;
+  }
+}

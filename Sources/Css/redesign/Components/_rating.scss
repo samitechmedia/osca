@@ -1,0 +1,21 @@
+.rating__count {
+    font-size: 20px;
+    color: #47ab00;
+    font-weight: 700;
+    display: inline-block;
+    vertical-align: middle;
+}
+
+// New star rating using inline svg
+// Uses percentage width on fill for color
+.rate-stars {
+    display: inline-block;
+    position: relative;
+
+    &__fill {
+        position: absolute;
+        top: 0;
+        left: 0;
+        overflow: hidden;
+    }
+}

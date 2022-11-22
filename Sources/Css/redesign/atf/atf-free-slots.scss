@@ -1,0 +1,11 @@
+// Our shared critical styles
+@import './shared-atf-global';
+
+@import '../../../_queen/Sass/Base/breadcrumbs';
+
+@import '../Base/typography-redesign';
+
+@import '../Components/heading';
+
+// Specific page styles
+@import '../Components/free-slots-redesign';

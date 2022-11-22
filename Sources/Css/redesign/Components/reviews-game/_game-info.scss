@@ -1,0 +1,25 @@
+.review-game__information {
+    margin-top: 10px;
+    margin-bottom: 40px;
+
+    .title--h2 {
+        color: #9d1b02;
+        @include respond-to('extra-large') {
+        color: inherit;
+        }
+    }
+
+    .primary-btn {
+        width: 369px;
+        max-width: 100%;
+        padding: 11px 20px;
+
+        @media (max-width: 991px) {
+        width: 100%;
+        }
+    }
+
+    .rating__count {
+        color: #d2d2d2;
+    }
+}

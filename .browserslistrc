@@ -1,0 +1,22 @@
+# Browsers that we support
+
+> 1% in CA
+not dead
+not ie >= 0
+
+# Check queries https://browserl.ist/
+# or check with CLI: npx browserslist "> 1% in CA, not dead, not ie >= 0"
+
+# Last checked 18-02-2021
+# and_chr 86
+# chrome 86
+# chrome 85
+# edge 86
+# firefox 81
+# ios_saf 14
+# ios_saf 13.4-13.7
+# ios_saf 13.3
+# ios_saf 12.2-12.4
+# safari 14
+# safari 13.1
+# samsung 12.0

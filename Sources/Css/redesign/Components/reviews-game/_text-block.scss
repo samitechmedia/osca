@@ -1,0 +1,54 @@
+.review__text-block {
+    .bottom__line {
+      width: 70px;
+      height: 4px;
+      background: #9e1c03;
+      display: block;
+
+      @include respond-to('extra-large') {
+        margin-top: 10px;
+        margin-bottom: 10px;
+
+      }
+
+    }
+    .review__upd-text {
+      font-size: 14px;
+      display: block;
+      margin-bottom: 15px;
+      @include respond-to('extra-large') {
+        font-size: 18px;
+      }
+    }
+    .purpur-color {
+      color: #9e1c03;
+    }
+    .type-left-side {
+      @include respond-to('extra-large') {
+        flex: 0 0 55%;
+      }
+    }
+    .type-right-side {
+      @include respond-to('extra-large') {
+        flex: 0 0 38%;
+        margin-bottom: 10px;
+      }
+
+      img {
+        border: 3px solid #e4e4e4;
+        padding: 8px;
+        border-radius: 5px;
+      }
+    }
+    .under-image__text {
+      font-size: 14px;
+      color: #b6b6b6;
+      font-style: italic;
+      display: block;
+      margin: 10px 0;
+    }
+    .type-read-more {
+      margin: 0;
+      font-size: 16px;
+    }
+  }

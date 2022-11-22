@@ -1,0 +1,43 @@
+@mixin respond-to($name) {
+	//If the key exist in the map
+	@if map-has-key($breakpoints, $name) {
+		//Print a media query based on the value
+		@media #{inspect(map-get($breakpoints, $name))} {
+			@content;
+		}
+	}
+}
+
+@mixin retina-bg($width, $height, $bgx, $bgy, $rebuild: 'medium') {
+	width: ($width / 2);
+	height: ($height / 2);
+	background-image: $sprite;
+	background-position: ($bgx / 2) ($bgy / 2);
+	background-size: $sprite-size2x;
+	@include respond-to($rebuild) {
+		width: $width;
+		height: $height;
+		background-size: $sprite-size-x $sprite-size-y;
+		background-position: $bgx $bgy;
+	}
+}
+
+@mixin respons-margin($blocks, $margin, $units) {
+	&:nth-child(n) {
+		margin-right: ($margin * $blocks / ($blocks - 1))#{$units};
+	}
+	&:nth-child(#{$blocks}n) {
+		margin-right: 0;
+	}
+}
+
+// Use font-awesome on Pseudo-elements
+@mixin font-awesome-pseudo($fa-content) {
+	content: $fa-content;
+	display: inline-block;
+	font: normal normal normal 14px/1 FontAwesome;
+	font-size: inherit;
+	text-rendering: auto;
+	-webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
+}

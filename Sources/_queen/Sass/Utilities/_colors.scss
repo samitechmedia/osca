@@ -1,0 +1,23 @@
+.c {
+    &-green {
+        color: #4cb400;
+    }
+
+    &-orange {
+        color: #fa9f00;
+    }
+
+    &-red {
+        color: #9e1c03;
+    }
+
+    &-silver {
+        color: #c2c2c2;
+    }
+
+    &-white {
+        --color2: #fff;
+
+        color: #fff;
+    }
+}

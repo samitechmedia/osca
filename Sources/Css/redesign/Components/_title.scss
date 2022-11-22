@@ -1,0 +1,62 @@
+.title {
+    margin-bottom: .6em;
+    color: $osca-heading-color;
+    font-weight: 900;
+}
+.title--h1 {
+    font-size: 21px;
+    line-height: initial;
+    color: $white;
+    @include respond-to('extra-large') {
+        font-size: 42px;
+        line-height: normal;
+    }
+}
+.title--h2 {
+    margin-top: 20px;
+    font-size: 26px;
+
+    @include respond-to('extra-large') {
+        font-size: 32px;
+        margin-bottom: .2em;
+
+    }
+}
+.title--h3 {
+    font-size: 24px;
+}
+.title--h4 {
+    font-size: 18px;
+    @include respond-to('extra-large') {
+        font-size: 20px;
+    }
+}
+.text--bold {
+    font-weight: bold;
+}
+.text--link {
+    text-decoration: underline;
+    color: $osca-link-color;
+    display: inline-block;
+    cursor: pointer;
+}
+.green-text {
+    color: $osca-lime-green;
+}
+.red--text {
+    color: $osca-red;
+}
+
+.title__number {
+    display: inline-block;
+    position: relative;
+    top: -4px;
+    background: $black;
+    font-size: 65%;
+    color: $white;
+    width: 45px;
+    height: 45px;
+    line-height: 45px;
+    border-radius: 50%;
+    text-align: center;
+}

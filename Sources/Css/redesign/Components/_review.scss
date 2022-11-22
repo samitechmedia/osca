@@ -1,0 +1,18 @@
+.review__casino-left {
+  padding-bottom: 40px;
+
+  @include respond-to('medium') {
+    float: left;
+    width: 67%;
+    padding-right: 40px;
+  }
+
+  @include respond-to('extra-large') {
+    width: 854px;
+  }
+}
+
+.review__casino-wide-btn {
+  margin-bottom: 35px;
+}
+

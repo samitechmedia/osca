@@ -1,0 +1,15 @@
+version: '3.7'
+
+services:
+  osca:
+    container_name: osca
+    build:
+      context: .
+      dockerfile: server.Dockerfile
+      args:
+        USER_ID: ${USER_ID}
+    image: osca
+    volumes:
+      - ../..:/var/www/html
+    ports:
+      - 80:80

@@ -1,0 +1,113 @@
+.faq__area {
+  display: none;
+  @include respond-to('extra-large') {
+    display: block;
+    padding-bottom: 40px;
+  }
+}
+
+.faq__accordion {
+  margin: 30px 0 0 0;
+}
+
+.accordion__item {
+  position: relative;
+  width: 100%;
+  height: auto;
+  background-color: #f1f1f1;
+  margin: 0 0 11px 0;
+  border-radius: 10px;
+  transition: .3s linear;
+
+  .accordion-item__title {
+    cursor: pointer;
+    padding: 15px 60px 10px 15px;
+    text-decoration: none;
+    color: #393939;
+    font-size: 24px;
+    font-weight: 700;
+    transition: all 0.2s linear;
+    border-radius: 10px;
+    position: relative;
+
+    .fa .fa-angle-down {
+      color: #b4b4b4;
+      position: absolute;
+      top: 50%;
+      right: 15px;
+      transform: translateY(-50%);
+
+      &:before {
+        font-size: 28px;
+      }
+    }
+
+    .elipsis {
+      text-overflow: ellipsis;
+      overflow: hidden;
+      white-space: pre;
+      width: 90%;
+    }
+    .no-elipsis {
+      white-space: normal;
+    }
+  }
+  &__img {
+    max-height: 150px;
+  }
+}
+
+.accordion__icon {
+  position: absolute;
+  right: 10px;
+  top: 10px;
+}
+
+.active-item {
+  .fa-angle-down,
+  .icon {
+    transform: rotate(180deg);
+  }
+}
+
+.t_active {
+  border-bottom-color: transparent !important;
+  border-bottom-right-radius: 0 !important;
+  border-bottom-left-radius: 0 !important;
+}
+
+.accordion__content {
+  position: relative;
+  width: 100%;
+  background-color: #fff;
+  border-bottom-left-radius: 5px;
+  border-bottom-right-radius: 5px;
+  transition: 0.3s max-height ease-in;
+  max-height: 0;
+  overflow: hidden;
+  padding-left: 14px;
+  padding-right: 14px;
+
+  p {
+    padding: 10px 15px;
+    margin: 0;
+  }
+
+  &__img {
+    @media (max-width: 768px) {
+      margin-left: auto;
+      margin-right: auto;
+      display: block;
+    }
+
+  }
+}
+
+.js-accordion-active {
+  background-color:#e6e6e6;
+
+  .fa-angle-down {
+    transform: rotate(180deg);
+  }
+
+}

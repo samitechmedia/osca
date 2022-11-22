@@ -1,0 +1,103 @@
+.jackpot {
+  background: #eeeeee;
+  .type-left-side {
+    @include respond-to('extra-large') {
+      flex: 0 0 48%;
+    }
+    P {
+      margin-bottom: 15px;
+    }
+  }
+  .type-right-side {
+    @include respond-to('extra-large') {
+      flex: 0 0 48%;
+    }
+  }
+}
+
+.jackpot__area {
+  text-align: center;
+  position: relative;
+  background-color: #9b0104;
+  font-size: 17px;
+  color: #fff;
+  border-radius: 5px;
+  padding: 30px 5px;
+
+  &--light {
+    color: $white;
+  }
+
+  &__win {
+    font-size: 24px;
+    font-weight: bold;
+  }
+
+  .title--h2 {
+    text-align: center;
+    color: $osca-gold;
+    font-size: 24px;
+    line-height: 26px;
+    max-width: 200px;
+    width: 100%;
+    margin: auto auto 12px auto;
+    text-transform: uppercase;
+    @include respond-to('medium') {
+      max-width: 300px;
+      font-size: 32px;
+      line-height: 38px;
+    }
+  }
+  .primary-btn {
+    max-width: 290px;
+    width: 100%;
+    margin: 15px auto 15px auto;
+    padding: 16px 0;
+  }
+  img {
+    border-radius: 5px;
+    margin: 10px 0;
+  }
+  p {
+    margin: 0;
+  }
+  .jackpot__text {
+    font-size: 20px;
+    margin: 0 0 10px 0 !important;
+  }
+  @include respond-to('extra-large') {
+    margin: 21px 0 0 0;
+  }
+}
+
+.ribbon {
+  position: absolute;
+  top: -13px;
+  right: -4px;
+  img {
+    width: 100px;
+    height: auto;
+  }
+  @include respond-to('extra-large') {
+    top: -17px;
+    right: -7px;
+    img {
+      width: auto;
+    }
+  }
+}
+
+.jackpot__price {
+  color: $osca-gold;
+  font-size: 32px;
+  font-weight: 700;
+  @include respond-to('extra-large') {
+    font-size: 46px;
+  }
+}
+
+.jackpot__text {
+  font-size: 26px;
+  font-weight: 700;
+}
+

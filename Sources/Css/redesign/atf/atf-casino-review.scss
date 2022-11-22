@@ -1,0 +1,20 @@
+// Our shared critical styles
+@import './shared-atf-global';
+
+@import '../Base/typography';
+
+@import '../../../_queen/Sass/Base/breadcrumbs';
+
+@import '../Components/title';
+@import '../Components/bullet-list';
+
+@import '../../../_queen/Sass/Plugins/swiper';
+@import '../Helpers/deposit-icons';
+@import '../Components/rating';
+
+//  Top section of reviews
+@import '../Components/review';
+@import '../Components/review-sidebar';
+@import '../Components/casino-review-header';
+
+@import '../_legacy/review-tooltips';

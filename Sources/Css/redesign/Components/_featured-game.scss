@@ -1,0 +1,176 @@
+.featured__game {
+  padding-top: 23px;
+
+  @include respond-to("large") {
+    width: 100%;
+    padding: 24px 16px;
+  }
+
+  .col-12 {
+    padding: 0;
+  }
+
+  .type-left-side {
+    @include respond-to("extra-large") {
+      flex: 0 0 45%;
+    }
+  }
+
+  .type-right-side {
+    @include respond-to("extra-large") {
+      flex: 0 0 35%;
+    }
+  }
+
+  &.opened {
+    display: flex;
+  }
+
+  .bullet__list {
+    text-align: left;
+  }
+
+  .primary-btn--outline {
+    width: 232px !important;
+    margin: auto;
+    padding: 10px 20px !important;
+  }
+
+  .title--h3 {
+    color: #555555;
+    margin-bottom: 10px;
+    text-align: center;
+    margin-top: 30px;
+    
+    @include respond-to("extra-large") {
+      margin-top: 0;
+      text-align: left;
+    }
+  }
+
+  .bullet__list {
+    margin-bottom: 35px;
+  }
+
+  .bullet__item {
+    &:not(:last-child) {
+      margin-bottom: 12px;
+    }
+  }
+
+  .primary-btn {
+    max-width: 390px;
+    width: 100%;
+    margin: auto;
+    font-size: 16px;
+    position: relative;
+    top: 12px;
+    left: 0;
+    padding: 19px 20px;
+
+    @include respond-to("extra-large") {
+      left: -30px;
+      font-size: 24px;
+    }
+
+    &--outline {
+      margin: 0 auto 20px;
+    }
+  }
+
+  .type-read-more {
+    position: relative;
+    top: 10px;
+    right: 0;
+
+    @include respond-to("extra-large") {
+      right: 34px;
+    }
+  }
+  
+  .freeGame-block {
+    margin-bottom: 8px;
+
+    @include respond-to("large") {
+      margin-bottom: 0;
+    }
+  }
+
+  .featured__game-top {
+    margin-bottom: 28px;
+  
+    @include respond-to("large") {
+      order: 2;
+      padding-left: 50px;
+    }
+
+    @include respond-to("extra-large") {
+      padding-left: 70px;
+    }
+  }
+}
+
+.featured__image-holder {
+  position: relative;
+  border-radius: 4px;
+  overflow: hidden;
+  max-width: 120px;
+  margin-right: 8px;
+  min-width: 120px;
+
+  img {
+    align-self: center;
+    width: 100%;
+    max-width: 100%;
+  }
+}
+
+.featured__tool-tip {
+  font-size: 12px;
+  line-height: 16px;
+  color: $osca-gray-5;
+  margin-bottom: 4px;
+  text-align: left;
+  text-transform: capitalize;
+
+  @include respond-to("large") {
+    font-size: 14px;
+    line-height: 22px;
+    margin-bottom: 16px;
+  }
+}
+
+.featured__top-link {
+  display: block;
+}
+
+.featured__top-holder {
+  display: flex;
+  text-align: left;
+  align-items: flex-start;
+}
+
+.game-block__title {
+  font-size: 14px;
+  line-height: 22px;
+  font-weight: bold;
+  color: $black;
+  margin-bottom: 7px;
+}
+
+.game-block__text {
+  font-size: 12px;
+  line-height: 16px;
+  color: $black;
+}
+
+.find-out-link {
+  text-decoration: underline;
+  font-weight: 600;
+  font-size: 12px;
+  line-height: 16px;
+
+  &:hover {
+    text-decoration: none;
+  }
+}

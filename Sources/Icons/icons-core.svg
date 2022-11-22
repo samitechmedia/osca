@@ -1,0 +1,132 @@
+<!--
+    SVG Common Icons
+-->
+<svg xmlns="http://www.w3.org/2000/svg">
+
+    <symbol id="icon-star-solid" viewBox="0 0 30 28">
+        <title>five stars</title>
+        <polygon fill="currentColor" points="15 22.5 6.18322122 27.1352549 7.86707613 17.3176275 0.734152256 10.3647451 10.5916106 8.93237254 15 0 19.4083894 8.93237254 29.2658477 10.3647451 22.1329239 17.3176275 23.8167788 27.1352549"></polygon>
+    </symbol>
+
+    <symbol id="icon-five-stars-solid" viewBox="0 0 205 35">
+        <title>five stars</title>
+        <g fill="currentColor" fill-rule="nonzero">
+            <polygon points="18.32 28.871 7.005 34.821 9.167 22.22 0 13.297 12.65 11.464 18.308 0 23.965 11.464 36.615 13.297 27.449 22.22 29.61 34.821"/>
+            <polygon points="60.321 28.871 49.005 34.821 51.167 22.22 42 13.297 54.65 11.464 60.308 0 65.965 11.464 78.615 13.297 69.449 22.22 71.61 34.821"/>
+            <polygon points="102.32 28.871 91.005 34.821 93.167 22.22 84 13.297 96.65 11.464 102.308 0 107.965 11.464 120.615 13.297 111.449 22.22 113.61 34.821"/>
+            <polygon points="144.321 28.871 133.005 34.821 135.167 22.22 126 13.297 138.65 11.464 144.308 0 149.965 11.464 162.615 13.297 153.449 22.22 155.61 34.821"/>
+            <polygon points="186.321 28.871 175.005 34.821 177.167 22.22 168 13.297 180.65 11.464 186.308 0 191.965 11.464 204.615 13.297 195.449 22.22 197.61 34.821"/>
+        </g>
+    </symbol>
+
+    <symbol id="icon-quote-right" viewBox="0 0 512 512">
+        <title>five stars</title>
+        <path fill="currentColor" d="M464 32H336c-26.5 0-48 21.5-48 48v128c0 26.5 21.5 48 48 48h80v64c0 35.3-28.7 64-64 64h-8c-13.3 0-24 10.7-24 24v48c0 13.3 10.7 24 24 24h8c88.4 0 160-71.6 160-160V80c0-26.5-21.5-48-48-48zm-288 0H48C21.5 32 0 53.5 0 80v128c0 26.5 21.5 48 48 48h80v64c0 35.3-28.7 64-64 64h-8c-13.3 0-24 10.7-24 24v48c0 13.3 10.7 24 24 24h8c88.4 0 160-71.6 160-160V80c0-26.5-21.5-48-48-48z"/>
+    </symbol>
+
+    <symbol id="icon-caret-circle-right" viewBox="0 0 30 30">
+        <title>caret right</title>
+        <path fill="var(--color2)" fill-rule="nonzero" d="M30,15 C30,23.284 23.284,30 15,30 C6.716,30 0,23.284 0,15 C0,6.716 6.716,0 15,0 C23.284,0 30,6.716 30,15 Z"/>
+        <polygon fill="currentColor" points="23 15.5 12 24 12 7"/>
+    </symbol>
+
+    <symbol id="icon-caret-circle-left" viewBox="0 0 30 30">
+        <title>caret left</title>
+        <path fill="var(--color2)" fill-rule="nonzero" d="M30,15 C30,23.284 23.284,30 15,30 C6.716,30 0,23.284 0,15 C0,6.716 6.716,0 15,0 C23.284,0 30,6.716 30,15 Z"/>
+        <polygon fill="currentColor" points="19 15.5 8 24 8 7" transform="rotate(-180 13.5 15.5)"/>
+    </symbol>
+
+<!--
+    Icons that react to stroke width
+-->
+    <symbol id="icon-times" viewBox="0 0 34 34">
+        <title>times</title>
+        <g stroke="currentColor" fill="none" fill-rule="evenodd" stroke-linecap="round">
+            <path d="M2.5 2.5l29 29M2.5 31.5l29-29"/>
+        </g>
+    </symbol>
+
+    <symbol id="icon-check" viewBox="0 0 34 34">
+        <title>check</title>
+        <g stroke="currentColor" fill="none" fill-rule="evenodd" stroke-linecap="round">
+            <path d="M3.5 19.88l7.28 7.28M10.78 27.16L31.127 7.187"/>
+        </g>
+    </symbol>
+
+    <symbol id="icon-angle-right" viewBox="0 0 34 34">
+        <title>angle right</title>
+        <g stroke="currentColor" fill="none" fill-rule="evenodd" stroke-linecap="round">
+            <path d="M10.5 3.5l14 14m-14 13l14-13"/>
+        </g>
+    </symbol>
+
+    <symbol id="icon-angle-left" viewBox="0 0 34 34">
+        <title>angle left</title>
+        <g stroke="currentColor" fill="none" fill-rule="evenodd" stroke-linecap="round">
+            <path d="M24.5 3.5l-14 14m14 13l-14-13"/>
+        </g>
+    </symbol>
+
+    <symbol id="icon-angle-up" viewBox="0 0 15 15">
+        <title>angle up</title>
+        <g stroke="currentColor" fill="none" fill-rule="evenodd" stroke-linecap="round">
+            <path d="M1 10l6.5-7 6.5 7"/>
+        </g>
+    </symbol>
+
+    <symbol id="icon-angle-down" viewBox="0 0 34 34">
+        <title>angle down</title>
+        <path fill="none" fill-rule="evenodd" stroke="currentColor" stroke-linecap="round" d="M4 10l14 14m13-14L18 24"/>
+    </symbol>
+
+    <symbol id="icon-search" viewBox="0 0 15 15">
+        <title>magnifier</title>
+        <g stroke="currentColor" fill="none">
+            <path d="M14.5 14.5l-4-4m-4 2a6 6 0 110-12 6 6 0 010 12z"/>
+        </g>
+    </symbol>
+
+    <symbol id="icon-triangle-right" viewBox="0 0 30 34">
+        <title>triangle right</title>
+        <path stroke="currentColor" fill="var(--color2)" d="M28.346 17L5.5 30.5v-27z" fill-rule="evenodd" stroke-linejoin="round"/>
+    </symbol>
+
+    <symbol id="icon-arrow-solid-right" viewBox="0 0 30 30">
+        <title>arrow right</title>
+        <circle fill="var(--color2)" cx="15" cy="15" r="15"></circle>
+        <g stroke="currentColor" stroke-linecap="round">
+            <line x1="7.98572997" y1="15.0335346" x2="22.1789243" y2="15.0335346"></line>
+            <line x1="22.1789243" y1="15" x2="15" y2="22.1130626"></line>
+            <line x1="15" y1="7.75521405" x2="22.1789243" y2="15"></line>
+        </g>
+    </symbol>
+
+    <symbol id="icon-arrow-solid-left" viewBox="0 0 30 30">
+        <title>arrow left</title>
+        <circle fill="var(--color2)" cx="15" cy="15" r="15"></circle>
+        <g stroke="currentColor" stroke-linecap="round">
+            <line x1="7.98572997" y1="15.0335346" x2="22.1789243" y2="15.0335346"></line>
+            <line x1="7.98572997" y1="15" x2="15" y2="7.75521405"></line>
+            <line x1="7.98572997" y1="15" x2="15" y2="22.1130626"></line>
+        </g>
+    </symbol>
+
+    <symbol id="icon-arrow-right" viewBox="0 0 32 31">
+        <title>arrow right</title>
+        <g stroke="currentColor" stroke-linecap="round">
+            <line x1="0.0343249428" y1="15.1529748" x2="29.6224256" y2="15.1529748"></line>
+            <line x1="29.6224256" y1="15.1372998" x2="14.6567506" y2="29.9656751"></line>
+            <line x1="14.6567506" y1="0.0343249428" x2="29.6224256" y2="15.1372998"></line>
+        </g>
+    </symbol>
+
+    <symbol id="icon-arrow-left" viewBox="0 0 32 30">
+        <title>arrow left</title>
+        <g stroke="currentColor" stroke-linecap="round">
+            <line x1="0.0343249428" y1="15.1529748" x2="29.6224256" y2="15.1529748"></line>
+            <line x1="0.0343249428" y1="15.1372998" x2="14.6567506" y2="0.0343249428"></line>
+            <line x1="0.0343249428" y1="15.1372998" x2="14.6567506" y2="29.9656751"></line>
+        </g>
+    </symbol>
+
+</svg>

@@ -1,0 +1,143 @@
+.exclusive-slots {
+  margin-top: 40px;
+  border: 1px solid $osca-gray-4;
+  border-radius: 4px;
+  padding-bottom: 16px;
+  overflow: hidden;
+
+  @include respond-to("large") {
+    padding-bottom: 24px;
+  }
+
+  &__head {
+    background-color: #F8F9FF;
+    display: flex;
+    align-items: center;
+    padding: 16px;
+  }
+
+  &__title {
+    font-family: $font-poppins;
+    font-size: 20px;
+    line-height: 28px;
+  }
+
+  &__bonus {
+    width: 100%;
+    max-width: 50%;
+    text-align: center;
+
+    @include respond-to("small") {
+      width: auto;
+    }
+  }
+
+  &__logo {
+    width: 100%;
+    max-width: 50%;
+
+    @include respond-to("small") {
+      width: auto;
+      margin-right: 40px;
+    }
+
+    img {
+      max-width: 110px;
+    }
+  }
+
+  &__inner {
+    padding: 16px 16px 20px;
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: 8px;
+    justify-content: space-between;
+
+    @include respond-to("large") {
+      padding: 24px;
+    }
+  }
+
+  &__block {
+    width: 100%;
+    max-width: 50%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+
+    &--full {
+      max-width: 100%;
+      margin-bottom: 24px;
+
+      @include respond-to("medium") {
+        max-width: 50%;
+        padding-right: 25px;
+        margin-bottom: 0;
+      }
+
+      .toplist__info-title {
+        text-align: left;
+      }
+
+      .bullet__item {
+        font-size: 14px;
+        line-height: 22px;
+        color: $black-2;
+        margin-bottom: 8px;
+        display: flex;
+        align-items: center;
+
+        &:before {
+          content: "";
+          width: 13px;
+          height: 13px;
+          margin-right: 8px;
+          background-image: url(/dist/icons/icon-check-green.svg);
+        }
+      }
+    }
+
+    &--payment {
+      @include respond-to("medium") {
+        max-width: 25%;
+        order: 2;
+      }
+
+      .bullet__item {
+        margin-bottom: 8px;
+      }
+
+      .toplist__info-title {
+        margin-left: 4px;
+      }
+    }
+
+    &--devices {
+      align-items: center;
+
+      @include respond-to("medium") {
+        max-width: 25%;
+        align-items: flex-start;
+      }
+
+      .toplist__info-title {
+        @include respond-to("medium") {
+          margin-left: 5px;
+        }
+      }
+    }
+  }
+
+  .toplist__button {
+    margin-right: 16px;
+    margin-left: 16px;
+    text-align: center;
+    display: block;
+    width: auto;
+
+    @include respond-to("large") {
+      margin-right: 24px;
+      margin-left: 24px;
+    }
+  }
+}

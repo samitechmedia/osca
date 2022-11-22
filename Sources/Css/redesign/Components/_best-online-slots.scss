@@ -1,0 +1,20 @@
+.best-online-slots {
+    .type-left-side {
+      @include respond-to("extra-large") {
+        flex: 0 0 79%;
+      }
+    }
+    .type-right-side {
+      @include respond-to("extra-large") {
+        flex: 0 0 17%;
+      }
+    }
+}
+
+.info__container {
+    display: none;
+
+    @include respond-to("extra-large") {
+      display: flex;
+    }
+}

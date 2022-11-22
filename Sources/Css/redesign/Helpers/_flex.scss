@@ -1,0 +1,50 @@
+.flex {
+  display: flex;
+
+  &__md {
+
+    @media (min-width: 991px) {
+      display: flex;
+    }
+  }
+
+  &--wrap {
+    flex-wrap: wrap;
+  }
+
+  &--space-between {
+    justify-content: space-between;
+  }
+
+  &--space-around {
+    justify-content: space-around;
+  }
+
+  &--align-centre {
+    align-items: center;
+  }
+
+  &--justify-centre {
+    justify-content: center;
+  }
+
+  &--align-self-centre {
+    align-self: center;
+  }
+
+  &--two-col {
+
+    @media (min-width: 991px) {
+      width: 50%;
+    }
+  }
+
+  &--two-col-gap {
+
+    @media (min-width: 991px) {
+      width: 48%;
+    }
+
+  }
+
+}

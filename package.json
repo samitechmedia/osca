@@ -1,0 +1,46 @@
+{
+  "name": "OSCA",
+  "version": "1.0.0",
+  "description": "All the packages required to create and development OSCA",
+  "main": "gulpfile.js",
+  "scripts": {
+    "build": "gulp --production",
+    "dev": "gulp dev"
+  },
+  "author": "GROW",
+  "license": "MIT",
+  "repository": "bitbucket",
+  "dependencies": {
+    "@netmanagement/aa-connector": "^1.3.3",
+    "axios": "^0.21.1",
+    "gulp-clean-css": "^4.3.0",
+    "gulp-mode": "^1.0.2",
+    "gulp-rename": "^2.0.0",
+    "gulp-svgo": "^2.2.1",
+    "gulp-terser": "^2.0.1",
+    "swiper": "^6.2.0",
+    "vanilla-lazyload": "^17.3.1",
+    "webpack-stream": "^5.2.1"
+  },
+  "devDependencies": {
+    "@babel/core": "^7.13.10",
+    "@babel/preset-env": "^7.13.10",
+    "@namics/stylelint-bem": "^6.3.1",
+    "del": "^5.1.0",
+    "dotenv-webpack": "^6.0.4",
+    "gulp": "^4.0.0",
+    "gulp-autoprefixer": "^7.0.1",
+    "gulp-babel": "^8.0.0",
+    "gulp-cli": "^2.3.0",
+    "gulp-concat": "~2.6.0",
+    "gulp-eslint": "^6.0.0",
+    "gulp-kraken": "^0.2.0",
+    "gulp-sass": "^4.1.0",
+    "gulp-sourcemaps": "^2.6.5",
+    "gulp-stylelint": "^13.0.0",
+    "stylelint": "^13.12.0",
+    "stylelint-config-recommended": "^3.0.0",
+    "stylelint-config-sass-guidelines": "^8.0.0",
+    "stylelint-config-standard": "^20.0.0"
+  }
+}

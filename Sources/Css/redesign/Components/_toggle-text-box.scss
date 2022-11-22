@@ -1,0 +1,16 @@
+.js-toggle-text {
+
+  &-box {
+    overflow: hidden;
+    max-height: 50px;
+    transition: max-height .3s ease-out;
+  }
+
+  &-active {
+
+    .js-toggle-text-box {
+      max-height: 2000px;
+      transition: max-height 0.3s ease-in;
+    }
+  }
+}

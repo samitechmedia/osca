@@ -1,0 +1,115 @@
+.top5-table .btn-play-now, .box-jackpot .btn-play-now, .block-winners-map .box-winner .btn-play-now{
+    /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#ff9a2c+0,c56700+100 */
+    background: #ff9a2c; /* Old browsers */
+    background: -moz-linear-gradient(top,  #ff9a2c 0%, #c56700 100%); /* FF3.6-15 */
+    background: -webkit-linear-gradient(top,  #ff9a2c 0%,#c56700 100%); /* Chrome10-25,Safari5.1-6 */
+    background: linear-gradient(to bottom,  #ff9a2c 0%,#c56700 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ff9a2c', endColorstr='#c56700',GradientType=0 ); /* IE6-9 */
+    border: 1px solid #c56700;
+    box-shadow: inset 0px 0px 0px 1px rgba(255, 255, 255, 0.25);
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5);
+}
+
+.top5-table .btn-play-now:hover, .box-jackpot .btn-play-now:hover, .block-winners-map .box-winner .btn-play-now:hover{
+    background: #ea9941;
+    background: -moz-linear-gradient(top, #ea9941 0%, #b16614 100%);
+    background: -webkit-linear-gradient(top, #ea9941 0%, #b16614 100%);
+    background: linear-gradient(to bottom, #ea9941 0%, #b16614 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ea9941', endColorstr='#b16614',GradientType=0 );
+}
+
+.top5-table .btn-play-now .text:after, .box-jackpot .btn-play-now .text:after, .block-winners-map .box-winner .btn-play-now .text:after{
+    background: url(/images/bullet_single.png) no-repeat;
+    margin: -8px 0 0;
+}
+
+.top5-table .btn-play-now:hover .text:after, .box-jackpot .btn-play-now:hover .text:after, .block-winners-map .box-winner .btn-play-now:hover .text:after{
+    background-position: 0 0;
+}
+
+.freeGame-block_btn .image_box{
+    background: #FF9A2C;
+    box-shadow: 0 3px 0 0 #7F4C15;
+}
+
+.freeGame-block_btn .image_box:hover{
+    background-image: none;
+    background: #FF9A2C;
+    box-shadow: 0 1px 0 0 #7F4C15;
+}
+
+.btn-wide, .btn-wide:hover, .bottom-box2 .btn-wide{
+    background: none;
+    background: #FF9A2C;
+}
+
+.btn-wide .arrow{
+    border-left: 1px solid #E8C64D;
+}
+
+.btn-wide .arrow, .btn-wide:hover .arrow{
+    background: #C0852A;
+}
+
+@media (max-width: 1009px) {
+    .btn-wide, .bottom-box2 .btn-wide {
+        line-height: 22px;
+    }
+}
+
+.widget-table .play-cell > a{
+    color: #C0852A;
+}
+
+/* FREE GAMES BOX */
+
+.free-games-box .inner .btn-play{
+	background-color: #FF9A2C;
+	box-shadow: 0 4px 0 0 #7F4C15;
+	border-radius: 5px;
+	padding: 10px 0 8px;
+}
+.free-games-box .inner .btn-play:hover{
+	background-color: #FF9A2C;
+	box-shadow: 0 2px 0 0 #7F4C15;
+    transform: translateY(2px);
+    -ms-transform: translateY(2px);
+    -webkit-transform: translateY(2px);
+}
+
+
+/* HUB PAGE BUTTONS */
+
+#bx1 .red {
+    background-color: #FF9A2C;
+    border-bottom: 5px solid #7F4C15;
+    text-shadow: 0 1px #7F4C15;
+}
+
+#bx1 .red:hover {
+    transform: translateY(2px);
+    border-bottom: 2px solid #7F4C15;
+}
+
+.rhpf_box.hubsnob2 .action-button {
+    border-bottom: 5px solid #7F4C15;
+}
+
+.rhpf_box.hubsnob2 .action-button:hover {
+    transform: translateY(2px);
+    border-bottom: 3px solid #7F4C15;
+}
+
+.text-style-1{
+    box-shadow: 0 3px #7F4C15 !important;
+    background: #FF9A2C !important;
+    text-shadow: 0 -1px #7F4C15;
+}
+
+.block-top-tips .title a, #clickyt4, .boxes-3col .heading{
+    color: #20304E !important;
+}
+
+h2 .number, h4 .number{
+    background-color: #1A60E8;
+}

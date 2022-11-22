@@ -1,0 +1,23 @@
+// Our shared non-critical styles
+@import './shared-btf-global';
+
+// Vendors - Must come before our custom styles
+@import '../../../_queen/Sass/Plugins/swiper';
+
+// Toplist Inner
+
+@import '../Components/rating';
+@import '../Components/featured-game';
+@import '../Components/toplist-redesign';
+@import '../Components/exclusive-slot-redesign';
+
+//Components
+
+@import '../Components/buttons';
+@import '../Components/info-box';
+@import '../Components/tick-list';
+@import '../Components/review-links';
+@import '../Components/aside-links';
+@import '../Components/faq-hollow';
+@import '../Components/related-box';
+@import '../Components/box-more';

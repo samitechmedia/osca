@@ -1,0 +1,146 @@
+.mobile__game {
+    margin: 25px 0;
+
+    @include respond-to('extra-large') {
+      margin-top: 0;
+    }
+
+    .game__holder {
+      width: 100%;
+      text-align: center;
+
+      img {
+        width: 100%;
+      }
+    }
+    .mobile__game-title {
+      font-size: 14px;
+      color: #221c1c;
+      font-weight: 700;
+      display: inline-block;
+      vertical-align: middle;
+
+      @include respond-to('extra-large') {
+        font-size: 28px;
+      }
+    }
+    .rating {
+      font-size: 14px;
+
+      @include respond-to('extra-large') {
+        font-size: 16px;
+      }
+    }
+    .rating__count {
+      color: #9b9b9b;
+      font-weight: 400;
+      font-size: 13px;
+
+      @include respond-to('extra-large') {
+        font-size: 16px;
+      }
+    }
+    .mobile__game-info {
+      margin: 15px 0;
+      width: 100%;
+
+      .type-left-side {
+        flex: 0 0 28% !important;
+        text-align: center;
+
+        @include respond-to('extra-small') {
+          flex: 0 0 100%;
+          text-align: center;
+        }
+
+        @include respond-to('small') {
+          flex: 0 0 32%;
+        }
+
+        img {
+          margin-right: 10px;
+          width: 100%;
+          padding: 20px 5px;
+          border: 1px solid #dcd7d7;
+          border-radius: 5px;
+
+          @include respond-to('large') {
+            border: none;
+          }
+
+          @include respond-to('extra-large') {
+            margin-right: 20px;
+            height: 118px;
+            border: none;
+          }
+        }
+      }
+
+      .type-right-side {
+        flex: 0 0 69% !important;
+
+        @include respond-to('extra-small') {
+          flex: 0 0 100%;
+        }
+
+        @include respond-to('small') {
+          flex: 0 0 68%;
+        }
+
+        img {
+          width: 24px;
+        }
+      }
+    }
+    .sprite-icon_canadian {
+      display: inline-block;
+      vertical-align: middle;
+
+      @include respond-to('extra-large') {
+        vertical-align: sub;
+      }
+    }
+
+    .fa-mobile {
+      font-size: 45px;
+      color: #555555;
+      display: inline-block;
+      vertical-align: middle;
+
+      @include respond-to('extra-large') {
+        font-size: 70px;
+      }
+    }
+
+    .custom-bg__color {
+      background: #50bd00;
+      border-radius: 5px;
+      padding: 5px 10px;
+      color: #fff;
+      font-size: 11px;
+      margin-top: 8px;
+
+      @include respond-to('extra-large') {
+        font-size: 19px;
+      }
+    }
+
+    .type-inline-block {
+      font-size: 15px;
+      color: #555555;
+      line-height: normal;
+      margin-left: 10px;
+
+      span {
+        display: block;
+      }
+
+      @include respond-to('extra-large') {
+        font-size: 20px;
+      }
+    }
+
+    .freeGamesMobile {
+        display: block;
+      }
+  }

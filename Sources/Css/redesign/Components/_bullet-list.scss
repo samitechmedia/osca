@@ -1,0 +1,132 @@
+.bullet__list {
+    font-size: 16px;
+    margin-bottom: 15px;
+    counter-reset: number;
+
+    &--plain {
+        font-size: inherit;
+
+        & li {
+            margin: 10px 0 10px 20px;
+            line-height: 24px;
+            list-style: disc;
+        }
+
+        & ul li {
+            list-style: circle;
+        }
+    }
+
+    &--check-green,
+    &--times-red {
+
+        .bullet__item:after {
+            position: absolute;
+            top: rem(3px);
+            left: 0;
+            content: "";
+            width: 16px;
+            height: 16px;
+        }
+    }
+
+    &--check-green {
+
+        .bullet__item:after {
+            background-image: url(/dist/icons/icon-check-green.svg);
+        }
+    }
+
+    &--times-red {
+
+        .bullet__item:after {
+            background-image: url(/dist/icons/icon-times-red.svg);
+        }
+    }
+
+    &--numbered-list {
+        .bullet__item {
+            &::after {
+                counter-increment: number;
+                content: counter(number);
+                position: absolute;
+                left: 0;
+                top: 0;
+                width: 27px;
+                height: 27px;
+                border-radius: 27px;
+                background: #4aaf00;
+                text-align: center;
+                line-height: 27px;
+                color: #fff;
+                padding: 2px;
+            }
+        }
+    }
+}
+
+.bullet--text {
+    font-size: inherit;
+    line-height: 30px;
+    margin-bottom: 15px;
+}
+
+.bullet--links {
+    .bullet__item{
+        opacity: .7;
+        transition: 0.3s ease;
+        &:hover {
+            opacity: 1;
+        }
+    }
+}
+
+.bullet__item {
+    position: relative;
+    padding-left: rem(30px);
+    color: #555;
+
+    > .icon {
+        flex: 0 0 auto;
+        margin-right: rem(8px);
+    }
+
+    .fa {
+        font-size: 16px;
+        margin: 0 4px;
+        position: absolute;
+        left: 0;
+        &--relative {
+            position: relative;
+        }
+    }
+}
+.bullet__item--null-padding {
+    padding: 0;
+}
+.fa-check {
+    color: #52bf02;
+    margin-right: 15px;
+}
+.fa-times {
+    color: #9b0104;
+}
+
+.bullet__item__left {
+    width: 60%;
+    padding: 10px 0 10px 88px;
+    border-right: solid 1px #fff;
+}
+.bullet__item__right {
+    width: 40%;
+    padding: 10px 0 10px 17px;
+}
+.bullet__item__left,
+.bullet__item__right {
+    box-sizing: border-box;
+    float: left;
+    font-size: 14px;
+    font-weight: 400;
+    color: #707070;
+    display: block;
+}

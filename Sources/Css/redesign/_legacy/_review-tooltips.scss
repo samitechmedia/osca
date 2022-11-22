@@ -1,0 +1,158 @@
+.review__casino .screenshots {
+  margin: 0;
+  list-style: none;
+  overflow: visible;
+  display: flex;
+  justify-content: space-between;
+  position: relative;
+}
+
+.review__casino .screenshots li {
+  float: left;
+  width: 210px;
+  margin: 0 0 0 25px;
+  cursor: pointer;
+}
+
+.review__casino .screenshots li:first-child {
+  margin: 0;
+}
+
+.screenshots .wrapper .tooltip {
+  border-radius: 4px;
+  background: #000;
+  bottom: 100%;
+  color: #fff;
+  content-visibility: hidden;
+  left: 0;
+  right: 0;
+  z-index: 1;
+  margin-bottom: 15px;
+  opacity: 0;
+  padding: 3px;
+  pointer-events: none;
+  position: absolute;
+  display: inline-block;
+  transition: all .25s ease-out;
+  box-shadow: 2px 2px 6px rgba(0, 0, 0, 0.28);
+
+  @include respond-to('large') {
+    right: auto;
+    left: 50%;
+    transform: translateX(-50%);
+  }
+}
+
+/* This bridges the gap so you can mouse into the tooltip without it disappearing */
+
+.screenshots .wrapper .tooltip:before {
+  bottom: -20px;
+  content: " ";
+  display: block;
+  height: 20px;
+  left: 0;
+  position: absolute;
+  width: 100%;
+}
+
+.screenshots .wrapper .tooltip.left {
+  @include respond-to('large') {
+    left: 0;
+    right: auto;
+    transform: translateX(0);
+  }
+}
+
+.screenshots .wrapper .tooltip.right {
+  @include respond-to('large') {
+    right: 0;
+    left: auto;
+    transform: translateX(0);
+  }
+}
+
+.screenshots .wrapper .tooltip img {
+  width: 100%;
+  height: auto;
+  max-width: none;
+
+  @include respond-to('large') {
+    width: 500px;
+  }
+}
+
+.systems-list .wrapper {
+  height: 42px;
+  background: none;
+  position: relative;
+}
+
+.systems-list .wrapper .tooltip {
+  border-radius: 0;
+  content-visibility: hidden;
+  height: 40px;
+  background: #9b0000;
+  bottom: 100%;
+  display: block;
+  line-height: 80px;
+  left: -27px;
+  margin-bottom: 15px;
+  opacity: 0;
+  pointer-events: none;
+  position: absolute;
+  width: 100px;
+  z-index: 100;
+  transform: translateY(10px);
+  transition: all .25s ease-out;
+  box-shadow: 2px 2px 6px rgba(0, 0, 0, 0.28);
+}
+
+/* This bridges the gap so you can mouse into the tooltip without it disappearing */
+
+.systems-list .wrapper .tooltip:before {
+  bottom: -20px;
+  content: " ";
+  display: block;
+  height: 20px;
+  left: 0;
+  position: absolute;
+  width: 100%;
+}
+
+.systems-list .wrapper .tooltip p {
+  padding: 0;
+  margin: 0;
+  line-height: 40px;
+  color: #fff;
+  text-align: center;
+}
+
+.systems-list .wrapper .tooltip:after {
+  border-left: solid transparent 10px;
+  border-right: solid transparent 10px;
+  border-top: solid #9b0000 10px;
+  bottom: -10px;
+  content: " ";
+  height: 0;
+  left: 50%;
+  margin-left: -13px;
+  position: absolute;
+  width: 0;
+}
+
+.review__casino .wrapper:hover .tooltip {
+  content-visibility: auto;
+  opacity: 1;
+  pointer-events: auto;
+}
+
+.review__casino-screenshots:before,
+.review__casino-screenshots:after {
+  clear: both;
+  display: block;
+  content: '';
+}
+
+.review__casino-screenshots {
+  margin: 10px 0 30px 0;
+}

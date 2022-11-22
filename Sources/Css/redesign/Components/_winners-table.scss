@@ -1,0 +1,85 @@
+.mm-winners-table {
+  margin: 20px 0 40px;
+  width: 100%;
+  display: table;
+  font-size: .9em;
+  color: #606060
+}
+
+@media screen and (max-width: 580px) {
+  .mm-winners-table {
+    display:block
+  }
+}
+
+.mm-winners-table__row {
+  display: table-row;
+  background: #f1f1f1
+}
+
+.mm-winners-table__row:nth-of-type(odd) {
+  background: #e1e1e1
+}
+
+.mm-winners-table__row.header {
+  font-weight: 900;
+  color: #fff;
+  background: #ea6153
+}
+
+.mm-winners-table__row.green {
+  background: #27ae60
+}
+
+.mm-winners-table__row.blue {
+  background: #2980b9
+}
+
+@media screen and (max-width: 580px) {
+  .mm-winners-table__row {
+    padding:8px 0;
+    display: block
+  }
+}
+
+.mm-winners-table__cell {
+  padding: 6px 12px;
+  display: table-cell
+}
+
+.mm-winners-table>.mm-winners-table__row>.mm-winners-table__cell:first-child {
+  width: 50%
+}
+
+@media screen and (max-width: 580px) {
+  .mm-winners-table__cell {
+    padding:2px 12px;
+    display: block
+  }
+
+  .mm-winners-table>.mm-winners-table__row>.mm-winners-table__cell:first-child {
+    width: 100%
+  }
+}
+
+.mm-winners-table__row .mm-winners-table__cell .mm-winners-table__row {
+  width: 100%;
+  display: table;
+  background: 0 0
+}
+
+.mm-winners-table__cell .mm-winners-table__row .mm-winners-table__cell {
+  padding: 0;
+  font-weight: 700;
+  font-size: 1.1em;
+  background: 0 0;
+  width: 50%;
+  display: table-cell
+}
+
+@media screen and (max-width: 580px) {
+  .mm-winners-table__cell .mm-winners-table__row .mm-winners-table__cell {
+    font-size:.9em;
+    background: 0 0
+  }
+}
