@@ -1,0 +1,253 @@
+{
+  "visualIds": {
+    "LB_fancyContent" : "js_gameContent",
+    "LB_fancyContentHeader": "js_gameContentHeader",
+    "LB_fancyContentFooter": "js_gameContentFooter",
+    "LB_fancyIFrameContainer": "js_gameContentBody",
+
+    "LB_feedbackShow": "js_feedbackShow",
+    "LB_socialButtons": "js_socialButtons",
+
+    "AF_instantPlay" : "js_flashInstantPlay",
+
+    "FE_otherFeedback": "js_visualFeedbackOther"
+  },
+  "visualClasses": {
+    "LB_aspectRatio43": "aspectRatio43",
+
+    "LB_fancyBoxFullscreen": "js_lightFullScreen",
+    "LB_btnCloseSelector": "js_lightClose",
+    "LB_btnCloseSelectorFullscreen": "js_lightCloseFullScreen",
+    "LB_btnResizeSelector": "js_lightResize",
+    "LB_btnResizeSelectorFullscreen": "js_lightResizeFullScreen",
+    "LB_hiddenElement": "js_hiddenElement",
+
+    "FE_options" : "js_feedbackContainerOption",
+
+    "AF_reduce" : "js_flashReduce",
+
+    "ActionTriggerContinue" : "js_actionContinue",
+    "ActionTriggerDismiss" : "js_actionDismiss",
+    "ActionTriggerSubmit" : "js_actionSubmit"
+  },
+  "configurationSelectors": [
+    {
+      "name": "modalElement",
+      "identifier": "js_modalElement",
+      "selector": "#js_modalElement"
+    },
+    {
+      "name": "visualGamesLoader",
+      "identifier": "js_visualGamesLoader",
+      "selector": ".js_visualGamesLoader"
+    },
+    {
+      "name": "sortFilterActionsContainer",
+      "identifier": "js_visualSortFilterActionsContainer",
+      "selector": ".js_visualSortFilterActionsContainer"
+    },
+    {
+      "name": "sortFilterActionElement",
+      "identifier": "js_visualSortFilterActionElement",
+      "selector": ".js_visualSortFilterActionElement"
+    },
+    {
+      "name": "typeFilterActionsContainer",
+      "identifier": "typeFilterActionsContainer",
+      "selector": ".js_visualTypeFilterActionsContainer"
+    },
+    {
+      "name": "typeFilterActionElement",
+      "identifier": "typeFilterActionElement",
+      "selector": ".js_visualTypeFilterActionElement"
+    },
+    {
+      "name": "actionElementText",
+      "identifier": "",
+      "selector": ""
+    },
+    {
+      "name": "providerFilterParent",
+      "identifier": "js_visualProviderFilterParent",
+      "selector": ".js_visualProviderFilterParent",
+      "children": []
+    },
+    {
+      "name": "providerFilterActionElement",
+      "identifier": "",
+      "selector": ""
+    },
+    {
+      "name": "searchActionContainer",
+      "identifier": "js_visualSearchContainer",
+      "selector": ".js_visualSearchContainer"
+    },
+    {
+      "name": "searchInput",
+      "identifier": "js_visualSearchElement",
+      "selector": ".js_visualSearchElement"
+    },
+    {
+      "name": "mainGameContainer",
+      "identifier": "js_gamesContainer",
+      "selector": ".js_gamesContainer",
+      "children": []
+    },
+    {
+      "name": "individualGameContainer",
+      "identifier": "js_gamesContainerSingle",
+      "selector": ".js_gamesContainerSingle"
+    },
+    {
+      "name": "filterViewActionElement",
+      "identifier": "",
+      "selector": ""
+    },
+    {
+      "name": "viewToggleActionsContainer",
+      "identifier": "",
+      "selector": ""
+    },
+    {
+      "name": "gridViewActionElement",
+      "identifier": "",
+      "selector": ""
+    },
+    {
+      "name": "listViewActionElement",
+      "identifier": "",
+      "selector": ""
+    },
+    {
+      "name": "filterToggleViewWrapContainer",
+      "identifier": "",
+      "selector": ""
+    },
+    {
+      "name": "sortInformationAndResetActionsContainer",
+      "identifier": "js_gamesResetContainer",
+      "selector": ".js_gamesResetContainer"
+    },
+    {
+      "name": "resetAllSortInformationActionElement",
+      "identifier": "js_gamesResetAll",
+      "selector": ".js_gamesResetAll"
+    },
+    {
+      "name": "resetSingleSortInformationActionElement",
+      "identifier": "",
+      "selector": ""
+    },
+    {
+      "name": "sortInformationTextString",
+      "identifier": "",
+      "selector": ""
+    },
+    {
+      "name": "providerFilterLogosParent",
+      "identifier": "",
+      "selector": ""
+    },
+    {
+      "name": "providerShowMoreButton",
+      "identifier": "",
+      "selector": ""
+    },
+    {
+      "name": "libraryGamesPaginationRow",
+      "identifier": "js_visualGamesPaginationContainer",
+      "selector": ".js_visualGamesPaginationContainer"
+    },
+    {
+      "name": "libraryGamesPaginationCenter",
+      "identifier": "js_visualGamesPaginationRow",
+      "selector": ".js_visualGamesPaginationRow"
+    },
+    {
+      "name": "prevButton",
+      "identifier": "js_PaginationButtonPrev",
+      "selector": ".js_PaginationButtonPrev"
+    },
+    {
+      "name": "nextButton",
+      "identifier": "js_PaginationButtonNext",
+      "selector": ".js_PaginationButtonNext"
+    },
+    {
+      "name": "nextPageSetButton",
+      "identifier": "",
+      "selector": ""
+    },
+    {
+      "name": "prevPageSetButton",
+      "identifier": "",
+      "selector": ""
+    },
+    {
+      "name": "gameCountPlaceholder",
+      "identifier": "",
+      "selector": ""
+    },
+    {
+      "name" : "gameRatingActionContainer",
+      "identifier": "js_gameRatingsContainer",
+      "selector": ".js_gameRatingsContainer"
+    },
+    {
+      "name" : "gameRatingActionElement",
+      "identifier" : "js_gameRatingsElement",
+      "selector" : ".js_gameRatingsElement"
+    },
+    {
+      "name" : "gameRatingCallToAction",
+      "identifier": "",
+      "selector": ""
+    },
+    {
+      "name" : "gameRatingResponsePlaceholder",
+      "identifier": "js_gameRatingsResponse",
+      "selector": ".js_gameRatingsResponse"
+    }
+
+  ],
+  "configurationSelectorsDependent": [
+    {
+      "name": "visualOrientationNotification",
+      "identifier": "js_visualRotate",
+      "selector": "#js_visualRotate"
+    },
+    {
+      "name": "feedbackElement",
+      "identifier": "js_visualFeedbackElement",
+      "selector": "#js_visualFeedbackElement"
+    },
+    {
+      "name": "feedbackResponse",
+      "identifier": "js_visualFeedbackElement",
+      "selector": "#js_visualFeedbackElement"
+    },
+    {
+      "name": "mobileGameRating",
+      "identifier": "js_visualMobileFeedbackElement",
+      "selector": "#js_visualMobileFeedbackElement"
+    }
+  ],
+  "templatesToProcess": {
+    "flashElement": {
+      "ids": []
+    },
+    "feedbackElement" : {
+      "ids": [],
+      "classes" : []
+    },
+    "feedbackResponse" : {
+      "ids": []
+    },
+    "orientationNotice" : {
+      "ids": []
+    },
+    "mobileGameRating" : {
+      "ids" : []
+    }
+  }
+}
