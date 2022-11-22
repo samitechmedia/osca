@@ -1,6 +1,12 @@
+additionalRepositories:
+  - url: https://bitbucket.org/legendcorp/codelibrary/src/master/
+    # checkoutLocation is optional and relative to /workspaces.
+    # by default the location defaults to the repository name.
+    checkoutLocation: backend
+
 tasks:
-  - init: cd LOCAL_WORKING/Docker/ && ./setup.sh
-    command: bash
+  - init: echo 'e'
+    command: echo 'e'
 ports:
   - port: 80
     onOpen: open-preview
