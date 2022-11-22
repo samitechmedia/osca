@@ -1,0 +1,6 @@
+tasks:
+  - init: cd LOCAL_WORKING/Docker/ && ./setup.sh
+    command: bash
+ports:
+  - port: 80
+    onOpen: open-preview
