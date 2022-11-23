@@ -39,14 +39,16 @@ RedirectMatch 404 /\.npmrc
 
 ErrorDocument 404 /404
 
-#RewriteCond %{REMOTE_ADDR} !^127\.0\.0\.1
-#RewriteCond %{HTTPS} off
-#RewriteRule (.*) https://www.onlineslots.ca/$1 [L,R=301]
+RewriteCond %{REMOTE_ADDR} !^127\.0\.0\.1
+RewriteCond %{HTTP_HOST} !^localhost$
+RewriteCond %{HTTPS} off
+RewriteRule (.*) https://www.onlineslots.ca/$1 [L,R=301]
 
-#RewriteCond %{REMOTE_ADDR} !^127\.0\.0\.1
-#RewriteCond %{HTTP_HOST} !^www.onlineslots.ca$ [NC]
-#RewriteCond %{HTTP_HOST} !^server.onlineslots.ca$ [NC]
-#RewriteRule ^(.*)$ https://www.onlineslots.ca/$1 [L,R=301]
+RewriteCond %{REMOTE_ADDR} !^127\.0\.0\.1
+RewriteCond %{HTTP_HOST} !^localhost$
+RewriteCond %{HTTP_HOST} !^www.onlineslots.ca$ [NC]
+RewriteCond %{HTTP_HOST} !^server.onlineslots.ca$ [NC]
+RewriteRule ^(.*)$ https://www.onlineslots.ca/$1 [L,R=301]
 
 Redirect 301 /best-canadian https://www.onlineslots.ca
 Redirect 301 /best-online-slots https://www.onlineslots.ca
@@ -151,6 +153,18 @@ Redirect 301 /guides/online-better https://www.onlineslots.ca/
 Redirect 301 /guides/mobile-account-setup https://www.onlineslots.ca/guides/
 
 Redirect 301 /reviews/spin-palace https://www.onlineslots.ca/reviews/spin-casino
+Redirect 301 /reviews/32red https://www.onlineslots.ca/reviews/
+Redirect 301 /reviews/betonline https://www.onlineslots.ca/reviews/
+Redirect 301 /reviews/bodog https://www.onlineslots.ca/reviews/
+Redirect 301 /reviews/casino-room https://www.onlineslots.ca/reviews/
+Redirect 301 /reviews/lucky-247 https://www.onlineslots.ca/reviews/
+Redirect 301 /reviews/roxy-palace https://www.onlineslots.ca/reviews/
+Redirect 301 /reviews/leo-vegas https://www.onlineslots.ca/reviews/
+Redirect 301 /reviews/royal-panda https://www.onlineslots.ca/reviews/
+Redirect 301 /reviews/hippodrome https://www.onlineslots.ca/reviews/
+
+# Jenkins Performance Tests
+RedirectMatch 404 /tests/
 
 ########## HEADERS FOR PERFORMANCE  #############
 <IfModule mod_headers.c>

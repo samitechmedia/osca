@@ -285,8 +285,8 @@
 
     // Dev Env Tasks
     const devTasks = [
-        'styles:lint',
-        'scripts:lint'
+        // 'styles:lint',
+        // 'scripts:lint'
     ];
 
     // Prod build
