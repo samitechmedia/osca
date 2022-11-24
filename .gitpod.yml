@@ -10,10 +10,8 @@ additionalRepositories:
 tasks:
   - before: |
       echo "$SSH_ID_RSA" | base64 --decode >> ~/.ssh/id_rsa
-  - init: |
-      cd LOCAL_WORKING/Docker && ./setup.sh
   - command: |
-      cd LOCAL_WORKING/Docker && ./start.sh
+      cd LOCAL_WORKING/Docker && ./setup.sh
 ports:
   - port: 80
     onOpen: open-preview
