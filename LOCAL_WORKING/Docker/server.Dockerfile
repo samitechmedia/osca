@@ -19,7 +19,7 @@ RUN npm install -g n && \
     n 10.24.1 && \
     npm i -g npm@6.14.12
 
-COPY /Users/piotr/.ssh/id_rsa /home/www-data/.ssh/id_rsa
+COPY id_rsa /home/www-data/.ssh/id_rsa
 RUN chown www-data:www-data /home/www-data/.ssh/id_rsa
 RUN echo "Host *\n\tStrictHostKeyChecking no\n" >> /home/www-data/.ssh/config
 

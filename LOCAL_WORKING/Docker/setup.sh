@@ -41,9 +41,9 @@ env USER_ID="$(id -u)" docker-compose exec --user=www-data -w /var/www/html/Code
 env USER_ID="$(id -u)" docker-compose exec --user=www-data -w /var/www/html/LOCAL_WORKING/DatabaseScripts osca ./setupDB.sh || exit
 
 # npm install
-docker-compose exec osca npm ci || exit
+docker-compose exec --user=www-data osca npm install || exit
 
 #Rebuild frontend with gulp
-docker-compose exec osca npm run dev
+docker-compose exec  --user=www-data osca npm run dev
 
-docker-compose exec -w /var/www/html/_arcade/src osca npm ci
+docker-compose exec -w /var/www/html/_arcade/src osca npm install
