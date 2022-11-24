@@ -3,7 +3,6 @@
   "version": "1.0.0",
   "description": "All the packages required to create and development OSCA",
   "main": "gulpfile.js",
-
   "scripts": {
     "build": "gulp --production",
     "dev": "gulp dev"
@@ -12,7 +11,7 @@
   "license": "MIT",
   "repository": "bitbucket",
   "dependencies": {
-    "aa-connector": "git+ssh://git@bitbucket.org:legendcorp/aa-connector.git",
+    "@netmanagement/aa-connector": "git@github.com:NetManagement/aa-connector.git",
     "axios": "^0.21.1",
     "gulp-clean-css": "^4.3.0",
     "gulp-mode": "^1.0.2",
