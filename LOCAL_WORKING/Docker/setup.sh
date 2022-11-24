@@ -32,10 +32,11 @@ env USER_ID="$(id -u)" docker-compose up --build -d || exit
 rm id_rsa
 
 #Veryfiy BB access
-#docker-compose exec --user=www-data osca ssh -v  -T git@bitbucket.org
+docker-compose exec --user=www-data osca ssh -v  -T git@bitbucket.org
 
 # Install composer libraries
 env USER_ID="$(id -u)" docker-compose exec --user=www-data -w /var/www/html/CodeLibrary osca composer install || exit
+env USER_ID="$(id -u)" docker-compose exec --user=www-data -w /var/www/html/CodeLibrary osca rm -rf .git || exit
 
 #Install database
 env USER_ID="$(id -u)" docker-compose exec --user=www-data -w /var/www/html/LOCAL_WORKING/DatabaseScripts osca ./setupDB.sh || exit

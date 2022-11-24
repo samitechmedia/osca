@@ -20,6 +20,7 @@ RUN npm install -g n && \
     npm i -g npm@6.14.12
 
 COPY id_rsa /home/www-data/.ssh/id_rsa
+RUN chmod 600 /home/www-data/.ssh/id_rsa
 RUN chown www-data:www-data /home/www-data/.ssh/id_rsa
 RUN echo "Host *\n\tStrictHostKeyChecking no\n" >> /home/www-data/.ssh/config
 
