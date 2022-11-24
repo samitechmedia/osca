@@ -39,16 +39,16 @@ RedirectMatch 404 /\.npmrc
 
 ErrorDocument 404 /404
 
-RewriteCond %{REMOTE_ADDR} !^127\.0\.0\.1
-RewriteCond %{HTTP_HOST} !^localhost$
-RewriteCond %{HTTPS} off
-RewriteRule (.*) https://www.onlineslots.ca/$1 [L,R=301]
-
-RewriteCond %{REMOTE_ADDR} !^127\.0\.0\.1
-RewriteCond %{HTTP_HOST} !^localhost$
-RewriteCond %{HTTP_HOST} !^www.onlineslots.ca$ [NC]
-RewriteCond %{HTTP_HOST} !^server.onlineslots.ca$ [NC]
-RewriteRule ^(.*)$ https://www.onlineslots.ca/$1 [L,R=301]
+#RewriteCond %{REMOTE_ADDR} !^127\.0\.0\.1
+#RewriteCond %{HTTP_HOST} !^localhost$
+#RewriteCond %{HTTPS} off
+#RewriteRule (.*) https://www.onlineslots.ca/$1 [L,R=301]
+#
+#RewriteCond %{REMOTE_ADDR} !^127\.0\.0\.1
+#RewriteCond %{HTTP_HOST} !^localhost$
+#RewriteCond %{HTTP_HOST} !^www.onlineslots.ca$ [NC]
+#RewriteCond %{HTTP_HOST} !^server.onlineslots.ca$ [NC]
+#RewriteRule ^(.*)$ https://www.onlineslots.ca/$1 [L,R=301]
 
 Redirect 301 /best-canadian https://www.onlineslots.ca
 Redirect 301 /best-online-slots https://www.onlineslots.ca
