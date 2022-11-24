@@ -5,8 +5,8 @@ additionalRepositories:
     checkoutLocation: CodeLibrary
 
 tasks:
-  - init: echo 'e'
-    command: echo 'e'
+  - init: cd LOCAL_WORKING/Docker && ./setup.sh
+    command: cd LOCAL_WORKING/Docker && ./start.sh
 ports:
   - port: 80
     onOpen: open-preview

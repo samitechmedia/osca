@@ -7,7 +7,7 @@ if ! grep -q local.onlineslots.ca "/etc/hosts"; then
   sudo echo "$STR"  | sudo tee -a /etc/hosts >/dev/null
 fi
 
-cp ~/.ssh/id_rsa ./id_rsa
+#cp ~/.ssh/id_rsa ./id_rsa
 
 #Removing existing container
 docker-compose rm -f
@@ -29,7 +29,7 @@ git checkout CodeLibrary
 cd LOCAL_WORKING/Docker || exit;
 env USER_ID="$(id -u)" docker-compose up --build -d || exit
 
-rm id_rsa
+#rm id_rsa
 
 #Veryfiy BB access
 docker-compose exec --user=www-data osca ssh -v  -T git@bitbucket.org
@@ -41,9 +41,9 @@ env USER_ID="$(id -u)" docker-compose exec --user=www-data -w /var/www/html/Code
 env USER_ID="$(id -u)" docker-compose exec --user=www-data -w /var/www/html/LOCAL_WORKING/DatabaseScripts osca ./setupDB.sh || exit
 
 # npm install
-docker-compose exec --user=www-data osca npm install || exit
-
-#Rebuild frontend with gulp
-docker-compose exec  --user=www-data osca npm run dev
-
-docker-compose exec -w /var/www/html/_arcade/src osca npm install
+#docker-compose exec --user=www-data osca npm install || exit
+#
+##Rebuild frontend with gulp
+#docker-compose exec  --user=www-data osca npm run dev
+#
+#docker-compose exec -w /var/www/html/_arcade/src osca npm install
