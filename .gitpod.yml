@@ -7,6 +7,11 @@ additionalRepositories:
 #tasks:
 #  - init: cd LOCAL_WORKING/Docker && ./setup.sh
 #    command: cd LOCAL_WORKING/Docker && ./start.sh
+tasks:
+  - name: Example of passing an environment variable to a command
+    env:
+      PRINT_ME: "Hello World!"
+    command: echo "$PRINT_ME"
 ports:
   - port: 80
     onOpen: open-preview
