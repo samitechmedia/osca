@@ -1,3 +1,5 @@
+#!/bin/bash
+
 if ! docker ps -a | grep -i 'osca'; 
 then
   echo 'no container at all installing from scratch'
