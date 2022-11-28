@@ -27,7 +27,7 @@ git checkout CodeLibrary
 
 #Build docker compose with images from Dockerfile and force recreate
 cd LOCAL_WORKING/Docker || exit;
-env USER_ID="$(id -u)" docker-compose up --build -d || exit
+env USER_ID="$(id -u)" docker compose up --build -d || exit
 
 rm id_rsa
 
