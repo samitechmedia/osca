@@ -6,16 +6,16 @@
 	"features": {
 		"ghcr.io/devcontainers/features/common-utils:1": {
 			"installZsh": "true",
-			"upgradePackages": "true",
+			"upgradePackages": "false",
 			"uid": "1000",
 			"gid": "1000",
 			"installOhMyZsh": "true",
-			"nonFreePackages": "true"
+			"nonFreePackages": "false"
 		},
 		"ghcr.io/devcontainers/features/docker-from-docker:1": {
 			"version": "20.10",
 			"enableNonRootDocker": "true",
-			"moby": "false"
+			"moby": "true"
 		}
 	},
 
