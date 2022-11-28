@@ -10,4 +10,4 @@ cp /workspaces/osca/.devcontainer/.ssh/config ~/.ssh/config
 cd /workspaces 
 rm -rf CodeLibrary 
 git clone git@bitbucket.org:legendcorp/codelibrary.git CodeLibrary
-cd /workspaces/osca/LOCAL_WORKING/Docker && ./setup.sh
+# cd /workspaces/osca/LOCAL_WORKING/Docker && ./setup.sh
