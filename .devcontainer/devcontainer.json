@@ -6,8 +6,8 @@
 
 	// Use 'postCreateCommand' to run commands after the container is created.
 	// "postCreateCommand": "cd /workspaces/osca/.devcontainer && bash setup.sh && sleep 100 && cd /workspaces/osca/LOCAL_WORKING/Docker &&",
-	"postCreateCommand": "./.devcontainer/setup.sh",
-	"postStartCommand": "./.devcontainer/start.sh",
+	"postCreateCommand": ".bash .devcontainer/setup.sh",
+	"postStartCommand": "bash .devcontainer/start.sh",
 
 	"hostRequirements": {
 		"cpus": 2,

@@ -1,4 +1,5 @@
 #!/bin/bash
+cd $(dirname $0)
 
 if ! docker ps -a | grep -i 'osca'; 
 then
