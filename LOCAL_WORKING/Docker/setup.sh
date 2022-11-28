@@ -35,8 +35,10 @@ rm id_rsa
 docker-compose exec --user=www-data osca ssh -v  -T git@bitbucket.org
 
 # Install composer libraries
+echo 'Instaling Composer...'
 env USER_ID="$(id -u)" docker-compose exec --user=www-data -w /var/www/html/CodeLibrary osca composer install || exit
 env USER_ID="$(id -u)" docker-compose exec --user=www-data -w /var/www/html/CodeLibrary osca rm -rf .git || exit
+echo 'Finshed Instaling Composer...'
 
 #Install database
 echo 'Instaling DB...'
