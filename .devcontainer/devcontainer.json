@@ -15,7 +15,7 @@
 		"ghcr.io/devcontainers/features/docker-from-docker:1": {
 			"version": "20.10",
 			"enableNonRootDocker": "true",
-			"moby": "true"
+			"moby": "false"
 		}
 	},
 
@@ -27,7 +27,7 @@
 	"postCreateCommand": "bash /workspaces/osca/.devcontainer/setup.sh",
 
 	"hostRequirements": {
-		"cpus": 8,
+		"cpus": 4,
 		"memory": "8gb",
 		"storage": "32gb" 
 	 }
