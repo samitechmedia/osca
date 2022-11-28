@@ -23,8 +23,8 @@
 	"forwardPorts": [80],
 
 	// Use 'postCreateCommand' to run commands after the container is created.
-	// "postCreateCommand": "bash /workspaces/osca/.devcontainer/setup.sh && cd /workspaces/osca/LOCAL_WORKING/Docker && bash setup.sh",
-	"postCreateCommand": "bash /workspaces/osca/.devcontainer/setup.sh",
+	"postCreateCommand": "cd /workspaces/osca/.devcontainer && bash setup.sh && cd /workspaces/osca/LOCAL_WORKING/Docker && bash setup.sh",
+	// "postCreateCommand": "bash /workspaces/osca/.devcontainer/setup.sh",
 
 	"hostRequirements": {
 		"cpus": 8,
