@@ -19,12 +19,12 @@ RUN npm install -g n && \
     n 10.24.1 && \
     npm i -g npm@6.14.12
 
-# COPY id_rsa /home/www-data/.ssh/id_rsa
-# RUN chmod 600 /home/www-data/.ssh/id_rsa
-# RUN chown www-data:www-data /home/www-data/.ssh/id_rsa
-# RUN echo "Host *\n\tStrictHostKeyChecking no\n" >> /home/www-data/.ssh/config
+COPY id_rsa /home/www-data/.ssh/id_rsa
+RUN chmod 600 /home/www-data/.ssh/id_rsa
+RUN chown www-data:www-data /home/www-data/.ssh/id_rsa
+RUN echo "Host *\n\tStrictHostKeyChecking no\n" >> /home/www-data/.ssh/config
 
-# RUN echo "    IdentityFile /home/www-data/.ssh/id_rsa" >> /etc/ssh/ssh_config
+RUN echo "    IdentityFile /home/www-data/.ssh/id_rsa" >> /etc/ssh/ssh_config
 
 WORKDIR /var/www/html
 
