@@ -39,7 +39,9 @@ env USER_ID="$(id -u)" docker-compose exec --user=www-data -w /var/www/html/Code
 env USER_ID="$(id -u)" docker-compose exec --user=www-data -w /var/www/html/CodeLibrary osca rm -rf .git || exit
 
 #Install database
+echo 'Instaling DB...'
 env USER_ID="$(id -u)" docker-compose exec --user=www-data -w /var/www/html/LOCAL_WORKING/DatabaseScripts osca ./setupDB.sh || exit
+echo 'DB installed...'
 
 # Frontend building and running dev
 docker-compose exec --user=www-data osca npm install || exit
